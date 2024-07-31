@@ -1,0 +1,122 @@
+*,*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Poppins,'Helvetica','Arial';
+    user-select: none;
+    background-image: url(images\boliviainteligente-zv6PzgyoRoE-unsplash.jpg);
+}
+
+
+:root {
+    --primary-body-bg: #ffffff;
+    --text-color: black;
+    --text-color-btn: white;
+    --card-bg-color: #f5f5f5;
+    --test-color: #5836b1;
+}
+
+a {
+    text-decoration: none;
+}
+nav {
+    --justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 8rem;
+    padding: 1rem;
+    background-color: var(--primary-body-bg);
+    z-index: 1;
+}
+
+nav img {
+    width: 10rem;
+}
+
+.nav-items a,li{
+    text-decoration:none;
+    list-style-type: none;
+    color: var(--text-color);
+    font-weight: 650;
+    &:active {
+        --text-color: rgb(0 0 0 /0.8)
+    }
+}
+.nav-items {
+    margin-left: 2rem;
+    --gap: 2rem;
+}
+
+#sign-in {
+    --font-weight: 700;
+    --text-color-btn: #3c7eff;
+    &:hover {
+        --text-color-btn: #216afd;
+    }
+    &:active {
+    --text-color-btn: #3c7eff;
+    }
+}
+#sign-up {
+    --text-color-btn: white;
+    --btn-background: #538af7;
+    &:hover {
+        --btn-background: #3c7eff;    
+    }
+    &:active {
+    --btn-background: #538af7;
+    }
+
+}
+
+section .hero {
+    width: 90vw;
+    height: fit-content;
+    padding: 2rem;
+    margin-top: 10rem;
+    border-radius: 1.25rem;
+    backdrop-filter: blur(20px);
+    --columns: 2;
+}
+
+section .text {
+    width: 100%;
+    height: 100%;
+    h1 {
+        font-size: 4.25rem;
+        line-height: 1.1;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    p {
+        font-size: 1.315em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        line-height: 1.6;
+        color: var(--text-color);
+        opacity: 0.6;
+    }
+}
+#questions-btn {
+    --btn-background: #387aff;
+    --btn-padding: 1.2rem;
+    --width: 8rem;
+    --height: 3rem;
+    cursor: pointer;
+    &:hover {
+    --btn-background: #3c7eff;    
+    }
+    &:active {
+    --btn-background: #538af7;
+    }
+}
