@@ -12,7 +12,13 @@
     grid-template-rows: repeat(var(--rows,auto),var(--rows-size,1fr));
     gap: var(--gap,1rem);
 }
-
+.flex-column {
+    display: flex;
+    gap: var(--gap,1rem);
+    flex-direction: var(--flex-direction,column);
+    justify-content: var(--justify-content,center);
+    align-items: var(--align-items,center);
+}
 .btn {
   width: var(--width,6rem);
   height: var(--height,2.5rem);
