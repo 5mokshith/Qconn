@@ -19,6 +19,8 @@
     justify-content: var(--justify-content,center);
     align-items: var(--align-items,center);
 }
+
+/* Components */
 .btn {
   width: var(--width,6rem);
   height: var(--height,2.5rem);
@@ -32,6 +34,21 @@
   border: 1px solid transparent !important;
   font-size: 1.15rem;
   border-radius: .625rem;
+}
+
+
+/* user selection styles */
+
+::selection {
+  background-color: #ffa722;
+  color: var(--text-color);
+  opacity: 1;
+}
+
+
+::-moz-selection {
+  background-color: #fd7e14;
+  color: var(--text-color);
 }
 
 /* Don't change these are the font styles */
