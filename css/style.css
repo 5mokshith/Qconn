@@ -4,6 +4,24 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-body-bg: #ffffff;
+  --text-color: black;
+  --text-color-btn: white;
+  --card-bg-color: #f5f5f5;
+  --toogle-btn-bg: black;
+  --toogle-btn-text: white;
+}
+
+/* Dark Theme colors */
+[data-dark-mode = "true"] {
+  --primary-body-bg: #000000;
+  --text-color: white;
+  --card-bg-color: #27282a;
+  --toogle-btn-bg: white;
+  --toogle-btn-text: black;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,22 +32,6 @@ body {
   position: relative;
 }
 
-:root {
-  --primary-body-bg: #ffffff;
-  --text-color: black;
-  --text-color-btn: white;
-  --card-bg-color: #f5f5f5;
-  --toogle-btn-bg: black;
-  --toogle-btn-text: white;
-}
-/* Dark Theme colors */
-[data-dark-mode = "true"] {
-  --primary-body-bg: #000000;
-  --text-color: white;
-  --card-bg-color: #27282a;
-  --toogle-btn-bg: white;
-  --toogle-btn-text: black;
-}
 
 a {
   text-decoration: none;
@@ -45,6 +47,7 @@ nav {
   padding: 1rem;
   background-color: var(--primary-body-bg);
   border-block-end: 1px solid rgba(133, 127, 127, 0.335);
+  transition: all 0.2s ease;
 }
 
 nav img {
@@ -95,21 +98,13 @@ li {
   }
 }
 
-.theme-toogle-btn {
+.theme-toggle-btn {
   position: absolute;
   top: 10%;
   right: 5%;
   z-index: 1;
-  
-}
-.toogle-btn {
-  --width: 6.5rem;
-  --padding: 1rem;
-  --btn-background: var(--toogle-btn-bg);
-  --text-color-btn: var(--toogle-btn-text);
-  font-weight: 800;
-  border-radius: 0; 
-  transition: all 200ms ease;
+  font-weight: 500;
+  color: var(--text-color);
 }
 
 section .hero {

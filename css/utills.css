@@ -36,16 +36,35 @@
   border-radius: .625rem;
 }
 
-/* Javascript classes */
-
-.toogle-active {
-  animation: roll-back 200ms ease forwards;
-}
-@keyframes roll-back {
-  to {
-    transform: rotateY(360deg);
-  }
+input {
   
+}
+
+/* toggle button styles */
+
+.toggle-box {
+  margin-right: 10px;
+  position: relative;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+width: 38px;
+height: 20px;
+background: #c0c0c0; /* #EFEFEF */
+border-radius: 10px;
+transition: all 0.2s;
+bottom: -5px;
+
+i {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 15%;
+  transition: all 0.2s ease;
+}
 }
 
 
