@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main page</title>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- End google fonts -->
+
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/utills.css" />
+  <script src="script/theme.js" defer></script>
+  <script src="script/main.js" defer></script>
+</head>
+
+<body data-dark-mode="false">
+  <nav class="flex" id="nav-bar">
+    <div class="logo">
+      <a href="#"><img src="images/logo.png" alt="logo" /></a>
+    </div>
+    <ul class="nav-items flex">
+      <li><a href="#nav-bar">Home</a></li>
+      <li><a href="#">Questions</a></li>
+      <li><a href="#">Users</a></li>
+      <li><a href="#">Discussions</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+    <div class="sign-btns">
+      <button id="sign-in" class="btn">Sign In</button>
+      <button id="sign-up" class="btn">Sign Up</button>
+    </div>
+  </nav>
+
+<section class="theme-toggle-btn">
+  Dark mode :
+  <div class="toggle-box" data-active="false">
+    <i class="toggle-icon"></i>
+</div>
+</section>
+
+  <main>
+    <section role="region" class="flex">
+      <div class="hero grid">
+        <div class="text">
+          <h1>Your questions are resolved here</h1>
+          <p>
+            Meet exiting new people that can solve your queries, or you maybe
+            the one who solves them and build your connections from now
+          </p>
+          <a href=""><button id="questions-btn" class="btn flex">Questions</button></a>
+        </div>
+        <div class="image">
+          <img src="C:\Users\dell\Downloads/header-1.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards section -->
+    <section role="region" class="flex-column">
+      <div class="features-text">
+        <h2>Features</h2>
+        <p>
+          Start making connections in your institute and start gaining
+          popularity points remember there is somone that needs help just like
+          you so start your journey
+        </p>
+      </div>
+
+      <div class="flex testimonial">
+        
+        <div class="card flex-column">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3c7eff" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" class="feather feather-user-check">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="8.5" cy="7" r="4"></circle>
+            <polyline points="17 11 19 13 23 9"></polyline>
+          </svg>
+          <h5>User-Friendly Interface</h5>
+          <p>
+            Navigate effortlessly through easy-to-use platform. Posting
+            questions and finding answers has never been easier.
+          </p>
+          <a href="#" class="learn-more">Learn more</a>
+        </div>
+
+        <div class="flex-column card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fd7e14" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          <h5>Diverse Expertise</h5>
+          <p class="my-4">
+            Get insights from a wide range of subjects and experts. Whether
+            it's academic help or practical advice, find what you need.
+          </p>
+          <a href="#" class="learn-more">Learn more</a>
+        </div>
+
+        <div class="flex-column card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#8bd74e" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="feather feather-pocket">
+            <path d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z"></path>
+            <polyline points="8 10 12 14 16 10"></polyline>
+          </svg>
+          <h5>Secure and Reliable</h5>
+          <p class="my-4">
+            Your data and privacy are our top priority. Enjoy a secure and
+            trustworthy platform where your questions and answers are safe.
+          </p>
+          <a href="#" class="learn-more">Learn more</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Platform Logo" />
+      </div>
+
+      <div class="footer-description">
+        <p>
+          Connecting students, teachers, and seniors to share knowledge and
+          solve problems together.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">FAQ</a>
+        <a href="#">Terms of Service</a>
+      </div>
+
+      <p>Copyright 	&#169; 2024 techExchange.com</p>
+    
+    </div>
+  </footer>
+</body>
+
+
+</html>
