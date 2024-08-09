@@ -1,38 +1,105 @@
 main {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
+    background-color: var(--primary-body-bg);
 }
 
 .wrapper {
     border: 2px solid black;
     padding: 1rem;
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10rem;
+}
 
-    form {
-        height: 100%;
-        width: 50%;
-        padding: 1rem;
+.wrapper form {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.wrapper .left {
+    margin-left: 10rem;
+}
+
+.wrapper h1 {
+    font-size: 2.725rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.wrapper form .input-group {
+    display: flex;
+    width: 90%;
+    height: 3.5rem;
+    border-radius: .625rem;
+    border: 2px solid #bebebf;
+
+    .svg-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        width: 70px;
+        aspect-ratio: 1;
+        padding: 1rem;
 
-        h1 {
-            font-size: 3.25rem;
-            line-height: 1.1;
-            margin-block-start: 0.67em;
-            margin-block-end: 0.67em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
+        svg {
+            fill: var(--text-color);
+            opacity: 0.5;
         }
+    }
 
-        img {
-            width: 50%;
+}
+
+.wrapper .picture {
+    width: 50%;
+    margin-right: 5rem;
+}
+
+form .sign-in {
+    width: 90%;
+    padding: 1rem;
+    height: 100%;
+
+    &:hover {
+        --btn-background: #3c7eff;
+      }
+    
+      &:active {
+        --btn-background: #538af7;
+      }
+}
+
+.socials {
+    text-align: center;
+}
+
+.socials .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+
+    .social-icon {
+        --btn-background: var(--card-bg-color);
+
+        svg {
+            stroke: var(--text-color);
+            fill: var(--text-color);
         }
     }
 }
