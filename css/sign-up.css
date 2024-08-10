@@ -1,0 +1,66 @@
+.wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper form {
+    padding: 1rem;
+    --gap: 1.6rem;
+    color: var(--text-color);
+}
+
+.wrapper form h1 {
+    font-size: 2.525rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.wrapper form .child-1 {
+    gap: 1rem;
+    border: none!important;
+    input {
+    border: 2px solid #bebebf;
+    border-radius: .625rem;
+    width: 12rem;
+    }
+}
+
+.sign-up {
+    width: 90%;
+    height: 3rem;
+    &:hover {
+        --btn-background: #3c7eff;
+      }
+    
+      &:active {
+        --btn-background: #538af7;
+      }
+}
+
+.wrapper form .input-group {
+    display: flex;
+    width: 25rem;
+    height: 3.5rem;
+    border-radius: .625rem;
+    border: 2px solid #bebebf;
+    --font-size: 1.2rem;
+
+    .svg-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        aspect-ratio: 1;
+        padding: 1rem;
+
+        svg {
+            fill: var(--text-color);
+            opacity: 0.5;
+        }
+    }
+
+}

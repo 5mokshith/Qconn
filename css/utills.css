@@ -40,7 +40,7 @@
 .input {
   width: 100%;
   padding: .825rem 1.1875rem;
-  font-size: 1.425rem;
+  font-size: var(--font-size,1.425rem);
   font-weight: 400;
   line-height: 1.1;
   color: var(--text-color);
@@ -49,11 +49,13 @@
   border-left: none;
   border: none;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  outline: none;
 }
 
 input::placeholder {
   font-size: 1.3rem;
   color: var(--text-color);
+  opacity: 0.6;
 }
 
 img {
