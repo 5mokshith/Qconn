@@ -13,12 +13,12 @@
 
 <body data-dark-mode="false">
 
-    <div class="wrapper">
+    <div class="wrapper flex">
         <div class="left">
-            <form action="/" method="post">
+            <form action="/" method="post" class="flex-column">
                 <h1>Sign in</h1>
-                <div class="input-group">
-                    <div class="svg-container">
+                <div class="input-group flex">
+                    <div class="svg-container flex">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
@@ -28,8 +28,8 @@
                     <input type="email" required aria-required="true" class="mail-field input"
                         placeholder="Email address" />
                 </div>
-                <div class="input-group">
-                    <div class="svg-container">
+                <div class="input-group flex">
+                    <div class="svg-container flex">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
@@ -40,14 +40,14 @@
                         placeholder="Password" />
                 </div>
                 <button class="btn sign-in" type="submit">Sign in</button>
-                <p>Don't have an account? <a href="#">Log in</a></p>
+                <p>Don't have an account? <a href="sign-up.html">Log in</a></p>
             </form>
 
             <!-- O-auth seems to be preety hard to implement -->
 
             <!-- <div class="socials">
                 <div class="text">Sign in via socials</div>
-                <div class="social-icons">
+                <div class="social-icons flex">
                     <button class="btn flex social-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                             class="fill-dark-1 js-on-edit" sf-label="SVG icon" sf-type="svg" sf-uid="29"

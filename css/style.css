@@ -11,6 +11,7 @@
   --card-bg-color: #f5f5f5; 
   --toogle-btn-bg: black;
   --toogle-btn-text: white;
+  --text-color-input: rgb(46, 44, 44);
 }
 
 /* Dark Theme colors */
@@ -20,6 +21,7 @@
   --card-bg-color: #27282a;
   --toogle-btn-bg: white;
   --toogle-btn-text: black;
+  --text-color-input: rgba(0, 0, 0, 0.737);
 }
 
 body {
