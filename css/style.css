@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 10rem;
 }
 
 :root {
@@ -28,7 +30,6 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  scroll-behavior: smooth;
   font-family: Poppins, "Helvetica", "Arial";
   background-color: var(--primary-body-bg);
   transition: all 600ms ease;
