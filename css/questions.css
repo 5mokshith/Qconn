@@ -1,0 +1,120 @@
+main {
+    margin-block-start: 8.5rem;
+    height: fit-content;
+}
+
+main .hero {
+    width: 100%;
+    padding: 2rem;
+    /* background: linear-gradient(to left,pink, 5%,rgba(237, 221, 2, 0.523),orange); */
+    background: conic-gradient(pink,#ecec22ab,transparent,pink);
+    /* box-shadow: 0 0 20px orange; */
+    box-shadow: 0 0 20px pink;
+}
+
+.hero h1 {
+    font-size: 5rem;
+}
+
+.hero .stats {
+    --gap: 2rem;
+}
+
+.hero .stats .stat-info {
+    padding: 1rem;
+    --gap: 0rem;
+    width: 20rem;
+   /*  box-shadow: 0 0 100px #ffb73c; */
+    background-color: #80808051;
+    border-radius: 1rem;
+}
+.stat-info h3 {
+    font-size: 1.9rem;
+    margin: 0;
+}
+.stat-info span {
+    margin-block-start: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: red;
+}
+
+.stats .child-1 {
+    position: relative!important;
+    background-color: #939292!important;
+    opacity: 1!important;
+}
+
+
+
+main .hero .stats .child-1::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    padding: 0.5rem;
+    box-sizing: content-box;
+    border-radius: inherit;
+    background: conic-gradient(from var(--angle),transparent 20%,blue);
+    animation: rotate 2s linear  infinite;
+}
+
+main .hero .stats .child-1::before {
+    filter: blur(10px);
+}
+
+
+.card-container {
+    margin-block-start: 1rem;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    --columns: auto-fit;
+    --col-size: minmax(330px,1fr); 
+    --gap: 2rem;
+}
+
+.card {
+    border-radius: 1rem;
+    padding: 1rem;
+    --gap: 1rem;
+    --justify-content: space-between;
+    background-color: var(--card-bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);    
+    transition: all 0.3s ease-in-out;
+}
+.card h2 {
+    margin-top: 1rem;
+    font-size: clamp(1.2rem, 2.5vw, 1.4em);
+}
+.card div {
+    margin-block-end: 0.5rem;
+    color: var(--text-color);
+}
+.card span {
+    opacity: 0.6;
+}
+.card:hover {
+    box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+    outline: 1px solid orange;
+}
+
+.card .buttons {
+    height: 100%;
+    width: 1.5rem;
+    --gap: 0px;
+}
+
+.buttons svg {
+    stroke: red;
+    fill: #3c7eff;
+    &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+    }
+    &:active {
+        opacity: 1;
+    }
+}

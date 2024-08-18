@@ -110,7 +110,23 @@ h1,h2,h3,h4,h5,p {
   color: var(--text-color);
 }
 
-/* Don't change these are the font styles */
+/* scroll bars  */
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: color-mix(in srgb, var(--text-color), transparent 50%);
+  opacity: 0.2;
+  /* border-radius: 1rem; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: color-mix(in srgb, var(--primary-body-bg), transparent 60%);
+  /* border-radius: 1rem; */
+}
+
+
+/* Don't change */
+
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -217,4 +233,25 @@ h1,h2,h3,h4,h5,p {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: italic;
+}
+
+
+/* Animations */
+
+@keyframes rotate {
+  from {
+      --angle: 0deg;
+  }
+  to {
+      --angle: 360deg;
+  }
+}
+
+
+/* Custom properties */
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
