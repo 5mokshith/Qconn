@@ -40,15 +40,22 @@
 .input {
   width: 100%;
   padding: .825rem 1.1875rem;
-  font-size: 1.725rem;
+  font-size: var(--font-size,1.225rem);
   font-weight: 400;
-  line-height: 1.2;
-  color: var(--text-color);
+  line-height: 1.1;
+  color: var(--text-color-input);
   background-color: transparent;
   appearance: none;
   border-left: none;
   border: none;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 1.3rem;
+ /*  color: var(--text-color); */
+  opacity: 0.6;
 }
 
 img {
@@ -74,17 +81,50 @@ img {
   transition: all 0.2s;
   bottom: -5px;
 
-  i {
-    width: 15px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background-color: white;
-    position: absolute;
-    left: 15%;
-    transition: all 0.2s ease;
-  }
 }
 
+.toggle-box i {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 15%;
+  transition: all 0.2s ease;
+}
+
+h1,h2,h3,h4,h5,p {
+  color: var(--text-color);
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Tooltips */
+
+.tooltip::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
 
 /* user selection styles */
 
@@ -100,7 +140,23 @@ img {
   color: var(--text-color);
 }
 
-/* Don't change these are the font styles */
+/* scroll bars  */
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: color-mix(in srgb, var(--text-color), transparent 50%);
+  opacity: 0.2;
+  /* border-radius: 1rem; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: color-mix(in srgb, var(--primary-body-bg), transparent 60%);
+  /* border-radius: 1rem; */
+}
+
+
+/* Don't change */
+
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -207,4 +263,25 @@ img {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: italic;
+}
+
+
+/* Animations */
+
+@keyframes rotate {
+  from {
+      --angle: 0deg;
+  }
+  to {
+      --angle: 360deg;
+  }
+}
+
+
+/* Custom properties */
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }

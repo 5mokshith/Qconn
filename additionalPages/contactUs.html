@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/utills.css" />
+    <link rel="stylesheet" href="../css/contactUs.css">
+</head>
+<body>
+    <main class="flex">
+        <form action="\" class="flex-column">
+            <h1 class="poppins-medium">Contact us</h1>
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Your name" name="name" class="input">
+            </div>
+            <div class="input-group">
+                <label for="Email">Email</label>
+                <input type="text" placeholder="Email" name="Email" class="input">
+            </div>
+            <div class="input-group">
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject" class="input">
+                    <option value="question">Questions</option>
+                    <option value="suggestion">Suggestion</option>
+                    <option value="Bug-report">Bug report</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" class="input"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let currentTheme = localStorage.getItem('theme');
+        if(currentTheme) {
+            document.body.setAttribute('data-dark-mode',currentTheme === 'dark'?'true':'false');
+            document.querySelectorAll('.input-group').forEach(item => item.style.backgroundColor = 'rgb(255 255 255 /0.1)');
+        }
+    });
+</script>
+</html>

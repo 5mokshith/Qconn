@@ -2,15 +2,19 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 10rem;
 }
 
 :root {
   --primary-body-bg: #ffffff;
   --text-color: black;
   --text-color-btn: white;
-  --card-bg-color: #f5f5f5;
+  --card-bg-color: #f5f5f5; 
   --toogle-btn-bg: black;
   --toogle-btn-text: white;
+  --text-color-input: rgb(46, 44, 44);
+  --modal-bg-color: rgb(0 0 0 /0.35);
 }
 
 /* Dark Theme colors */
@@ -20,13 +24,14 @@
   --card-bg-color: #27282a;
   --toogle-btn-bg: white;
   --toogle-btn-text: black;
+  --text-color-input: rgba(0, 0, 0, 0.737);
+  --modal-bg-color: rgb(255 255 255 / 0.36);
 }
 
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  scroll-behavior: smooth;
   font-family: Poppins, "Helvetica", "Arial";
   background-color: var(--primary-body-bg);
   transition: all 600ms ease;
