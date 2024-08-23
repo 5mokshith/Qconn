@@ -2,11 +2,12 @@
 const likeButton = document.querySelectorAll('.card-container .card .buttons #like');
 const writeAnswer = document.querySelectorAll('.card .buttons #answer');
 const viewAnswers = document.querySelectorAll('.card .buttons #answers');
-const AnswersModal = document.querySelector('.modal');
+const answersModal = document.querySelector('.modal');
 const container = document.querySelector('.card-container');
+const answersModalClose = document.querySelector('.modal .close');
 
 
-/* Buddy design the API in the backend that has this JSON format */
+/* Buddy design the API in the backEnd that has this JSON format */
 
 const questions = [{
     id: 1,
@@ -16,8 +17,12 @@ const questions = [{
     likes: 100,
     answers: [{
         answerId: 1,
+        author: "Hello world",
+        date: "32-65-2365",
         answer: "Practicing Dom manupulation could make your skill's popup"
     },{answerId: 2,
+        author: "Hello world",
+        date: "32-65-2365",
         answer: "practice can make your learning process better"
     }]
 },{
@@ -28,19 +33,33 @@ const questions = [{
     likes: 200,
     answers: [{
         answerId: 1,
-        answer: "Practicing Dom manupulation could make your skill's popup"
+        author: "Hello world",
+        date: "32-65-2365",
+        answer: "Practicing Dom manupulation could make your skill's popup 2"
     },{answerId: 2,
-        answer: "practice can make your learning process better"
+        author: "Hello world",
+        date: "32-65-2365",
+        answer: "practice can make your learning process better 2"
     }]
 }];
 
 const handleLike = (event) => {
-    if(!isclicked(event.target)) {
+    let btn = event.target.closest('#like');
+    if(!isclicked(btn)) {
         let totalLikesDisplay = btn.querySelector('span');
         let totalLikes = Number(totalLikesDisplay.textContent);
         totalLikes += 1;
         totalLikesDisplay.textContent = totalLikes;
+
+        /* Note to me: also update this(likes) in the server */
     }
+};
+
+const showAnswers = event => {
+    let questionId = event.target.closest('.card').getAttribute('data-question-id');
+    let currentQuestion = questions.find(question => question.id === Number(questionId));
+    renderAnswers(currentQuestion.answers);
+    console.log('hello');
 }
 
 likeButton.forEach(btn => {
@@ -50,14 +69,6 @@ likeButton.forEach(btn => {
 writeAnswer.forEach(btn => {
     btn.addEventListener('click', event => console.log('hello'));
 });
-
-/* viewAnswers.forEach( btn => {
-    btn.addEventListener('click', showAnswers);
-});
-
-const showAnswers = questionId => {
-    console.log(questionId);
-}; */
 
 
 const isclicked = btn => {
@@ -109,11 +120,36 @@ function renderQuestions() {
                     </div>
                 </div>`;
 
-/*                 questionElement.querySelector('#like').addEventListener('click',)
- */
+                questionElement.querySelector('#like').addEventListener('click',handleLike);
+                questionElement.querySelector('#answers').addEventListener('click',showAnswers);
                 container.appendChild(questionElement);
     })
 };
+
+function renderAnswers(answers) {
+    const answersContainer = document.querySelector('.modal .wrapper');
+    answersContainer.innerHTML = '';
+    answers.forEach(ans => {
+        let answer = document.createElement('div');
+    answer.classList.add('card','flex');
+    answer.setAttribute('data-answer-id',ans.Id);
+    answer.innerHTML = `
+                    <div class="stats">
+                        <h2>${ans.answer}</h2>
+                        <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">${ans.author}
+                                </span></div>
+                        <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
+                                ${ans.date}</span></div>
+                    </div>`;
+                    answersContainer.appendChild(answer);
+    });
+    answersModal.style.display = 'grid';
+}
+
+
+answersModalClose.addEventListener('click', () => {
+    answersModal.style.display = 'none';
+})
 
 
 renderQuestions();
