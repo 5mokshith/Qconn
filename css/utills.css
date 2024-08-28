@@ -81,19 +81,49 @@ img {
   transition: all 0.2s;
   bottom: -5px;
 
-  i {
-    width: 15px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background-color: white;
-    position: absolute;
-    left: 15%;
-    transition: all 0.2s ease;
-  }
+}
+
+.toggle-box i {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 15%;
+  transition: all 0.2s ease;
 }
 
 h1,h2,h3,h4,h5,p {
   color: var(--text-color);
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Tooltips */
+
+.tooltip::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* user selection styles */

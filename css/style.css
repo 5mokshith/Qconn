@@ -14,6 +14,7 @@
   --toogle-btn-bg: black;
   --toogle-btn-text: white;
   --text-color-input: rgb(46, 44, 44);
+  --modal-bg-color: rgb(0 0 0 /0.35);
 }
 
 /* Dark Theme colors */
@@ -24,6 +25,7 @@
   --toogle-btn-bg: white;
   --toogle-btn-text: black;
   --text-color-input: rgba(0, 0, 0, 0.737);
+  --modal-bg-color: rgb(255 255 255 / 0.36);
 }
 
 body {

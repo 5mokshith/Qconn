@@ -56,14 +56,47 @@ main .hero .stats .child-1::after{
     padding: 0.5rem;
     box-sizing: content-box;
     border-radius: inherit;
-    background: conic-gradient(from var(--angle),transparent 20%,blue);
-    animation: rotate 2s linear  infinite;
+    background: conic-gradient(from var(--angle),orange,transparent 50%,blue);
+    animation: rotate 800ms linear  infinite;
 }
 
 main .hero .stats .child-1::before {
     filter: blur(10px);
 }
 
+main .ask-question {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20rem;
+    border-block-start: 1px solid rgb(224, 22, 22);
+}
+
+main .ask-question div {
+    width: 100%;
+}
+main .ask-question input {
+    width: 50%;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 10px var(--text-color);
+    transition: all 200ms ease;
+    color: var(--text-color);    
+}
+main .ask-question input:hover {
+    box-shadow: 8px 2px 100px var(--text-color);    
+}
+main .ask-question .btn {
+    margin: 1rem;
+    width: 10rem;
+}
+
+main .ask-question .btn:hover {
+    --btn-background: #3c7eff;
+  }
+
+main .ask-question .btn:active {
+    --btn-background: #538af7;
+  }
 
 .card-container {
     margin-block-start: 1rem;
@@ -71,7 +104,8 @@ main .hero .stats .child-1::before {
     width: 100%;
     padding: 2rem;
     --columns: auto-fit;
-    --col-size: minmax(330px,1fr); 
+    --col-size: minmax(330px,1fr);  /* Tried for responsive design but didn't liked at the larger screen sizes */
+  /*  --columns: 3; */
     --gap: 2rem;
 }
 
@@ -104,17 +138,66 @@ main .hero .stats .child-1::before {
 .card .buttons {
     height: 100%;
     width: 1.5rem;
-    --gap: 0px;
+    --gap: 5px;
+}
+.buttons div {
+    margin-block-start: 10px;
+    width: 100%;
+    height: 100%;
 }
 
-.buttons svg {
-    stroke: red;
+.buttons div svg {
     fill: #3c7eff;
-    &:hover {
-        cursor: pointer;
-        opacity: 0.6;
-    }
-    &:active {
-        opacity: 1;
-    }
+}
+.buttons div svg:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+.buttons div svg:active {
+    opacity: 1;
+}
+
+body {
+    position: relative;
+}
+
+.modal {
+    --columns: 1;
+    display: none;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    place-items: center;
+    height: 75vh;
+    width: 40vw;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--modal-bg-color);
+    backdrop-filter: blur(10px);
+}
+
+.modal .wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    --rows: 1;
+    overflow-y: auto;
+}
+.modal .close {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: -8px;
+    right: -15px;
+    background-color: white;
+    border-radius: 50%;
+}
+.modal .close svg:hover {
+    cursor: pointer;
+    fill: red;
+}
+
+.modal .close svg:active {
+    fill: black;
 }

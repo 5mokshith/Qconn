@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utills.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <script src="script/theme.js" defer="defer"></script>
+</head>
+<body>
+    <nav class="flex" id="nav-bar">
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+        <ul class="nav-items flex">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="questions.html">Questions</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+        <div class="sign-btns">
+            <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
+            <a href="sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
+ -->
+            <section class="theme-toggle-btn poppins-bold" style="position: static;">
+                Dark mode :
+                <div class="toggle-box" data-active="false">
+                    <i class="toggle-icon"></i>
+                </div>
+            </section>
+
+        </div>
+    </nav>
+
+    <main class="flex hero">
+
+        <section class="flex" style="--flex-direction: column;">
+            <div role="figure" class="profile-picture">
+                <img src="images/header-1.png" alt="Profile picture">
+            </div>
+            <h1>Mokshith</h1>
+            <h3>student</h3>
+        </section>
+
+        <section role="region" class="grid stats">
+            <div class="questions-answered card flex-column">
+                <h1>Questions answered</h1>
+                <span>05</span>
+            </div>
+            <div class="questions-asked card flex-column">
+                <h1>Questions asked</h1>
+                <span>10</span>
+            </div>
+            <div class="achievements card flex-column">
+                <h1>Achievement points</h1>
+                <span>10</span>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
