@@ -104,8 +104,8 @@ main .ask-question .btn:active {
     width: 100%;
     padding: 2rem;
     --columns: auto-fit;
-   /*  --col-size: minmax(330px,1fr);  */ /* Tried for responsive design but didn't liked at the larger screen sizes */
-   --columns: 3;
+    --col-size: minmax(330px,1fr);  /* Tried for responsive design but didn't liked at the larger screen sizes */
+  /*  --columns: 3; */
     --gap: 2rem;
 }
 
@@ -157,19 +157,26 @@ main .ask-question .btn:active {
     opacity: 1;
 }
 
+body {
+    position: relative;
+}
 
-.modal {
-    --columns: 1;
+.modal,
+.modal-ans {
     display: none;
-    position: absolute;
+    --columns: 1;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     place-items: center;
-    height: 80vh;
-    width: 50vw;
+    height: 70vh;
+    width: 40vw;
     padding: 1rem;
-    margin: 10% auto;
     border-radius: 1rem;
     background-color: var(--modal-bg-color);
-    position: relative;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
 .modal .wrapper {
@@ -179,7 +186,8 @@ main .ask-question .btn:active {
     --rows: 1;
     overflow-y: auto;
 }
-.modal .close {
+.modal .close,
+.modal-ans .close {
     width: 2rem;
     height: 2rem;
     position: absolute;
@@ -188,11 +196,38 @@ main .ask-question .btn:active {
     background-color: white;
     border-radius: 50%;
 }
-.modal .close svg:hover {
+.modal .close svg:hover,
+.modal-ans .close svg:hover {
     cursor: pointer;
     fill: red;
 }
 
-.modal .close svg:active {
+.modal .close svg:active,
+.modal-ans .close svg:active {
     fill: black;
 }
+
+.modal-ans .wrapper {
+    height: 100%;
+    width: 100%;
+}
+.modal-ans textarea {
+    border-radius: 1rem;
+    font-family:  Helvetica, sans-serif;
+    background-color: rgb(0 0 0 / 0.6);
+    color: white;
+    --font-size: 1.815rem;
+    height: 50%;
+}
+
+.modal-ans button {
+    width: 50%;
+}
+
+.modal-ans button:hover {
+    --btn-background: #3c7eff;
+  }
+
+.modal-ans button:active {
+    --btn-background: #538af7;
+  }

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/utills.css">
     <link rel="stylesheet" href="css/questions.css">
 
-    <script src="script/theme.js" defer></script>
+    <script src="script/theme.js" defer type="module"></script>
     <script src="script/questions.js" defer type="module"></script>
 
 </head>
@@ -65,12 +65,14 @@
         <section role="form" class="ask-question flex-column">
             <h2>Ask your question here</h2>
             <div class="flex-column">
-                <input type="text" class="input" placeholder="Enter your question here">
-                <button class="btn">Submit question</button>
+                <input type="text" class="input" placeholder="Enter your question here" id="submitQuestionField">
+                <button class="btn" id="submitQuestionBtn">Submit question</button>
             </div>
         </section>
 
         <div class="card-container grid" id="questions">
+
+            <!-- Delete these before deploying :) -->
             
             <div class="card flex" aria-label="Question" tabindex="0">
                 <div class="stats">
@@ -175,69 +177,81 @@
         </div>
     </footer>
 
-    <aside>
 
-        <div class="modal grid">
-            <h2>Answers</h2>
-            <div class="close">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+        <!-- These are modals triggered by javascript -->
+        <aside>
+
+            <div class="modal grid">
+                <h2>Answers</h2>
+                <div class="close" data-modal="show-answers">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                </div>
+                <div class="wrapper grid">
+
+                    <!-- Delete these before deploying :) -->
+
+                    <div class="card flex">
+                        <div class="stats">
+                            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+                            <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">Hello
+                                    world</span></div>
+                            <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
+                                    21-677-9890</span></div>
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <div class="stats">
+                            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+                            <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">Hello
+                                    world</span></div>
+                            <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
+                                    21-677-9890</span></div>
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <div class="stats">
+                            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+                            <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">Hello
+                                    world</span></div>
+                            <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
+                                    21-677-9890</span></div>
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <div class="stats">
+                            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+                            <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">Hello
+                                    world</span></div>
+                            <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
+                                    21-677-9890</span></div>
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <div class="stats">
+                            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+                            <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">Hello
+                                    world</span></div>
+                            <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
+                                    21-677-9890</span></div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="wrapper grid">
 
-                <div class="card flex">
-                    <div class="stats">
-                        <h2>Practice the DOM manupulation can make your skill's popup</h2>
-                        <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">Hello
-                                world</span></div>
-                        <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
-                                21-677-9890</span></div>
-                    </div>
+            <div class="modal-ans">
+                <div class="close" data-modal="write-answer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
                 </div>
-
-                <div class="card flex">
-                    <div class="stats">
-                        <h2>Practice the DOM manupulation can make your skill's popup</h2>
-                        <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">Hello
-                                world</span></div>
-                        <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
-                                21-677-9890</span></div>
-                    </div>
+                <div class="wrapper flex-column">
+                    <h2>Write your Answer here</h2>
+                    <textarea type="text" placeholder="Enter your answer here" class="input"></textarea>
+                    <button class="btn" type="submit">Submit Answer</button>
                 </div>
-
-                <div class="card flex">
-                    <div class="stats">
-                        <h2>Practice the DOM manupulation can make your skill's popup</h2>
-                        <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">Hello
-                                world</span></div>
-                        <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
-                                21-677-9890</span></div>
-                    </div>
-                </div>
-
-                <div class="card flex">
-                    <div class="stats">
-                        <h2>Practice the DOM manupulation can make your skill's popup</h2>
-                        <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">Hello
-                                world</span></div>
-                        <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
-                                21-677-9890</span></div>
-                    </div>
-                </div>
-
-                <div class="card flex">
-                    <div class="stats">
-                        <h2>Practice the DOM manupulation can make your skill's popup</h2>
-                        <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">Hello
-                                world</span></div>
-                        <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
-                                21-677-9890</span></div>
-                    </div>
-                </div>
-
             </div>
-        </div>
 
-    </aside>
+        </aside>
+
 
 </body>
 

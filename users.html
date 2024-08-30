@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utills.css">
+    <link rel="stylesheet" href="css/users.css">
+    <script src="script/theme.js" defer></script>
+</head>
+<body>
+
+    <nav class="flex" id="nav-bar">
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+        <ul class="nav-items flex">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#questions">Questions</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="sign-btns">
+            <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
+            <a href="sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
+ -->
+            <section class="theme-toggle-btn poppins-bold" style="position: static;">
+                Dark mode :
+                <div class="toggle-box" data-active="false">
+                    <i class="toggle-icon"></i>
+                </div>
+            </section>
+
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1 class="poppins-bold">Users</h1>
+    </div>
+
+    <main>
+        <div class="wrapper grid">
+
+            <div class="card flex">
+                <section role="img flex">
+                   <!-- Todo: somehow this should take to the user page --> 
+                    <a href="#"><img src="images/logo.png" alt="User profile picture"></a>
+                </section>
+                <div class="info flex-column">
+                    <b>
+                        <h3>User name</h3>
+                    </b>
+                    <p><b>Role:</b> <span>student</span></p>
+                    <p><b>Experience points:</b> <span>05</span></p>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </main>
+
+
+</body>
+</html>
