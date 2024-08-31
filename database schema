@@ -1,0 +1,76 @@
+database:
+
+
+
+	User(authentication) --> Users,
+	Questions,
+	Answers,
+
+
+	User(
+
+		userid: auto-increment,
+		Name --> username: no-unique,
+		Role: Teacher, (Default) Student,
+		Password: (hash),
+		Question-asked ,
+		Questions-ans,
+		Achivement-points,
+
+	);
+
+
+	User ---> Users (
+	
+		username,
+		Role,
+		Achivement-points,
+		
+
+	);
+
+
+	Questions(
+	
+		id: auto-increment,
+		question,
+		auther: User:Name,
+		dateOfSubmission: Date(),
+		likes: defalut(0),
+		#answers,
+		
+	);
+
+
+	Answers(
+	
+		id: Question:id,
+		Answer,		
+		auther,
+		Date:Date(),
+		 
+	
+	):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
