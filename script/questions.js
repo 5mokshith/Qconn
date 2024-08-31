@@ -1,20 +1,21 @@
 "use strict";
-/* const likeButton = document.querySelectorAll(
-    ".card-container .card .buttons #like"
-    );
-    const writeAnswer = document.querySelectorAll(".card .buttons #answer");
-    const viewAnswers = document.querySelectorAll(".card .buttons #answers"); */
-    const answersModal = document.querySelector(".modal");
-    const answersModalClose = document.querySelector(".modal .close");
-    const container = document.querySelector(".card-container");
-    const submitQuestionField = document.querySelector('#submitQuestionField');
-    const submitBtn = document.querySelector('#submitQuestionBtn');
-    
-/* Buddy design the API in the backEnd that has this JSON format */
+import { isclicked } from "./utills/utilities.js";
+import { closeModal } from "./utills/utilities.js";
 
+
+const container = document.querySelector(".card-container");
+const answersModal = document.querySelector(".modal");
+const answersModalClose = document.querySelector(".close");
+const answerModal = document.querySelector(".modal-ans");
+const answerModalClose = document.querySelector('.modal-ans .close')
+const submitQuestionField = document.querySelector("#submitQuestionField");
+const submitBtn = document.querySelector("#submitQuestionBtn");
+
+
+/* Buddy design the API in the backEnd that has this JSON format */
 class Answer {
-    constructor(answersId,author,date,answer) {
-        this.answerId = answersId;
+    constructor(answerId, author, date, answer) {
+        this.answerId = Number(answerId);
         this.author = author;
         this.date = date;
         this.answer = answer;
@@ -22,8 +23,15 @@ class Answer {
 }
 
 class Question {
-    constructor(questionId,author,dateOfSubmission,likes,question,answers = []) {
-        this.questionId = questionId;
+    constructor(
+        questionId,
+        author,
+        dateOfSubmission,
+        likes,
+        question,
+        answers = []
+    ) {
+        this.questionId = Number(questionId);
         this.author = author;
         this.dateOfSubmission = dateOfSubmission;
         this.likes = likes;
@@ -35,55 +43,35 @@ class Question {
     }
 }
 
-const questions = [ 
-    new Question(1,"hello world","21-98-6758",100,"How to learn javascript",
-        [
-            new Answer(1,"Hello","43-87-6859","Practice DOM manupulation it can make your skill's popup"),
-            new Answer(2,"world","43-87-6859","Practice can make your skill's popup")
-        ])
-    ];
+/* Example usage for my understanding and testing */ //This is how it's goona look after fetching
+const questions = [
+    new Question(1, "hello world", "21-98-6758", 100, "How to learn javascript", [
+        new Answer(
+            1,
+            "Hello",
+            "43-87-6859",
+            "Practice DOM manupulation it can make your skill's popup"
+        ),
+        new Answer(
+            2,
+            "world",
+            "43-87-6859",
+            "Practice can make your skill's popup"
+        ),
+    ]),
+];
+
+
+const currentUserName = getUserInfo(); // Todo: get username from backend
+let currentDate = new Date();
+currentDate = currentDate.toLocaleDateString();
 
 function getQuestionsFromServer() {
     questions = [];
-    fetch().then().then().catch()
 }
-    
-const currentUserName = getUserStatus(); // Todo: get username from backend
-let currentDate = new Date();
-currentDate = currentDate.toLocaleDateString();
-const handleLike = (event) => {
-    let btn = event.target.closest("#like");
-    if (!isclicked(btn)) {
-        let totalLikesDisplay = btn.querySelector("span");
-        let totalLikes = Number(totalLikesDisplay.textContent);
-        totalLikes += 1;
-        totalLikesDisplay.textContent = totalLikes;
-
-        /* Note to me: also update this(likes) in the server */
-    }
-};
-
-const showAnswers = (event) => {
-    let questionId = event.target
-        .closest(".card")
-        .getAttribute("data-question-id");
-        console.log(questionId);
-    let currentQuestion = questions.find(
-        (question) => question.questionId === Number(questionId)
-    );
-    console.log(currentQuestion);
-    renderAnswers(currentQuestion.answers);
-};
-
-
-const isclicked = (btn) => {
-    let clicked = btn.getAttribute("data-clicked");
-    if (clicked === "false") {
-        btn.setAttribute("data-clicked", "true");
-        return false;
-    }
-    return true;
-};
+function getUserInfo() {
+    // Todo: needed to fetech the user credentials
+} 
 
 function renderQuestions() {
     questions.forEach((question) => {
@@ -125,38 +113,17 @@ function renderQuestions() {
                     </div>
                 </div>`;
 
-        questionElement.querySelector("#like").addEventListener("click", handleLike);
-        questionElement.querySelector('#answer').addEventListener('click', writeAnswer);
-        questionElement.querySelector("#answers").addEventListener("click", showAnswers);
+        questionElement
+            .querySelector("#like")
+            .addEventListener("click", handleLike);
+        questionElement
+            .querySelector("#answer")
+            .addEventListener("click", submitAnswer);
+        questionElement
+        .querySelector("#answers")
+        .addEventListener("click", showAnswers);
         container.appendChild(questionElement);
     });
-}
-
-const getUserQuestion = (event) => {
-    if(submitQuestionField.value === '') {
-        alert('please enter the question before submitting');
-        return;
-    }
-    let userQuestion = submitQuestionField.value;
-    submitQuestionField.value = '';
-    return userQuestion;
-}
-
-const postQuestion = () => {
-    let questionToSubmit = getUserQuestion();
-    if(questionToSubmit) {
-        /* Todo: Need to post this question to the server then receive a unique id and 
-        then post it to the server to store */
-        questions.push(new Question(6,currentUserName,currentDate,0,questionToSubmit,[]));
-        // Todo: Need to post the new question to the server
-        renderQuestions();
-    }
-};
-
-function writeAnswer(event) {
-    let questionId = event.target.closest('.card').getAttribute('data-question-id');
-    let currentQuestion = questions.find(question => question.id === questionId);
-    console.log(currentQuestion);
 }
 
 function renderAnswers(answers) {
@@ -179,15 +146,99 @@ function renderAnswers(answers) {
     answersModal.style.display = "grid";
 }
 
-answersModalClose.addEventListener("click", () => {
-    answersModal.style.display = "none";
-});
+const getQuestion = (event) => {
+    if (submitQuestionField.value === "") {
+        alert("please enter the question before submitting");
+        return;
+    }
+    let userQuestion = submitQuestionField.value;
+    submitQuestionField.value = "";
+    return userQuestion;
+};
+
+const postQuestion = () => {
+    let questionToSubmit = getQuestion();
+    if (questionToSubmit) {
+        /* Todo: Need to post this question to the server then receive a unique id and 
+            then post it to the server to store */
+        questions.push(
+            new Question(6, currentUserName, currentDate, 0, questionToSubmit, [])
+        );
+        // Todo: Need to post the new question to the server
+        renderQuestions();
+    }
+};
+
+const handleLike = (event) => {
+    let btn = event.target.closest("#like");
+    if (!isclicked(btn)) {
+        let totalLikesDisplay = btn.querySelector("span");
+        let totalLikes = Number(totalLikesDisplay.textContent);
+        totalLikes += 1;
+        totalLikesDisplay.textContent = totalLikes;
+        
+        /* Note to me: also update this(likes) in the server */
+    }
+};
+
+const getAnswer = (event) => {
+    return new Promise((resolve, reject) => {
+        const userAnswerInput = answerModal.querySelector("textarea");
+        const submitBtn = answerModal.querySelector(".modal-ans button");
+        submitBtn.addEventListener("click", () => {
+            let answer = userAnswerInput.value;
+            if (answer.length < 1) {
+                window.alert("Please enter correct answer ");
+                reject("User entered a incorrect answer");
+                return;
+            }
+            userAnswerInput.value = "";
+            answerModal.style.display = "none";
+            submitBtn.disabled = true;
+            resolve(answer);
+        });
+    });
+};
+
+async function submitAnswer(event) {
+    let questionId = event.target
+        .closest(".card")
+        .getAttribute("data-question-id");
+    let currentQuestion = questions.find(
+        (question) => question.questionId === Number(questionId)
+    );
+    answerModal.style.display = "block";
+    try {
+        let answer = await getAnswer();
+        /* Todo: need to post this quetion and get unique answerId and then update it */
+        currentQuestion.postAnswer(
+            new Answer(3, currentUserName, currentDate, answer) /* Id should be fetched from the server */
+        );
+    } catch {
+    } finally {
+        const submitBtn = document.querySelector(".modal-ans button");
+        submitBtn.disabled = false;
+    }
+}
+
+const showAnswers = (event) => {
+    let questionId = event.target
+        .closest(".card")
+        .getAttribute("data-question-id");
+    let currentQuestion = questions.find(
+        (question) => question.questionId === Number(questionId)
+    );
+    renderAnswers(currentQuestion.answers);
+};
+
+
+
+
+
+submitBtn.addEventListener("click", postQuestion);
+answersModalClose.addEventListener("click", closeModal);
+answerModalClose.addEventListener('click',closeModal);
 
 renderQuestions();
 
-submitBtn.addEventListener('click', postQuestion);
 
-
-function getUserStatus() {
-    // Todo: needed to fetech the user credentials 
-}

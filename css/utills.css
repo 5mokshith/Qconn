@@ -34,13 +34,13 @@
   user-select: none !important;
   border: 1px solid transparent !important;
   font-size: 1.15rem;
-  border-radius: .625rem;
+  border-radius: 0.625rem;
 }
 
 .input {
   width: 100%;
-  padding: .825rem 1.1875rem;
-  font-size: var(--font-size,1.225rem);
+  padding: 0.825rem 1.1875rem;
+  font-size: var(--font-size, 1.225rem);
   font-weight: 400;
   line-height: 1.1;
   color: var(--text-color-input);
@@ -48,13 +48,13 @@
   appearance: none;
   border-left: none;
   border: none;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   outline: none;
 }
 
 input::placeholder {
   font-size: 1.3rem;
- /*  color: var(--text-color); */
+  /*  color: var(--text-color); */
   opacity: 0.6;
 }
 
@@ -80,7 +80,6 @@ img {
   border-radius: 10px;
   transition: all 0.2s;
   bottom: -5px;
-
 }
 
 .toggle-box i {
@@ -93,18 +92,26 @@ img {
   transition: all 0.2s ease;
 }
 
-h1,h2,h3,h4,h5,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   color: var(--text-color);
 }
 
-.tooltip {
+.tooltip,
+.tooltip-logo {
   position: relative;
   cursor: pointer;
+  z-index: 100;
 }
 
 /* Tooltips */
 
-.tooltip::before {
+.tooltip::before,
+.tooltip-logo::before {
   content: attr(data-tooltip);
   position: absolute;
   bottom: 100%;
@@ -121,7 +128,13 @@ h1,h2,h3,h4,h5,p {
   transition: opacity 0.2s ease-in-out;
 }
 
-.tooltip:hover::before {
+.tooltip-logo::before {
+  width: fit-content;
+  bottom: -300%;
+  transform: translateX(-130px);
+}
+.tooltip:hover::before,
+.tooltip-logo:hover:before {
   opacity: 1;
   visibility: visible;
 }
@@ -133,7 +146,6 @@ h1,h2,h3,h4,h5,p {
   color: var(--text-color);
   opacity: 1;
 }
-
 
 ::-moz-selection {
   background-color: #fd7e14;
@@ -153,7 +165,6 @@ h1,h2,h3,h4,h5,p {
   background-color: color-mix(in srgb, var(--primary-body-bg), transparent 60%);
   /* border-radius: 1rem; */
 }
-
 
 /* Don't change */
 
@@ -265,18 +276,16 @@ h1,h2,h3,h4,h5,p {
   font-style: italic;
 }
 
-
 /* Animations */
 
 @keyframes rotate {
   from {
-      --angle: 0deg;
+    --angle: 0deg;
   }
   to {
-      --angle: 360deg;
+    --angle: 360deg;
   }
 }
-
 
 /* Custom properties */
 

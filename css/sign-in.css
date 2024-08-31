@@ -1,98 +1,95 @@
 main {
-    min-height: 100%;
-    width: 100%;
-    background-color: var(--primary-body-bg);
+  min-height: 100%;
+  width: 100%;
+  background-color: var(--primary-body-bg);
 }
 
 .wrapper {
-    border: 2px solid black;
-    padding: 1rem;
-    min-height: 100vh;
-    width: 100%;
-    --gap: 10rem;
+  border: 2px solid black;
+  padding: 1rem;
+  min-height: 100vh;
+  width: 100%;
+  --gap: 10rem;
 }
 
 .wrapper form {
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
-    --gap: 1rem;
-
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  --gap: 1rem;
 }
 
 .wrapper .left {
-    margin-left: 10rem;
+  margin-left: 10rem;
 }
 
 .wrapper h1 {
-    font-size: 2.725rem;
-    font-weight: 500;
-    line-height: 1.1;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  font-size: 2.725rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .wrapper form .input-group {
-    width: 100%;
-    height: 3.2rem;
-    border-radius: .625rem;
-    border: 2px solid #bebebf;
-    background-color: #e8f0fe;
+  width: 100%;
+  height: 3.2rem;
+  border-radius: 0.625rem;
+  border: 2px solid #bebebf;
+  background-color: #e8f0fe;
+}
 
-    .svg-container {
-        width: 70px;
-        aspect-ratio: 1;
-        padding: 1rem;
+.wrapper form .input-group .svg-container {
+  width: 70px;
+  aspect-ratio: 1;
+  padding: 1rem;
+}
 
-        svg {
-            fill: var(--text-color-input);
-            opacity: 0.5;
-        }
-    }
-
+.wrapper form .input-group .svg-container svg {
+  fill: var(--text-color-input);
+  opacity: 0.5;
 }
 
 .wrapper .picture {
-    width: 50%;
-    margin-right: 5rem;
+  width: 50%;
+  margin-right: 5rem;
 }
 
 form .sign-in {
-    width: 100%;
-    padding: 1rem;
-    height: 100%;
+  width: 100%;
+  padding: 1rem;
+  height: 100%;
+  --btn-background: #007bff;
+}
 
-    &:hover {
-        --btn-background: #3c7eff;
-      }
-    
-      &:active {
-        --btn-background: #538af7;
-      }
+form .sign-in:hover {
+  --btn-background: #0056b3;
+}
+
+form .sign-in:active {
+  --btn-background: #007bff;
 }
 
 .socials {
-    text-align: center;
+  text-align: center;
 }
 
 .socials .social-icons {
-    margin-top: 1rem;
-    gap: 1rem;
-
-    .social-icon {
-        --btn-background: var(--card-bg-color);
-
-        svg {
-            stroke: var(--text-color);
-            fill: var(--text-color);
-        }
-    }
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.socials .social-icons .social-icon {
+  --btn-background: var(--card-bg-color);
+}
+.socials .social-icons .social-icon svg {
+  stroke: var(--text-color);
+  fill: var(--text-color);
 }
 a {
-    color: #007bff;
-    &:hover {
-        color: #195faa;
-    }
+  color: #007bff;
+}
+a:hover {
+  color: #195faa;
 }
