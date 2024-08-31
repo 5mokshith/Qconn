@@ -58,6 +58,14 @@ input::placeholder {
   opacity: 0.6;
 }
 
+input:user-valid {
+  border: 1px solid lightgreen;
+}
+
+input:user-invalid {
+  border: 1px solid red;
+}
+
 img {
   max-width: 100%;
   height: auto;
