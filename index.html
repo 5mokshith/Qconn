@@ -17,17 +17,20 @@
   <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/utills.css" />
+  <link rel="stylesheet" href="css/media-qurery.css">
   <script src="script/theme.js" defer></script>
   <script src="script/main.js" defer></script>
 </head>
 
 <body data-dark-mode="false">
+
+  <button class="mobile-nav-toggle" aria-controls="nav-bar" aria-expanded="false"><span class="sr-only">Menu</span></button>
   <nav class="flex" id="nav-bar">
     <div class="logo">
-      <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo-removebg.png" alt="logo" /></a>
+      <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
     </div>
     <ul class="nav-items flex">
-      <li><a href="#hero">Home</a></li>
+      <li><a href="#hero" class="active">Home</a></li>
       <li><a href="questions.html">Questions</a></li>
       <li><a href="users.html">Users</a></li>
       <li><a href="questions.html">Discussions</a></li>
@@ -128,7 +131,7 @@
     <div class="footer-container">
 
       <div class="footer-logo">
-        <img src="images/logo-removebg.png" alt="logo" />
+        <img src="images/logo.png" alt="logo" />
       </div>
 
       <div class="footer-description">

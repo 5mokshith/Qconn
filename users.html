@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/utills.css">
     <link rel="stylesheet" href="css/users.css">
     <script src="script/theme.js" defer></script>
+    <script type="module" src="script/users.js"></script>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +24,9 @@
         </div>
         <ul class="nav-items flex">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#questions">Questions</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Discussions</a></li>
+            <li><a href="questions.html">Questions</a></li>
+            <li><a class="active" href="#users">Users</a></li>
+            <li><a href="questions.html">Discussions</a></li>
             <li><a href="profile.html">Profile</a></li>
         </ul>
         <div class="sign-btns">
@@ -46,9 +47,23 @@
         <h1 class="poppins-bold">Users</h1>
     </div>
 
-    <!-- Todo: somehow this should take to the user page --> 
     <main>
-        <div class="grid wrapper">
+        <div class="grid wrapper" id="users">
+            
+            <!-- Todo: somehow this should take to the user page --> 
+            <div class="flex card">
+                <section role="img" class="flex">
+                    <a href="#"><img src="images/sign-in.png" alt="User profile picture"></a>
+                </section>
+                <div class="flex-column info">
+                
+                        <h3>Mokshith rao</h3>
+                 
+                    <p><b>Role:</b> <span>student</span></p>
+                    <p><b>Experience points:</b> <span>05</span></p>
+                    <button class="btn">View profile</button>
+                </div>
+            </div>
 
             <div class="flex card">
                 <section role="img" class="flex">
@@ -63,6 +78,49 @@
                     <button class="btn">View profile</button>
                 </div>
             </div>
+
+            <div class="flex card">
+                <section role="img" class="flex">
+                    <a href="#"><img src="images/sign-in.png" alt="User profile picture"></a>
+                </section>
+                <div class="flex-column info">
+                
+                        <h3>Mokshith rao</h3>
+                 
+                    <p><b>Role:</b> <span>student</span></p>
+                    <p><b>Experience points:</b> <span>05</span></p>
+                    <button class="btn">View profile</button>
+                </div>
+            </div>
+
+            <div class="flex card">
+                <section role="img" class="flex">
+                    <a href="#"><img src="images/sign-in.png" alt="User profile picture"></a>
+                </section>
+                <div class="flex-column info">
+                
+                        <h3>Mokshith rao</h3>
+                 
+                    <p><b>Role:</b> <span>student</span></p>
+                    <p><b>Experience points:</b> <span>05</span></p>
+                    <button class="btn">View profile</button>
+                </div>
+            </div>
+
+            <div class="flex card">
+                <section role="img" class="flex">
+                    <a href="#"><img src="images/sign-in.png" alt="User profile picture"></a>
+                </section>
+                <div class="flex-column info">
+                
+                        <h3>Mokshith rao</h3>
+                 
+                    <p><b>Role:</b> <span>student</span></p>
+                    <p><b>Experience points:</b> <span>05</span></p>
+                    <button class="btn">View profile</button>
+                </div>
+            </div>
+
         </div>
     </main>
 

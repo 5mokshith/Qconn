@@ -1,0 +1,41 @@
+@media screen and (max-width: 600px) {
+    nav {
+      width: 50vw;
+      height: 100vh;
+      right: 0;
+      --flex-direction: column;
+      --justify-content: space-between;
+      --align-items: flex-start;
+        background: rgb(0 0 0 / 0.6);
+    }
+    .nav-items a{
+        color: white;
+    }
+    nav img {
+        width: 4rem;
+        transform: translate(0);
+    }
+
+    .mobile-nav-toggle {
+        position: absolute;
+        background-color: aqua;
+        width: 1rem;
+        aspect-ratio: 1;
+        z-index: 9999;
+        top: 2rem;
+        right: 2rem;
+
+    }
+  
+
+  @supports ( backdrop-filter: blur(30px)) {
+    nav {
+        background: rgb(0 0 0 /0.2);
+      backdrop-filter: blur(30px);
+    }
+    .nav-items a {
+        color: var(--text-color);
+    }
+  }
+
+}

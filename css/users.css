@@ -1,11 +1,14 @@
 main {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
 .hero {
     width: 100%;
     padding: 2rem;
-    margin-block-start: 6.5rem;
+    -webkit-margin-before: 6.5rem;
+            margin-block-start: 6.5rem;
     text-align: center;
 }
 
@@ -15,13 +18,17 @@ main {
 
 .wrapper {
     --columns: auto-fit;
-    --col-size: minmax(300px,1fr);
+    --col-size: minmax(330px,1fr);
     padding: 1.125rem;
     gap: 2rem;
 }
 
 .card {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     padding: 1rem;
     border-radius: 1rem;

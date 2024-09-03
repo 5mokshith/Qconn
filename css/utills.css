@@ -31,7 +31,10 @@
   padding: var(--btn-padding);
   text-align: center !important;
   cursor: pointer !important;
-  user-select: none !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
   border: 1px solid transparent !important;
   font-size: 1.15rem;
   border-radius: 0.625rem;
@@ -45,11 +48,37 @@
   line-height: 1.1;
   color: var(--text-color-input);
   background-color: transparent;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-left: none;
   border: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   outline: none;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 1.3rem;
+  /*  color: var(--text-color); */
+  opacity: 0.6;
+}
+
+input::-moz-placeholder {
+  font-size: 1.3rem;
+  /*  color: var(--text-color); */
+  opacity: 0.6;
+}
+
+input:-ms-input-placeholder {
+  font-size: 1.3rem;
+  /*  color: var(--text-color); */
+  opacity: 0.6;
+}
+
+input::-ms-input-placeholder {
+  font-size: 1.3rem;
+  /*  color: var(--text-color); */
+  opacity: 0.6;
 }
 
 input::placeholder {
@@ -137,6 +166,8 @@ p {
 }
 
 .tooltip-logo::before {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   bottom: -300%;
   transform: translateX(-130px);
@@ -148,6 +179,12 @@ p {
 }
 
 /* user selection styles */
+
+::-moz-selection {
+  background-color: #ffa722;
+  color: var(--text-color);
+  opacity: 1;
+}
 
 ::selection {
   background-color: #ffa722;
@@ -286,6 +323,15 @@ p {
 
 /* Animations */
 
+@-webkit-keyframes rotate {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
 @keyframes rotate {
   from {
     --angle: 0deg;
@@ -295,10 +341,34 @@ p {
   }
 }
 
+
+@keyframes animated-gradient {
+  0%{
+    background-position: 300% 300%;
+  }
+  50%{
+    background-position: 200% 200%;
+  }
+  100%{
+    background-position: 0% 0%;
+  }
+}
+
 /* Custom properties */
 
 @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
+}
+
+
+@supports not((@property)) {
+  main .hero .stats .child-1::after {
+    background: transparent;
+  }
+  
+.stats .child-1 {
+  background-color: transparent;
+}
 }

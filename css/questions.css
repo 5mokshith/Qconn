@@ -2,12 +2,15 @@
   font-weight: 600;
 }
 main {
-  margin-block-start: 8.5rem;
+  -webkit-margin-before: 8.5rem;
+          margin-block-start: 8.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
 main .hero {
-  width: 100%;
+  width: 98%;
   padding: 2rem;
   /* background: linear-gradient(to left,pink, 5%,rgba(237, 221, 2, 0.523),orange); */
   background: conic-gradient(pink, #ecec22ab, transparent, pink);
@@ -36,10 +39,11 @@ main .hero {
   margin: 0;
 }
 .stat-info span {
-  margin-block-start: 1rem;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
   font-size: 2.5rem;
   font-weight: 600;
-  color: red;
+  color: rgb(140, 0, 255);
 }
 
 .stats .child-1 {
@@ -57,12 +61,16 @@ main .hero .stats .child-1::after {
   padding: 0.5rem;
   box-sizing: content-box;
   border-radius: inherit;
-  background: conic-gradient(from var(--angle), orange, transparent 50%, blue);
-  animation: rotate 800ms linear infinite;
+  background: conic-gradient(from var(--angle), transparent 50%, blue,orange);
+  color: black;
+  -webkit-animation: rotate 3000ms linear infinite;
+          animation: rotate 2000ms linear infinite;
+          filter: blur(5px);
 }
 
 main .hero .stats .child-1::before {
-  filter: blur(10px);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 
 main .ask-question {
@@ -70,7 +78,8 @@ main .ask-question {
   padding: 1rem;
   margin: 1rem;
   border-radius: 20rem;
-  border-block-start: 1px solid rgb(224, 22, 22);
+  -webkit-border-before: 1px solid rgb(224, 22, 22);
+          border-block-start: 1px solid rgb(224, 22, 22);
 }
 
 main .ask-question div {
@@ -100,7 +109,8 @@ main .ask-question .btn:active {
 }
 
 .card-container {
-  margin-block-start: 1rem;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
   height: 100%;
   width: 100%;
   padding: 2rem;
@@ -127,7 +137,8 @@ main .ask-question .btn:active {
   font-size: clamp(1.2rem, 2.5vw, 1.4em);
 }
 .card div {
-  margin-block-end: 0.5rem;
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
   color: var(--text-color);
 }
 .card span {
@@ -144,7 +155,8 @@ main .ask-question .btn:active {
   --gap: 5px;
 }
 .buttons div {
-  margin-block-start: 10px;
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
   width: 100%;
   height: 100%;
 }
@@ -178,7 +190,8 @@ body {
   padding: 1rem;
   border-radius: 1rem;
   background-color: var(--modal-bg-color);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   z-index: 1000;
 }
 
