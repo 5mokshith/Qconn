@@ -10,6 +10,16 @@
   background-color: rgb(198, 198, 198);
 }
 
+.logo-mobile {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 5rem;
+  z-index: 100;
+  --translateX: -50px;
+}
+
 .profile-picture img {
   /* border-radius: 50%;
   max-width: 18.156rem;

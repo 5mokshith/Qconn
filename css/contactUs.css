@@ -5,6 +5,16 @@ main {
 	        margin-block-start: 2rem;
 }
 
+.logo-mobile {
+	display: none;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 5rem;
+	z-index: 100;
+	--translateX: -50px;
+  }
+  
 main form {
 	padding: 1rem;
 	--gap: 2.6rem;

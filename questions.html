@@ -10,12 +10,25 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utills.css" />
     <link rel="stylesheet" href="css/questions.css" />
-
-    <script src="script/theme.js" defer type="module"></script>
+    <link rel="stylesheet" href="css/media-qurery.css">
+    
+    <script src="script/utills/theme.js" defer type="module"></script>
     <script src="script/questions.js" defer type="module"></script>
+    <script type="module" src="script/utills/navBar.js"></script>
   </head>
 
   <body data-dark-mode="false">
+
+    <div class="logo-mobile">
+      <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
+    </div>
+
+    <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu">
+      <div class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+      <span class="sr-only">Menu</span>
+    </button>
     <nav class="flex" id="nav-bar">
       <div class="logo">
         <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"
@@ -187,7 +200,7 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-logo">
-          <img src="images/logo.png" alt="Platform Logo" />
+          <img src="images/logo.png" alt="logo" />
         </div>
 
         <div class="footer-description">

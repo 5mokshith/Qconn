@@ -18,13 +18,22 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/utills.css" />
   <link rel="stylesheet" href="css/media-qurery.css">
-  <script src="script/theme.js" defer></script>
+  <script src="script/utills/theme.js" defer></script>
   <script src="script/main.js" defer></script>
+  <script type="module" src="script/utills/navBar.js"></script>
 </head>
 
 <body data-dark-mode="false">
 
-  <button class="mobile-nav-toggle" aria-controls="nav-bar" aria-expanded="false"><span class="sr-only">Menu</span></button>
+  <div class="logo-mobile">
+    <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
+  </div>
+  <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu">
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <span class="sr-only">Menu</span>
+  </button>
   <nav class="flex" id="nav-bar">
     <div class="logo">
       <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
@@ -33,7 +42,7 @@
       <li><a href="#hero" class="active">Home</a></li>
       <li><a href="questions.html">Questions</a></li>
       <li><a href="users.html">Users</a></li>
-      <li><a href="questions.html">Discussions</a></li>
+      <li><a href="questions.html">Leader board</a></li>
       <li><a href="profile.html">Profile</a></li>
     </ul>
     <div class="sign-btns">
@@ -42,7 +51,7 @@
     </div>
   </nav>
 
-<section class="theme-toggle-btn">
+<section class="theme-toggle-btn poppins-bold">
   Dark mode :
   <div class="toggle-box" data-active="false">
     <i class="toggle-icon"></i>

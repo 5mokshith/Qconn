@@ -12,7 +12,6 @@ const submitQuestionField = document.querySelector("#submitQuestionField");
 const submitBtn = document.querySelector("#submitQuestionBtn");
 
 
-/* Buddy design the API in the backEnd that has this JSON format */
 class Answer {
     constructor(answerId, author, date, answer) {
         this.answerId = Number(answerId);
@@ -43,7 +42,7 @@ class Question {
     }
 }
 
-/* Example usage for my understanding and testing */ //This is how it's goona look after fetching
+//This is how it's goona look after fetching
 const questions = [
     new Question(1, "hello world", "21-98-6758", 100, "How to learn javascript", [
         new Answer(
@@ -187,16 +186,16 @@ const getAnswer = (event) => {
         const submitBtn = answerModal.querySelector(".modal-ans button");
         submitBtn.addEventListener("click", () => {
             let answer = userAnswerInput.value;
-            if (answer.length < 1) {
+            if (answer === '') {
                 window.alert("Please enter correct answer ");
                 reject("User entered a incorrect answer");
                 return;
             }
-            userAnswerInput.value = "";
             answerModal.style.display = "none";
             submitBtn.disabled = true;
             resolve(answer);
         });
+        userAnswerInput.value = "";
     });
 };
 

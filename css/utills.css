@@ -138,14 +138,23 @@ p {
   color: var(--text-color);
 }
 
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}
+
+/* Tooltips */
+
 .tooltip,
 .tooltip-logo {
   position: relative;
   cursor: pointer;
   z-index: 100;
 }
-
-/* Tooltips */
 
 .tooltip::before,
 .tooltip-logo::before {
@@ -170,7 +179,7 @@ p {
   width: -moz-fit-content;
   width: fit-content;
   bottom: -300%;
-  transform: translateX(-130px);
+  transform: translateX(var(--translateX,-80px)) translateY(15px);
 }
 .tooltip:hover::before,
 .tooltip-logo:hover:before {

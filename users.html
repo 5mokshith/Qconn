@@ -9,14 +9,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utills.css">
     <link rel="stylesheet" href="css/users.css">
+    <link rel="stylesheet" href="css/media-qurery.css">
     <script src="script/theme.js" defer></script>
-    <script type="module" src="script/users.js"></script>
+    <script type="module" src="script/utills/navBar.js"></script>
+    <script type="module" src="script/utills/theme.js"></script>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Sevillana&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div class="logo-mobile">
+        <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
+      </div>
+
+    <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <span class="sr-only">Menu</span>
+      </button>
 
     <nav class="flex" id="nav-bar">
         <div class="logo">
@@ -52,7 +65,7 @@
             
             <!-- Todo: somehow this should take to the user page --> 
             <div class="flex card">
-                <section role="img" class="flex">
+                <section role="img" class="flex-column">
                     <a href="#"><img src="images/sign-in.png" alt="User profile picture"></a>
                 </section>
                 <div class="flex-column info">
