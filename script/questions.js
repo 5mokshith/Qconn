@@ -1,6 +1,7 @@
 "use strict";
 import { isclicked } from "./utills/utilities.js";
 import { closeModal } from "./utills/utilities.js";
+import { setAOS } from "./utills/utilities.js";
 
 
 const container = document.querySelector(".card-container");
@@ -78,6 +79,7 @@ function renderQuestions() {
         questionElement.classList.add("card", "flex");
         questionElement.setAttribute("aria-label", "Question");
         questionElement.setAttribute("data-question-id", `${question.questionId}`);
+        setAOS(questionElement);
         questionElement.setAttribute("tabindex", "0");
         questionElement.innerHTML = `
                 <div class="stats">

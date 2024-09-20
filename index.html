@@ -14,6 +14,13 @@
     rel="stylesheet" />
   <!-- End google fonts -->
 
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script/utills/AOS.js" defer></script>
+
   <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/utills.css" />
@@ -25,7 +32,7 @@
 
 <body data-dark-mode="false">
 
-  <div class="logo-mobile">
+  <div class="logo-mobile" data-aos="slide-down">
     <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
   </div>
   <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu">
@@ -35,37 +42,37 @@
     <span class="sr-only">Menu</span>
   </button>
   <nav class="flex" id="nav-bar">
-    <div class="logo">
+    <div class="logo" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
       <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
     </div>
     <ul class="nav-items flex">
-      <li><a href="#hero" class="active">Home</a></li>
-      <li><a href="questions.html">Questions</a></li>
-      <li><a href="users.html">Users</a></li>
-      <li><a href="questions.html">Leader board</a></li>
-      <li><a href="profile.html">Profile</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="#hero" class="active"  >Home</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a href="questions.html" >Questions</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a href="users.html" >Users</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a href="questions.html" >Leader board</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650"><a href="profile.html" >Profile</a></li>
     </ul>
-    <div class="sign-btns">
+    <div class="sign-btns" data-aos="fade-down" data-aos="slide-down" data-aos-delay="900">
       <a href="additionalPages/sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
       <a href="additionalPages/sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
     </div>
   </nav>
 
-<section class="theme-toggle-btn poppins-bold">
-  Dark mode :
-  <div class="toggle-box" data-active="false">
-    <i class="toggle-icon"></i>
-</div>
-</section>
+  <section class="theme-toggle-btn poppins-bold" data-aos="fade-down"data-aos="slide-down" data-aos-delay="800">
+    Dark mode :
+    <div class="toggle-box" data-active="false">
+      <i class="toggle-icon"></i>
+    </div>
+  </section>
 
   <main>
-    <section role="region" class="flex">
+    <section role="region" class="flex" data-aos="fade-down" data-aos="slide-down" data-aos-delay="500">
       <div class="hero grid" id="hero">
         <div class="text">
           <h1>Your questions are resolved here</h1>
           <p>
-            Meet exiting new people that can solve your queries, or you maybe
-            the one who solves them and build your connections from now
+            Meet exciting new people that can solve your queries, or you maybe
+            the one who solves them and build your connections from now.
           </p>
           <a href="questions.html"><button id="questions-btn" class="btn flex">Questions</button></a>
         </div>
@@ -76,19 +83,18 @@
     </section>
 
     <!-- Cards section -->
-    <section role="region" class="flex-column">
+    <section role="region" class="flex-column" data-aos="slide-up">
       <div class="features-text">
         <h2>Features</h2>
         <p>
           Start making connections in your institute and start gaining
-          popularity points remember there is somone that needs help just like
-          you so start your journey
+          popularity points. Remember, there is someone that needs help just like
+          you, so start your journey.
         </p>
       </div>
 
       <div class="flex testimonial">
-        
-        <div class="card flex-column">
+        <div class="card flex-column" data-aos="fade-right" data-aos-delay="300">
           <svg viewBox="0 0 24 24" fill="none" stroke="#3c7eff" stroke-width="1.5" stroke-linecap="round"
             stroke-linejoin="round" class="feather feather-user-check">
             <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -103,7 +109,7 @@
           <a href="#" class="learn-more">Learn more</a>
         </div>
 
-        <div class="flex-column card">
+        <div class="flex-column card" data-aos="slide-up" data-aos-delay="300">
           <svg viewBox="0 0 24 24" fill="none" stroke="#fd7e14" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round">
             <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
@@ -118,7 +124,7 @@
           <a href="#" class="learn-more">Learn more</a>
         </div>
 
-        <div class="flex-column card">
+        <div class="flex-column card" data-aos="fade-left" data-aos-delay="300">
           <svg viewBox="0 0 24 24" fill="none" stroke="#8bd74e" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" class="feather feather-pocket">
             <path d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z"></path>
@@ -131,12 +137,11 @@
           </p>
           <a href="#" class="learn-more">Learn more</a>
         </div>
-
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" data-aos="slide-up">
     <div class="footer-container">
 
       <div class="footer-logo">
@@ -158,11 +163,26 @@
         <a href="#">Terms of Service</a>
       </div>
 
-      <p>Copyright 	&#169; 2024 techExchange.com</p>
+      <p>Copyright &#169; 2024 techExchange.com</p>
     
     </div>
   </footer>
+
+
+  
 </body>
 
-
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

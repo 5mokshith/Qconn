@@ -25,3 +25,13 @@ export const closeModal = (event) => {
             break;
     }
 }
+
+export const setAOS = (element) => {
+    let dataAOS = ['fade-right','fade-left'];
+    element.setAttribute('data-aos',dataAOS[Math.floor(Math.random()*2)]);
+    if(element.getAttribute('data-aos') === 'fade-right')
+        element.setAttribute('data-aos','slide-right');
+    else
+        element.setAttribute('data-aos','slide-left');
+    element.setAttribute('data-aos-delay','500');
+}

@@ -6,12 +6,19 @@
     <title>Qconn | Questions</title>
 
     <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utills.css" />
     <link rel="stylesheet" href="css/questions.css" />
     <link rel="stylesheet" href="css/media-qurery.css">
+
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/utills/AOS.js" defer></script>
     
+    <script src="script/utills/AOS.js"></script>
     <script src="script/utills/theme.js" defer type="module"></script>
     <script src="script/questions.js" defer type="module"></script>
     <script type="module" src="script/utills/navBar.js"></script>
@@ -19,34 +26,34 @@
 
   <body data-dark-mode="false">
 
-    <div class="logo-mobile">
+    <div class="logo-mobile" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
       <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
     </div>
 
-    <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu">
+    <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
       <div class="child1"></div>
       <div class="child2"></div>
       <div class="child3"></div>
       <span class="sr-only">Menu</span>
     </button>
     <nav class="flex" id="nav-bar">
-      <div class="logo">
+      <div class="logo" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
         <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"
           ><img src="images/logo.png" alt="logo"
         /></a>
       </div>
       <ul class="flex nav-items">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="#questions">Questions</a></li>
-        <li><a href="users.html">Users</a></li>
-        <li><a href="questions.html">Discussions</a></li>
-        <li><a href="profile.html">Profile</a></li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="index.html">Home</a></li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a class="active" href="#questions">Questions</a></li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a href="users.html">Users</a></li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a href="questions.html">Discussions</a></li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650"><a href="profile.html">Profile</a></li>
       </ul>
-      <div class="sign-btns">
+      <div class="sign-btns"></div>
         <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
             <a href="sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
  -->
-        <section class="theme-toggle-btn poppins-bold" style="position: static">
+        <section class="theme-toggle-btn poppins-bold" style="position: static" data-aos="fade-down" data-aos="slide-down" data-aos-delay="850">
           Dark mode :
           <div class="toggle-box" data-active="false">
             <i class="toggle-icon"></i>
@@ -55,11 +62,11 @@
       </div>
     </nav>
 
-    <main class="flex-column">
+    <main data-aos="fade-down" data-aos="slide-down" data-aos-delay="750" class="flex-column">
       <div class="hero flex-column">
-        <h1>#Trending questions</h1>
+        <h1 data-aos="fade-down" data-aos="slide-down" data-aos-delay="800">#Trending questions</h1>
 
-        <div class="stats flex">
+        <div class="stats flex" data-aos="fade-down" data-aos="slide-down" data-aos-delay="850">
           <div class="stat-info flex-column child-1">
             <h3>Questions</h3>
             <h3>Answered</h3>
@@ -73,7 +80,7 @@
         </div>
       </div>
 
-      <section role="form" class="ask-question flex-column">
+      <section role="form" class="ask-question flex-column" data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
         <h2>Ask your question here</h2>
         <div class="flex-column">
           <input
@@ -86,10 +93,10 @@
         </div>
       </section>
 
-      <div class="card-container grid" id="questions">
+      <div class="card-container grid" id="questions" data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
         <!-- Delete these before deploying :) -->
 
-        <div class="card flex" aria-label="Question" tabindex="0">
+        <div class="card flex" aria-label="Question" tabindex="0" data-aos="fade-right" data-aos="slide-right" data-aos-delay="350">
           <div class="stats">
             <h2>How to learn Javascript</h2>
             <div style="font-weight: 700">
@@ -142,7 +149,7 @@
           </div>
         </div>
 
-        <div class="card flex" aria-label="Question" tabindex="0">
+        <div class="card flex" aria-label="Question" tabindex="0" data-aos="fade-left" data-aos="slide-left" data-aos-delay="350">
           <div class="stats">
             <h2>How to learn Javascript</h2>
             <div style="font-weight: 700">
