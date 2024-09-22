@@ -1,0 +1,347 @@
+.nav-items li a {
+  font-weight: 600;
+}
+main {
+  -webkit-margin-before: 8.5rem;
+          margin-block-start: 8.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.logo-mobile {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 5rem;
+  z-index: 100;
+  --translateX: -50px;
+}
+
+main .hero {
+  width: 98%;
+  padding: 2rem;
+  /* background: linear-gradient(to left,pink, 5%,rgba(237, 221, 2, 0.523),orange); */
+  background: conic-gradient(pink, #ecec22ab, transparent, pink);
+  /* box-shadow: 0 0 20px orange; */
+  box-shadow: 0 0 20px pink;
+}
+
+.hero h1 {
+  font-size: 5rem;
+}
+
+.hero .stats {
+  --gap: 2rem;
+}
+
+.hero .stats .stat-info {
+  padding: 1rem;
+  --gap: 0rem;
+  width: 20rem;
+  /*  box-shadow: 0 0 100px #ffb73c; */
+  background-color: #80808051;
+  border-radius: 1rem;
+}
+.stat-info h3 {
+  font-size: 1.9rem;
+  margin: 0;
+}
+.stat-info span {
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: rgb(140, 0, 255);
+}
+
+.stats .child-1 {
+  position: relative !important;
+  background-color: #939292 !important;
+  opacity: 1 !important;
+}
+
+main .hero .stats .child-1::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  padding: 0.5rem;
+  box-sizing: content-box;
+  border-radius: inherit;
+  background: conic-gradient(from var(--angle), transparent 50%, blue,orange);
+  color: black;
+  -webkit-animation: rotate 3000ms linear infinite;
+          animation: rotate 2000ms linear infinite;
+          filter: blur(5px);
+}
+
+main .hero .stats .child-1::before {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+main .ask-question {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 20rem;
+  border: none;
+}
+
+main .ask-question div {
+  width: 100%;
+}
+main .ask-question input {
+  width: 50%;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 10px var(--text-color);
+  transition: all 200ms ease;
+  color: var(--text-color);
+}
+main .ask-question input:hover {
+  box-shadow: 8px 2px 100px var(--text-color);
+}
+main .ask-question .btn {
+  margin: 1rem;
+  width: 10rem;
+}
+
+main .ask-question .btn:hover {
+  --btn-background: #3c7eff;
+}
+
+main .ask-question .btn:active {
+  --btn-background: #538af7;
+}
+
+.card-container {
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  --columns: auto-fit;
+  --col-size: minmax(
+    330px,
+    1fr
+  ); /* Tried for responsive design but didn't liked at the larger screen sizes */
+  /*  --columns: 3; */
+  --gap: 2rem;
+}
+
+.card {
+  border-radius: 1rem;
+  padding: 1rem;
+  --gap: 1rem;
+  --justify-content: space-between;
+  background-color: var(--card-bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+.card h2 {
+  margin-top: 1rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.4em);
+}
+.card div {
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
+  color: var(--text-color);
+}
+.card span {
+  opacity: 0.6;
+}
+.card:hover {
+  box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+}
+
+.card .buttons {
+  height: 100%;
+  width: 1.5rem;
+  --gap: 5px;
+}
+.buttons div {
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.buttons div svg {
+  fill: #3c7eff;
+}
+.buttons div svg:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.buttons div svg:active {
+  opacity: 1;
+}
+
+body {
+  position: relative;
+}
+
+.modal,
+.modal-ans {
+  display: none;
+  --columns: 1;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  place-items: center;
+  height: 70vh;
+  width: 40vw;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--modal-bg-color);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.modal .wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  --rows: 1;
+  overflow-y: auto;
+}
+.modal .close,
+.modal-ans .close {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: -8px;
+  right: -15px;
+  background-color: white;
+  border-radius: 50%;
+}
+.modal .close svg:hover,
+.modal-ans .close svg:hover {
+  cursor: pointer;
+  fill: red;
+}
+
+.modal .close svg:active,
+.modal-ans .close svg:active {
+  fill: black;
+}
+
+.modal-ans .wrapper {
+  height: 100%;
+  width: 100%;
+}
+.modal-ans textarea {
+  border-radius: 1rem;
+  font-family: Helvetica, sans-serif;
+  background-color: rgb(0 0 0 / 0.6);
+  color: white;
+  --font-size: 1.815rem;
+  height: 50%;
+}
+
+.modal-ans button {
+  width: 50%;
+}
+
+.modal-ans button:hover {
+  --btn-background: #3c7eff;
+}
+
+.modal-ans button:active {
+  --btn-background: #538af7;
+}
+
+@media screen and (max-width: 600px) {
+  .logo-mobile {
+    display: block;
+    top: -120px;
+  }
+
+  main .hero {
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: 2.368rem;
+  }
+  .hero .stats {
+    --gap: 1rem;
+  }
+  .hero .stats .stat-info {
+    width: 12rem;
+  }
+  .stat-info h3 {
+    font-size: 1.2rem;
+  }
+  main .ask-question input {
+    width: 90%;
+    margin: 0;
+  }
+  .modal,
+  .modal-ans {
+    width: 90vw;
+  }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero .stats {
+    --gap: 1rem;
+  }
+
+  .theme-toggle-btn {
+    width: 150%;
+    font-size: 0.8rem;
+    word-break: keep-all;
+    margin: 0;
+  }
+
+  .hero .stats .stat-info {
+    width: 18rem;
+  }
+
+  main .ask-question input {
+    width: 90%;
+    margin: 0;
+  }
+
+  .modal,
+  .modal-ans {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width:390px) {
+
+  nav {
+    height: max-content;
+    border-radius: 2rem;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero .stats .stat-info {
+    width: 9rem;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 450px) {
+  nav {
+    height: max-content;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero .stats .stat-info {
+    width: 9rem;
+  }
+}

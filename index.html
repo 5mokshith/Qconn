@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Main page</title>
+  <title>Qconn | Home</title>
 
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,46 +14,65 @@
     rel="stylesheet" />
   <!-- End google fonts -->
 
-  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script/utills/AOS.js" defer></script>
+
+  <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/utills.css" />
-  <script src="script/theme.js" defer></script>
+  <link rel="stylesheet" href="css/media-qurery.css">
+  <script src="script/utills/theme.js" defer></script>
   <script src="script/main.js" defer></script>
+  <script type="module" src="script/utills/navBar.js"></script>
 </head>
 
 <body data-dark-mode="false">
+
+  <div class="logo-mobile" data-aos="slide-down">
+    <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
+  </div>
+  <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu">
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <span class="sr-only">Menu</span>
+  </button>
   <nav class="flex" id="nav-bar">
-    <div class="logo">
-      <a href="#"><img src="images/logo.png" alt="logo" /></a>
+    <div class="logo" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+      <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
     </div>
     <ul class="nav-items flex">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="questions.html">Questions</a></li>
-      <li><a href="users.html">Users</a></li>
-      <li><a href="questions.html">Discussions</a></li>
-      <li><a href="profile.html">Profile</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="#hero" class="active"  >Home</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a href="questions.html" >Questions</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a href="users.html" >Users</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a href="questions.html" >Leader board</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650"><a href="profile.html" >Profile</a></li>
     </ul>
     <div class="sign-btns">
-      <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
-      <a href="sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
+      <a href="additionalPages/sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
+      <a href="additionalPages/sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
     </div>
   </nav>
 
-<section class="theme-toggle-btn">
-  Dark mode :
-  <div class="toggle-box" data-active="false">
-    <i class="toggle-icon"></i>
-</div>
-</section>
+  <section class="theme-toggle-btn poppins-bold" data-aos="fade-down"data-aos="slide-down" data-aos-delay="800">
+    Dark mode :
+    <div class="toggle-box" data-active="false">
+      <i class="toggle-icon"></i>
+    </div>
+  </section>
 
   <main>
-    <section role="region" class="flex">
+    <section role="region" class="flex" data-aos="fade-down" data-aos="slide-down" data-aos-delay="500">
       <div class="hero grid" id="hero">
         <div class="text">
           <h1>Your questions are resolved here</h1>
           <p>
-            Meet exiting new people that can solve your queries, or you maybe
-            the one who solves them and build your connections from now
+            Meet exciting new people that can solve your queries, or you maybe
+            the one who solves them and build your connections from now.
           </p>
           <a href="questions.html"><button id="questions-btn" class="btn flex">Questions</button></a>
         </div>
@@ -64,19 +83,18 @@
     </section>
 
     <!-- Cards section -->
-    <section role="region" class="flex-column">
+    <section role="region" class="flex-column" data-aos="slide-up">
       <div class="features-text">
         <h2>Features</h2>
         <p>
           Start making connections in your institute and start gaining
-          popularity points remember there is somone that needs help just like
-          you so start your journey
+          popularity points. Remember, there is someone that needs help just like
+          you, so start your journey.
         </p>
       </div>
 
       <div class="flex testimonial">
-        
-        <div class="card flex-column">
+        <div class="card flex-column" data-aos="fade-right" data-aos-delay="300">
           <svg viewBox="0 0 24 24" fill="none" stroke="#3c7eff" stroke-width="1.5" stroke-linecap="round"
             stroke-linejoin="round" class="feather feather-user-check">
             <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -91,7 +109,7 @@
           <a href="#" class="learn-more">Learn more</a>
         </div>
 
-        <div class="flex-column card">
+        <div class="flex-column card" data-aos="slide-up" data-aos-delay="300">
           <svg viewBox="0 0 24 24" fill="none" stroke="#fd7e14" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round">
             <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
@@ -99,36 +117,35 @@
             <polyline points="2 12 12 17 22 12"></polyline>
           </svg>
           <h5>Diverse Expertise</h5>
-          <p class="my-4">
+          <p>
             Get insights from a wide range of subjects and experts. Whether
             it's academic help or practical advice, find what you need.
           </p>
           <a href="#" class="learn-more">Learn more</a>
         </div>
 
-        <div class="flex-column card">
+        <div class="flex-column card" data-aos="fade-left" data-aos-delay="300">
           <svg viewBox="0 0 24 24" fill="none" stroke="#8bd74e" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" class="feather feather-pocket">
             <path d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z"></path>
             <polyline points="8 10 12 14 16 10"></polyline>
           </svg>
           <h5>Secure and Reliable</h5>
-          <p class="my-4">
+          <p>
             Your data and privacy are our top priority. Enjoy a secure and
             trustworthy platform where your questions and answers are safe.
           </p>
           <a href="#" class="learn-more">Learn more</a>
         </div>
-
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" data-aos="slide-up">
     <div class="footer-container">
 
       <div class="footer-logo">
-        <img src="images/logo.png" alt="Platform Logo" />
+        <img src="images/logo.png" alt="logo" />
       </div>
 
       <div class="footer-description">
@@ -146,11 +163,26 @@
         <a href="#">Terms of Service</a>
       </div>
 
-      <p>Copyright 	&#169; 2024 techExchange.com</p>
+      <p>Copyright &#169; 2024 techExchange.com</p>
     
     </div>
   </footer>
+
+
+  
 </body>
 
-
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
