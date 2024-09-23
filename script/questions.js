@@ -74,6 +74,7 @@ function getUserInfo() {
 } 
 
 function renderQuestions() {
+    container.innerHTML = '';
     questions.forEach((question) => {
         let questionElement = document.createElement("div");
         questionElement.classList.add("card", "flex");
