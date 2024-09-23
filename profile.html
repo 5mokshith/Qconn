@@ -21,9 +21,11 @@
   <link rel="stylesheet" href="css/media-qurery.css">
   <script src="script/utills/theme.js" defer="defer"></script>
   <script src="script/utills/navBar.js" defer></script>
+  <script src="script/profile.js" type="module" defer></script>
 </head>
 
 <body>
+
   <div class="logo-mobile" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
     <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
   </div>
@@ -60,29 +62,57 @@
   </nav>
 
   <main class="flex hero" id="profile" data-aos="fade-in" data-aos="slide-in" data-aos-delay="350">
-    <section class="flex" style="--flex-direction: column">
+    <section class="flex details" style="--flex-direction: column">
       <div role="figure" class="profile-picture" data-aos="fade-down" data-aos="slide-down" data-aos-delay="550">
         <img src="images/logo.jpg" alt="Profile picture" />
       </div>
-      <h1>Mokshith</h1>
-      <h3>student</h3>
+      <h1></h1>
+      <h3></h3>
     </section>
 
     <section role="region" class="grid stats">
+
       <div class="questions-answered card flex-column" data-aos="fade-down" data-aos="slide-down" data-aos-delay="600">
         <h1>Questions answered</h1>
-        <span>05</span>
+        <span></span>
       </div>
+
       <div class="questions-asked card flex-column" data-aos="fade-down" data-aos="slide-down" data-aos-delay="650">
         <h1>Questions asked</h1>
-        <span>10</span>
+        <span></span>
       </div>
+
       <div class="achievements card flex-column" data-aos="fade-down" data-aos="slide-down" data-aos-delay="680">
         <h1>Achievement points</h1>
-        <span>10</span>
+        <span></span>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="logo" />
+      </div>
+
+      <div class="footer-description">
+        <p>
+          Connecting students, teachers, and seniors to share knowledge and
+          solve problems together.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="additionalPages/contactUs.html">Contact</a>
+        <a href="#">FAQ</a>
+        <a href="#">Terms of Service</a>
+      </div>
+
+      <p>Copyright &#169; 2024 techExchange.com</p>
+    </div>
+  </footer>
 </body>
 
 </html>

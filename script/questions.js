@@ -233,13 +233,19 @@ const showAnswers = (event) => {
 };
 
 
-
-
+const renderStats = () => {
+    let questionsAnswered = document.querySelector('.stat-info .questions-asked').textContent = '100';
+    let questionsAsked = document.querySelector('.stat-info .questions-answered').textContent = '200';
+    // TODO : get these stats from the server
+}
 
 submitBtn.addEventListener("click", postQuestion);
 answersModalClose.addEventListener("click", closeModal);
 answerModalClose.addEventListener('click',closeModal);
 
-renderQuestions();
+window.onload = () => {
+    renderQuestions();
+    renderStats();
+}
 
 
