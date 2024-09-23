@@ -97,3 +97,19 @@ a {
 a:hover {
   color: #195faa;
 }
+
+@media screen and (max-width: 450px) {
+  .wrapper {
+    width: 90%;
+  }
+  .input-group input {
+    min-width: 8rem!important;
+  }
+  .teacher-section {
+    margin: 0!important;
+  }
+   .input-group {
+    width: 15rem!important;
+    margin: 0;
+  }
+}

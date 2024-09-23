@@ -1,77 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Qconn | Users</title>
 
     <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/utills.css">
-    <link rel="stylesheet" href="css/users.css">
-    <link rel="stylesheet" href="css/media-qurery.css">
-    <script src="script/theme.js" defer></script>
-    <script type="module" src="script/utills/navBar.js"></script>
-    <script type="module" src="script/utills/theme.js"></script>
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Sevillana&display=swap" rel="stylesheet">
-</head>
-<body>
+    
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <div class="logo-mobile">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utills.css" />
+    <link rel="stylesheet" href="css/users.css" />
+    <link rel="stylesheet" href="css/media-qurery.css" />
+
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/utills/AOS.js" defer></script>
+
+    <script type="module" src="script/utills/navBar.js" defer></script>
+    <script type="module" src="script/utills/theme.js" defer></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Sevillana&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="logo-mobile" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
         <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
       </div>
-
-    <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu">
+  
+      <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
         <div class="child1"></div>
         <div class="child2"></div>
         <div class="child3"></div>
         <span class="sr-only">Menu</span>
       </button>
-
-    <nav class="flex" id="nav-bar">
-        <div class="logo">
-            <a href="#"><img src="images/logo.png" alt="logo" /></a>
+      <nav class="flex" id="nav-bar">
+        <div class="logo" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+          <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"
+            ><img src="images/logo.png" alt="logo"
+          /></a>
         </div>
-        <ul class="nav-items flex">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="questions.html">Questions</a></li>
-            <li><a class="active" href="#users">Users</a></li>
-            <li><a href="questions.html">Discussions</a></li>
-            <li><a href="profile.html">Profile</a></li>
+        <ul class="flex nav-items">
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="index.html">Home</a></li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a href="#questions">Questions</a></li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a class="active"href="users.html">Users</a></li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a href="questions.html">LeaderBoard</a></li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650"><a href="profile.html">Profile</a></li>
         </ul>
-        <div class="sign-btns">
-            <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
-            <a href="sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
- -->
-            <section class="theme-toggle-btn poppins-bold" style="position: static;">
-                Dark mode :
-                <div class="toggle-box" data-active="false">
-                    <i class="toggle-icon"></i>
-                </div>
-            </section>
-
+        <div class="sign-btns"></div>
+          <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
+              <a href="sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
+   -->
+          <section class="theme-toggle-btn poppins-bold" style="position: static" data-aos="fade-down" data-aos="slide-down" data-aos-delay="850">
+            Dark mode :
+            <div class="toggle-box" data-active="false">
+              <i class="toggle-icon"></i>
+            </div>
+          </section>
         </div>
-    </nav>
+      </nav>
 
-    <div class="hero">
+    <div class="hero" data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
         <h1 class="poppins-bold">Users</h1>
     </div>
 
     <main>
-        <div class="grid wrapper" id="users">
-            
-            <!-- Todo: somehow this should take to the user page --> 
+        <div class="grid wrapper" id="users" data-aos="fade-down" data-aos="slide-down" data-aos-delay="250">
+            <!-- Todo: somehow this should take to the user page -->
             <div class="flex card">
                 <section role="img" class="flex-column">
-                    <a href="#"><img src="images/sign-in.png" alt="User profile picture"></a>
+                    <a href="#"><img src="images/sign-in.png" alt="User profile picture" /></a>
                 </section>
                 <div class="flex-column info">
-                
-                        <h3>Mokshith rao</h3>
-                 
+                    <h3>Mokshith rao</h3>
+
                     <p><b>Role:</b> <span>student</span></p>
                     <p><b>Experience points:</b> <span>05</span></p>
                     <button class="btn">View profile</button>
@@ -80,12 +88,11 @@
 
             <div class="flex card">
                 <section role="img" class="flex">
-                    <a href="#"><img src="images/sign-in.png" alt="User profile picture"></a>
+                    <a href="#"><img src="images/sign-in.png" alt="User profile picture" /></a>
                 </section>
                 <div class="flex-column info">
-                
-                        <h3>Mokshith rao</h3>
-                 
+                    <h3>Mokshith rao</h3>
+
                     <p><b>Role:</b> <span>student</span></p>
                     <p><b>Experience points:</b> <span>05</span></p>
                     <button class="btn">View profile</button>
@@ -94,12 +101,11 @@
 
             <div class="flex card">
                 <section role="img" class="flex">
-                    <a href="#"><img src="images/sign-in.png" alt="User profile picture"></a>
+                    <a href="#"><img src="images/sign-in.png" alt="User profile picture" /></a>
                 </section>
                 <div class="flex-column info">
-                
-                        <h3>Mokshith rao</h3>
-                 
+                    <h3>Mokshith rao</h3>
+
                     <p><b>Role:</b> <span>student</span></p>
                     <p><b>Experience points:</b> <span>05</span></p>
                     <button class="btn">View profile</button>
@@ -108,12 +114,11 @@
 
             <div class="flex card">
                 <section role="img" class="flex">
-                    <a href="#"><img src="images/sign-in.png" alt="User profile picture"></a>
+                    <a href="#"><img src="images/sign-in.png" alt="User profile picture" /></a>
                 </section>
                 <div class="flex-column info">
-                
-                        <h3>Mokshith rao</h3>
-                 
+                    <h3>Mokshith rao</h3>
+
                     <p><b>Role:</b> <span>student</span></p>
                     <p><b>Experience points:</b> <span>05</span></p>
                     <button class="btn">View profile</button>
@@ -122,21 +127,18 @@
 
             <div class="flex card">
                 <section role="img" class="flex">
-                    <a href="#"><img src="images/sign-in.png" alt="User profile picture"></a>
+                    <a href="#"><img src="images/sign-in.png" alt="User profile picture" /></a>
                 </section>
                 <div class="flex-column info">
-                
-                        <h3>Mokshith rao</h3>
-                 
+                    <h3>Mokshith rao</h3>
+
                     <p><b>Role:</b> <span>student</span></p>
                     <p><b>Experience points:</b> <span>05</span></p>
                     <button class="btn">View profile</button>
                 </div>
             </div>
-
         </div>
     </main>
-
-
 </body>
+
 </html>

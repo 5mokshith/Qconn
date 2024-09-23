@@ -117,4 +117,8 @@ main {
     .wrapper {
         --col-size: minmax(330px,1fr);
     }
+
+    .wrapper .card {
+        max-width: 28rem;
+    }
 }

@@ -326,10 +326,6 @@ body {
     height: max-content;
     border-radius: 2rem;
   }
- 
-  main .hero {
-    width: 100%;
-  }
   .hero h1 {
     font-size: 1.5rem;
   }
@@ -341,9 +337,6 @@ body {
 @media screen and (min-width: 390px) and (max-width: 450px) {
   nav {
     height: max-content;
-  }
-  main .hero {
-    width: 100%;
   }
   .hero h1 {
     font-size: 1.5rem;
