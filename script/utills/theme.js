@@ -41,6 +41,7 @@ const setTheme = () => {
   }
 };
 
-window.onload = () => {
+window.addEventListener('DOMContentLoaded',() => {
+  console.log(localStorage.getItem('theme'));
   setTheme();
-};
+});
