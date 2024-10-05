@@ -1,101 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Qconn | Questions</title>
 
-    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
-    <!-- AOS css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qconn | Questions</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utills.css" />
-    <link rel="stylesheet" href="css/questions.css" />
-    <link rel="stylesheet" href="css/media-qurery.css">
+  <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+  <!-- AOS css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- AOS script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script/utills/AOS.js" defer></script>
-    
-    <script src="script/utills/theme.js" defer></script>
-    <script src="script/questions.js" defer type="module"></script>
-    <script src="script/utills/navBar.js" defer></script>
-  </head>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/utills.css" />
+  <link rel="stylesheet" href="css/questions.css" />
+  <link rel="stylesheet" href="css/media-qurery.css">
 
-  <body data-dark-mode="false">
+  <!-- AOS script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script/utills/AOS.js" defer></script>
 
-    <div class="logo-mobile" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
-      <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
+  <script src="script/utills/theme.js" defer></script>
+  <script src="script/questions.js" defer type="module"></script>
+  <script src="script/utills/navBar.js" defer></script>
+</head>
+
+<body data-dark-mode="false">
+
+  <div class="logo-mobile" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+    <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
+  </div>
+
+  <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu"
+    data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <span class="sr-only">Menu</span>
+  </button>
+  <nav class="flex" id="nav-bar">
+    <div class="logo" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+      <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png"
+          alt="logo" /></a>
     </div>
-
-    <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
-      <div class="child1"></div>
-      <div class="child2"></div>
-      <div class="child3"></div>
-      <span class="sr-only">Menu</span>
-    </button>
-    <nav class="flex" id="nav-bar">
-      <div class="logo" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
-        <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"
-          ><img src="images/logo.png" alt="logo"
-        /></a>
-      </div>
-      <ul class="flex nav-items">
-        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="index.html">Home</a></li>
-        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a class="active" href="#questions">Questions</a></li>
-        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a href="users.html">Users</a></li>
-        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a href="leaderBoard.html">LeaderBoard</a></li>
-        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650"><a href="profile.html">Profile</a></li>
-      </ul>
-      <div class="sign-btns"></div>
-        <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
+    <ul class="flex nav-items">
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="index.html">Home</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a class="active"
+          href="#questions">Questions</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a href="users.html">Users</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a href="leaderBoard.html">LeaderBoard</a>
+      </li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650"><a href="profile.html">Profile</a></li>
+    </ul>
+    <div class="sign-btns"></div>
+    <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
             <a href="sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
  -->
-        <section class="theme-toggle-btn poppins-bold" style="position: static" data-aos="fade-down" data-aos="slide-down" data-aos-delay="850">
-          Dark mode :
-          <div class="toggle-box" data-active="false">
-            <i class="toggle-icon"></i>
-          </div>
-        </section>
+    <section class="theme-toggle-btn poppins-bold" style="position: static" data-aos="fade-down" data-aos="slide-down"
+      data-aos-delay="850">
+      Dark mode :
+      <div class="toggle-box" data-active="false">
+        <i class="toggle-icon"></i>
       </div>
-    </nav>
+    </section>
+    </div>
+  </nav>
 
-    <main data-aos="fade-down" data-aos="slide-down" data-aos-delay="750" class="flex-column">
-      <div class="hero flex-column">
-        <h1 data-aos="fade-down" data-aos="slide-down" data-aos-delay="800">#Trending questions</h1>
+  <main data-aos="fade-down" data-aos="slide-down" data-aos-delay="750" class="flex-column">
+    <div class="hero flex-column">
+      <h1 data-aos="fade-down" data-aos="slide-down" data-aos-delay="800">#Trending questions</h1>
 
-        <div class="stats flex" data-aos="fade-down" data-aos="slide-down" data-aos-delay="850">
-          <div class="stat-info flex-column child-1">
-            <h3>Questions</h3>
-            <h3>Answered</h3>
-            <span class="questions-answered">05</span>
-          </div>
-          <div class="stat-info flex-column">
-            <h3>Questions</h3>
-            <h3>Asked</h3>
-            <span class="questions-asked">03</span>
-          </div>
+      <div class="stats flex" data-aos="fade-down" data-aos="slide-down" data-aos-delay="850">
+        <div class="stat-info flex-column child-1">
+          <h3>Questions</h3>
+          <h3>Answered</h3>
+          <span class="questions-answered">05</span>
+        </div>
+        <div class="stat-info flex-column">
+          <h3>Questions</h3>
+          <h3>Asked</h3>
+          <span class="questions-asked">03</span>
         </div>
       </div>
+    </div>
 
-      <section role="form" class="ask-question flex-column" data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
-        <h2>Ask your question here</h2>
-        <div class="flex-column">
-          <input
-            type="text"
-            class="input"
-            placeholder="Enter your question here"
-            id="submitQuestionField"
-          />
-          <button class="btn" id="submitQuestionBtn">Submit question</button>
-        </div>
-      </section>
+    <section role="form" class="ask-question flex-column" data-aos="fade-down" data-aos="slide-down"
+      data-aos-delay="150">
+      <h2>Ask your question here</h2>
+      <div class="flex-column">
+        <input type="text" class="input" placeholder="Enter your question here" id="submitQuestionField" />
+        <button class="btn" id="submitQuestionBtn">Submit question</button>
+      </div>
+    </section>
 
-      <div class="card-container grid" id="questions" data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
-        <!-- Delete these before deploying :) -->
+    <div class="card-container grid" id="questions" data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
+      <!-- Delete these before deploying :) -->
 
-        <!-- <div class="card flex" aria-label="Question" tabindex="0" data-aos="fade-right" data-aos="slide-right" data-aos-delay="350">
+      <!-- <div class="card flex" aria-label="Question" tabindex="0" data-aos="fade-right" data-aos="slide-right" data-aos-delay="350">
           <div class="stats">
             <h2>How to learn Javascript</h2>
             <div style="font-weight: 700">
@@ -194,154 +194,134 @@
             </div>
           </div>
         </div> -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="logo" />
       </div>
-    </main>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-logo">
-          <img src="images/logo.png" alt="logo" />
-        </div>
-
-        <div class="footer-description">
-          <p>
-            Connecting students, teachers, and seniors to share knowledge and
-            solve problems together.
-          </p>
-        </div>
-
-        <div class="footer-nav">
-          <a href="index.html">Home</a>
-          <a href="#">About</a>
-          <a href="additionalPages/contactUs.html">Contact</a>
-          <a href="#">FAQ</a>
-          <a href="#">Terms of Service</a>
-        </div>
-
-        <p>Copyright &#169; 2024 techExchange.com</p>
+      <div class="footer-description">
+        <p>
+          Connecting students, teachers, and seniors to share knowledge and
+          solve problems together.
+        </p>
       </div>
-    </footer>
 
-    <!-- These are modals triggered by javascript -->
-    <aside>
-      <div class="modal grid">
-        <h2>Answers</h2>
-        <div class="close" data-modal="show-answers">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path
-              d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
-            />
-          </svg>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="additionalPages/contactUs.html">Contact</a>
+        <a href="#">FAQ</a>
+        <a href="#">Terms of Service</a>
+      </div>
+
+      <p>Copyright &#169; 2024 techExchange.com</p>
+    </div>
+  </footer>
+
+  <!-- These are modals triggered by javascript -->
+  <aside>
+    <div class="modal grid">
+      <h2>Answers</h2>
+      <div class="close" data-modal="show-answers">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+        </svg>
+      </div>
+      <div class="wrapper grid">
+        <!-- Delete these before deploying :) -->
+
+        <div class="card flex">
+          <div class="stats">
+            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+            <div style="font-weight: 700">
+              Author:
+              <span id="author-name" style="font-weight: 500">Hello world</span>
+            </div>
+            <div style="font-weight: 700">
+              Date:
+              <span id="date-of-submission" style="font-weight: 500">
+                21-677-9890</span>
+            </div>
+          </div>
         </div>
-        <div class="wrapper grid">
-          <!-- Delete these before deploying :) -->
-
-          <div class="card flex">
-            <div class="stats">
-              <h2>Practice the DOM manupulation can make your skill's popup</h2>
-              <div style="font-weight: 700">
-                Author:
-                <span id="author-name" style="font-weight: 500"
-                  >Hello world</span
-                >
-              </div>
-              <div style="font-weight: 700">
-                Date:
-                <span id="date-of-submission" style="font-weight: 500">
-                  21-677-9890</span
-                >
-              </div>
+        <div class="card flex">
+          <div class="stats">
+            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+            <div style="font-weight: 700">
+              Author:
+              <span id="author-name" style="font-weight: 500">Hello world</span>
+            </div>
+            <div style="font-weight: 700">
+              Date:
+              <span id="date-of-submission" style="font-weight: 500">
+                21-677-9890</span>
             </div>
           </div>
-          <div class="card flex">
-            <div class="stats">
-              <h2>Practice the DOM manupulation can make your skill's popup</h2>
-              <div style="font-weight: 700">
-                Author:
-                <span id="author-name" style="font-weight: 500"
-                  >Hello world</span
-                >
-              </div>
-              <div style="font-weight: 700">
-                Date:
-                <span id="date-of-submission" style="font-weight: 500">
-                  21-677-9890</span
-                >
-              </div>
+        </div>
+        <div class="card flex">
+          <div class="stats">
+            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+            <div style="font-weight: 700">
+              Author:
+              <span id="author-name" style="font-weight: 500">Hello world</span>
+            </div>
+            <div style="font-weight: 700">
+              Date:
+              <span id="date-of-submission" style="font-weight: 500">
+                21-677-9890</span>
             </div>
           </div>
-          <div class="card flex">
-            <div class="stats">
-              <h2>Practice the DOM manupulation can make your skill's popup</h2>
-              <div style="font-weight: 700">
-                Author:
-                <span id="author-name" style="font-weight: 500"
-                  >Hello world</span
-                >
-              </div>
-              <div style="font-weight: 700">
-                Date:
-                <span id="date-of-submission" style="font-weight: 500">
-                  21-677-9890</span
-                >
-              </div>
+        </div>
+        <div class="card flex">
+          <div class="stats">
+            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+            <div style="font-weight: 700">
+              Author:
+              <span id="author-name" style="font-weight: 500">Hello world</span>
+            </div>
+            <div style="font-weight: 700">
+              Date:
+              <span id="date-of-submission" style="font-weight: 500">
+                21-677-9890</span>
             </div>
           </div>
-          <div class="card flex">
-            <div class="stats">
-              <h2>Practice the DOM manupulation can make your skill's popup</h2>
-              <div style="font-weight: 700">
-                Author:
-                <span id="author-name" style="font-weight: 500"
-                  >Hello world</span
-                >
-              </div>
-              <div style="font-weight: 700">
-                Date:
-                <span id="date-of-submission" style="font-weight: 500">
-                  21-677-9890</span
-                >
-              </div>
+        </div>
+        <div class="card flex">
+          <div class="stats">
+            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+            <div style="font-weight: 700">
+              Author:
+              <span id="author-name" style="font-weight: 500">Hello world</span>
             </div>
-          </div>
-          <div class="card flex">
-            <div class="stats">
-              <h2>Practice the DOM manupulation can make your skill's popup</h2>
-              <div style="font-weight: 700">
-                Author:
-                <span id="author-name" style="font-weight: 500"
-                  >Hello world</span
-                >
-              </div>
-              <div style="font-weight: 700">
-                Date:
-                <span id="date-of-submission" style="font-weight: 500">
-                  21-677-9890</span
-                >
-              </div>
+            <div style="font-weight: 700">
+              Date:
+              <span id="date-of-submission" style="font-weight: 500">
+                21-677-9890</span>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="modal-ans">
-        <div class="close" data-modal="write-answer">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path
-              d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
-            />
-          </svg>
-        </div>
-        <div class="wrapper flex-column">
-          <h2>Write your Answer here</h2>
-          <textarea
-            type="text"
-            placeholder="Enter your answer here"
-            class="input"
-          ></textarea>
-          <button class="btn" type="submit">Submit Answer</button>
-        </div>
+    <div class="modal-ans">
+      <div class="close" data-modal="write-answer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+        </svg>
       </div>
-    </aside>
-  </body>
+      <div class="wrapper flex-column">
+        <h2>Write your Answer here</h2>
+        <textarea type="text" placeholder="Enter your answer here" class="input"></textarea>
+        <button class="btn" type="submit">Submit Answer</button>
+      </div>
+    </div>
+  </aside>
+</body>
+
 </html>

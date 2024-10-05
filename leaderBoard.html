@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qconn | LeaderBoard</title>
     <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
-    
+
     <!-- AOS css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- AOS script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script/utills/AOS.js" defer></script>
-    
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-qurery.css">
     <link rel="stylesheet" href="css/utills.css">
@@ -46,10 +46,11 @@
         </div>
         <ul class="flex nav-items">
             <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="index.html">Home</a></li>
-            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a
-                    href="questions.html">Questions</a></li>
+            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a href="questions.html">Questions</a>
+            </li>
             <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a href="users.html">Users</a></li>
-            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a class="active" href="questions.html">LeaderBoard</a>
+            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a class="active"
+                    href="#leaderBoard">LeaderBoard</a>
             </li>
             <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650"><a href="profile.html">Profile</a></li>
         </ul>
@@ -72,23 +73,23 @@
         <div class="hero flex">
             <h1>#LeaderBoard</h1>
         </div>
-        
+
         <div>
             <label for="search-bar" class="sr-only">search-bar</label>
             <input type="search" id="search-bar" placeholder="Search here..." class="input">
         </div>
 
         <div class="wrapper-main flex">
-                <table>
-                    <tr>
-                        <th>ranking</th>
-                        <th>User name</th>
-                        <th>Questions Asked</th>
-                        <th>Questions answered</th>
-                        <th>Achievement points</th>
-                        <th>Role</th>
-                    </tr>
-                    <!-- <tr>
+            <table id="leaderBoard">
+                <tr>
+                    <th>ranking</th>
+                    <th>User name</th>
+                    <th>Questions Asked</th>
+                    <th>Questions answered</th>
+                    <th>Achievement points</th>
+                    <th>Role</th>
+                </tr>
+                <!-- <tr>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -103,7 +104,7 @@
                         <td></td>
                         <td></td>
                     </tr> -->
-                </table>
+            </table>
         </div>
     </main>
 
