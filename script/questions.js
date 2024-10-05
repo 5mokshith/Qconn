@@ -3,86 +3,83 @@ import { isclicked } from "./utills/utilities.js";
 import { closeModal } from "./utills/utilities.js";
 import { setAOS } from "./utills/utilities.js";
 
-
 const container = document.querySelector(".card-container");
 const answersModal = document.querySelector(".modal");
 const answersModalClose = document.querySelector(".close");
 const answerModal = document.querySelector(".modal-ans");
-const answerModalClose = document.querySelector('.modal-ans .close')
+const answerModalClose = document.querySelector(".modal-ans .close");
 const submitQuestionField = document.querySelector("#submitQuestionField");
 const submitBtn = document.querySelector("#submitQuestionBtn");
 
-
 class Answer {
-    constructor(answerId, author, date, answer) {
-        this.answerId = Number(answerId);
-        this.author = author;
-        this.date = date;
-        this.answer = answer;
-    }
+  constructor(answerId, author, date, answer) {
+    this.answerId = Number(answerId);
+    this.author = author;
+    this.date = date;
+    this.answer = answer;
+  }
 }
 
 class Question {
-    constructor(
-        questionId,
-        author,
-        dateOfSubmission,
-        likes,
-        question,
-        answers = []
-    ) {
-        this.questionId = Number(questionId);
-        this.author = author;
-        this.dateOfSubmission = dateOfSubmission;
-        this.likes = likes;
-        this.question = question;
-        this.answers = answers;
-    }
-    postAnswer(answer) {
-        this.answers.push(answer);
-    }
+  constructor(
+    questionId,
+    author,
+    dateOfSubmission,
+    likes,
+    question,
+    answers = []
+  ) {
+    this.questionId = Number(questionId);
+    this.author = author;
+    this.dateOfSubmission = dateOfSubmission;
+    this.likes = likes;
+    this.question = question;
+    this.answers = answers;
+  }
+  postAnswer(answer) {
+    this.answers.push(answer);
+  }
 }
 
 //This is how it's goona look after fetching
 const questions = [
-    new Question(1, "hello world", "21-98-6758", 100, "How to learn javascript", [
-        new Answer(
-            1,
-            "Hello",
-            "43-87-6859",
-            "Practice DOM manupulation it can make your skill's popup"
-        ),
-        new Answer(
-            2,
-            "world",
-            "43-87-6859",
-            "Practice can make your skill's popup"
-        ),
-    ]),
+  new Question(1, "hello world", "21-98-6758", 100, "How to learn javascript", [
+    new Answer(
+      1,
+      "Hello",
+      "43-87-6859",
+      "Practice DOM manupulation it can make your skill's popup"
+    ),
+    new Answer(
+      2,
+      "world",
+      "43-87-6859",
+      "Practice can make your skill's popup"
+    ),
+  ]),
 ];
-
 
 const currentUserName = getUserInfo(); // Todo: get username from backend
 let currentDate = new Date();
 currentDate = currentDate.toLocaleDateString();
 
 function getQuestionsFromServer() {
-    questions = [];
+  questions = [];
 }
 function getUserInfo() {
-    // Todo: needed to fetech the user credentials
-} 
+  // Todo: needed to fetech the user credentials
+}
 
 function renderQuestions() {
-    container.innerHTML = '';
-    questions.forEach((question) => {
-        let questionElement = document.createElement("div");
-        questionElement.classList.add("card", "flex");
-        questionElement.setAttribute("aria-label", "Question");
-        questionElement.setAttribute("data-question-id", `${question.questionId}`);
-        setAOS(questionElement);
-        questionElement.setAttribute("tabindex", "0");
-        questionElement.innerHTML = `
+  container.innerHTML = "";
+  questions.forEach((question) => {
+    let questionElement = document.createElement("div");
+    questionElement.classList.add("card", "flex");
+    questionElement.setAttribute("aria-label", "Question");
+    questionElement.setAttribute("data-question-id", `${question.questionId}`);
+    setAOS(questionElement);
+    questionElement.setAttribute("tabindex", "0");
+    questionElement.innerHTML = `
                 <div class="stats">
                     <h2>${question.question}</h2>
                     <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">${question.author}
@@ -115,27 +112,28 @@ function renderQuestions() {
                     </div>
                 </div>`;
 
-        questionElement
-            .querySelector("#like")
-            .addEventListener("click", handleLike);
-        questionElement
-            .querySelector("#answer")
-            .addEventListener("click", submitAnswer);
-        questionElement
-        .querySelector("#answers")
-        .addEventListener("click", showAnswers);
-        container.appendChild(questionElement);
-    });
+    questionElement
+      .querySelector("#like")
+      .addEventListener("click", handleLike);
+    questionElement
+      .querySelector("#answer")
+      .addEventListener("click", submitAnswer);
+    questionElement
+      .querySelector("#answers")
+      .addEventListener("click", showAnswers);
+    questionElement.addEventListener('click',showAnswers);
+    container.appendChild(questionElement);
+  });
 }
 
 function renderAnswers(answers) {
-    const answersContainer = document.querySelector(".modal .wrapper");
-    answersContainer.innerHTML = "";
-    answers.forEach((ans) => {
-        let answer = document.createElement("div");
-        answer.classList.add("card", "flex");
-        answer.setAttribute("data-answer-id", ans.answerId);
-        answer.innerHTML = `
+  const answersContainer = document.querySelector(".modal .wrapper");
+  answersContainer.innerHTML = "";
+  answers.forEach((ans) => {
+    let answer = document.createElement("div");
+    answer.classList.add("card", "flex");
+    answer.setAttribute("data-answer-id", ans.answerId);
+    answer.innerHTML = `
                     <div class="stats">
                         <h2>${ans.answer}</h2>
                         <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">${ans.author}
@@ -143,110 +141,116 @@ function renderAnswers(answers) {
                         <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
                                 ${ans.date}</span></div>
                     </div>`;
-        answersContainer.appendChild(answer);
-    });
-    answersModal.style.display = "grid";
+    answersContainer.appendChild(answer);
+  });
+  answersModal.style.display = "grid";
 }
 
 const getQuestion = (event) => {
-    if (submitQuestionField.value === "") {
-        alert("please enter the question before submitting");
-        return;
-    }
-    let userQuestion = submitQuestionField.value;
-    submitQuestionField.value = "";
-    return userQuestion;
+  if (submitQuestionField.value === "") {
+    alert("please enter the question before submitting");
+    return;
+  }
+  let userQuestion = submitQuestionField.value;
+  submitQuestionField.value = "";
+  return userQuestion;
 };
 
 const postQuestion = () => {
-    let questionToSubmit = getQuestion();
-    if (questionToSubmit) {
-        /* Todo: Need to post this question to the server then receive a unique id and 
+  let questionToSubmit = getQuestion();
+  if (questionToSubmit) {
+    /* Todo: Need to post this question to the server then receive a unique id and 
             then post it to the server to store */
-        questions.push(
-            new Question(6, currentUserName, currentDate, 0, questionToSubmit, [])
-        );
-        // Todo: Need to post the new question to the server
-        renderQuestions();
-    }
+    questions.push(
+      new Question(6, currentUserName, currentDate, 0, questionToSubmit, [])
+    );
+    // Todo: Need to post the new question to the server
+    renderQuestions();
+  }
 };
 
 const handleLike = (event) => {
-    let btn = event.target.closest("#like");
-    if (!isclicked(btn)) {
-        let totalLikesDisplay = btn.querySelector("span");
-        let totalLikes = Number(totalLikesDisplay.textContent);
-        totalLikes += 1;
-        totalLikesDisplay.textContent = totalLikes;
-        
-        /* Note to me: also update this(likes) in the server */
-    }
+  let btn = event.target.closest("#like");
+  if (!isclicked(btn)) {
+    let totalLikesDisplay = btn.querySelector("span");
+    let totalLikes = Number(totalLikesDisplay.textContent);
+    totalLikes += 1;
+    totalLikesDisplay.textContent = totalLikes;
+
+    /* Note to me: also update this(likes) in the server */
+  }
 };
 
 const getAnswer = (event) => {
-    return new Promise((resolve, reject) => {
-        const userAnswerInput = answerModal.querySelector("textarea");
-        const submitBtn = answerModal.querySelector(".modal-ans button");
-        submitBtn.addEventListener("click", () => {
-            let answer = userAnswerInput.value;
-            if (answer === '') {
-                window.alert("Please enter correct answer ");
-                reject("User entered a incorrect answer");
-                return;
-            }
-            answerModal.style.display = "none";
-            submitBtn.disabled = true;
-            resolve(answer);
-        });
-        userAnswerInput.value = "";
+  return new Promise((resolve, reject) => {
+    const userAnswerInput = answerModal.querySelector("textarea");
+    const submitBtn = answerModal.querySelector(".modal-ans button");
+    submitBtn.addEventListener("click", () => {
+      let answer = userAnswerInput.value;
+      if (answer === "") {
+        window.alert("Please enter correct answer ");
+        reject("User entered a incorrect answer");
+        return;
+      }
+      answerModal.style.display = "none";
+      submitBtn.disabled = true;
+      resolve(answer);
     });
+    userAnswerInput.value = "";
+  });
 };
 
 async function submitAnswer(event) {
-    let questionId = event.target
-        .closest(".card")
-        .getAttribute("data-question-id");
-    let currentQuestion = questions.find(
-        (question) => question.questionId === Number(questionId)
+  let questionId = event.target
+    .closest(".card")
+    .getAttribute("data-question-id");
+  let currentQuestion = questions.find(
+    (question) => question.questionId === Number(questionId)
+  );
+  answerModal.style.display = "block";
+  try {
+    let answer = await getAnswer();
+    /* Todo: need to post this quetion and get unique answerId and then update it */
+    currentQuestion.postAnswer(
+      new Answer(
+        3,
+        currentUserName,
+        currentDate,
+        answer
+      ) /* Id should be fetched from the server */
     );
-    answerModal.style.display = "block";
-    try {
-        let answer = await getAnswer();
-        /* Todo: need to post this quetion and get unique answerId and then update it */
-        currentQuestion.postAnswer(
-            new Answer(3, currentUserName, currentDate, answer) /* Id should be fetched from the server */
-        );
-    } catch {
-    } finally {
-        const submitBtn = document.querySelector(".modal-ans button");
-        submitBtn.disabled = false;
-    }
+  } catch {
+  } finally {
+    const submitBtn = document.querySelector(".modal-ans button");
+    submitBtn.disabled = false;
+  }
 }
 
 const showAnswers = (event) => {
-    let questionId = event.target
-        .closest(".card")
-        .getAttribute("data-question-id");
-    let currentQuestion = questions.find(
-        (question) => question.questionId === Number(questionId)
-    );
-    renderAnswers(currentQuestion.answers);
+  let questionId = event.target
+    .closest(".card")
+    .getAttribute("data-question-id");
+  let currentQuestion = questions.find(
+    (question) => question.questionId === Number(questionId)
+  );
+  renderAnswers(currentQuestion.answers);
 };
 
-
 const renderStats = () => {
-    let questionsAnswered = document.querySelector('.stat-info .questions-asked').textContent = '100';
-    let questionsAsked = document.querySelector('.stat-info .questions-answered').textContent = '200';
-    // TODO : get these stats from the server
-}
+  let questionsAnswered = (document.querySelector(
+    ".stat-info .questions-asked"
+  ).textContent = "100");
+  let questionsAsked = (document.querySelector(
+    ".stat-info .questions-answered"
+  ).textContent = "200");
+  // TODO : get these stats from the server
+};
 
 submitBtn.addEventListener("click", postQuestion);
 answersModalClose.addEventListener("click", closeModal);
-answerModalClose.addEventListener('click',closeModal);
+answerModalClose.addEventListener("click", closeModal);
 
 window.onload = () => {
-    renderQuestions();
-    renderStats();
-}
-
-
+  renderQuestions();
+  renderStats();
+};

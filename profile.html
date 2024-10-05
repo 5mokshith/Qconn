@@ -1,118 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qconn | profile</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Qconn | profile</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/utills/AOS.js" defer></script>
 
-  <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
-  <!-- AOS script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script/utills/AOS.js" defer></script>
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <!-- AOS css -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utills.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/media-qurery.css" />
+    <script src="script/utills/theme.js" defer="defer"></script>
+    <script src="script/utills/navBar.js" defer></script>
+    <script src="script/profile.js" type="module" defer></script>
+  </head>
 
-  <!-- Custom css -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/utills.css" />
-  <link rel="stylesheet" href="css/profile.css" />
-  <link rel="stylesheet" href="css/media-qurery.css">
-  <script src="script/utills/theme.js" defer="defer"></script>
-  <script src="script/utills/navBar.js" defer></script>
-  <script src="script/profile.js" type="module" defer></script>
-</head>
-
-<body>
-
-  <div class="logo-mobile" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
-    <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
-  </div>
-
-  <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu"
-    data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
-    <div class="child1"></div>
-    <div class="child2"></div>
-    <div class="child3"></div>
-    <span class="sr-only">Menu</span>
-  </button>
-  <nav class="flex" id="nav-bar">
-    <div class="logo" data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
-      <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+  <body>
+    <div
+      class="logo-mobile"
+      data-aos="fade-down"
+      data-aos="slide-down"
+      data-aos-delay="100"
+    >
+      <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"
+        ><img src="images/logo.png" alt="logo"
+      /></a>
     </div>
-    <ul class="nav-items flex">
-      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="index.html">Home</a></li>
-      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a href="questions.html">Questions</a></li>
-      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a href="users.html">Users</a></li>
-      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a href="users.html">LeaderBoard</a></li>
-      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="550"><a class="active" href="#profile">Profile</a></li>
-    </ul>
-    <div class="sign-btns">
-      <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
+
+    <button
+      class="mobile-nav-toggle tooltip"
+      aria-controls="nav-bar"
+      aria-expanded="false"
+      data-tooltip="Menu"
+      data-aos="fade-down"
+      data-aos="slide-down"
+      data-aos-delay="150"
+    >
+      <div class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="flex" id="nav-bar">
+      <div
+        class="logo"
+        data-aos="fade-down"
+        data-aos="slide-down"
+        data-aos-delay="150"
+      >
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+      </div>
+      <ul class="nav-items flex">
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
+          <a href="index.html">Home</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250">
+          <a href="questions.html">Questions</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350">
+          <a href="users.html">Users</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450">
+          <a href="users.html">LeaderBoard</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="550">
+          <a class="active" href="#profile">Profile</a>
+        </li>
+      </ul>
+      <div class="sign-btns">
+        <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
             <a href="sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
  -->
-      <section class="theme-toggle-btn poppins-bold" style="position: static" data-aos="fade-down" data-aos="slide-down" data-aos-delay="650">
-        Dark mode :
-        <div class="toggle-box" data-active="false">
-          <i class="toggle-icon"></i>
+        <section
+          class="theme-toggle-btn poppins-bold"
+          style="position: static"
+          data-aos="fade-down"
+          data-aos="slide-down"
+          data-aos-delay="650"
+        >
+          Dark mode :
+          <div class="toggle-box" data-active="false">
+            <i class="toggle-icon"></i>
+          </div>
+        </section>
+      </div>
+    </nav>
+
+    <main
+      class="flex hero"
+      id="profile"
+      data-aos="fade-in"
+      data-aos="slide-in"
+      data-aos-delay="350"
+    >
+      <section class="flex details" style="--flex-direction: column">
+        <div
+          role="figure"
+          class="profile-picture"
+          data-aos="fade-down"
+          data-aos="slide-down"
+          data-aos-delay="550"
+        >
+          <img src="images/logo.jpg" alt="Profile picture" />
+        </div>
+        <h1></h1>
+        <h3></h3>
+      </section>
+
+      <section role="region" class="grid stats">
+        <div
+          class="questions-answered card flex-column"
+          data-aos="fade-down"
+          data-aos="slide-down"
+          data-aos-delay="600"
+        >
+          <h1>Questions answered</h1>
+          <span></span>
+        </div>
+
+        <div
+          class="questions-asked card flex-column"
+          data-aos="fade-down"
+          data-aos="slide-down"
+          data-aos-delay="650"
+        >
+          <h1>Questions asked</h1>
+          <span></span>
+        </div>
+
+        <div
+          class="achievements card flex-column"
+          data-aos="fade-down"
+          data-aos="slide-down"
+          data-aos-delay="680"
+        >
+          <h1>Achievement points</h1>
+          <span></span>
         </div>
       </section>
-    </div>
-  </nav>
+    </main>
 
-  <main class="flex hero" id="profile" data-aos="fade-in" data-aos="slide-in" data-aos-delay="350">
-    <section class="flex details" style="--flex-direction: column">
-      <div role="figure" class="profile-picture" data-aos="fade-down" data-aos="slide-down" data-aos-delay="550">
-        <img src="images/logo.jpg" alt="Profile picture" />
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="logo" />
+        </div>
+
+        <div class="footer-description">
+          <p>
+            Connecting students, teachers, and seniors to share knowledge and
+            solve problems together.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="additionalPages/contactUs.html">Contact</a>
+          <a href="#">FAQ</a>
+          <a href="#">Terms of Service</a>
+        </div>
+
+        <p>Copyright &#169; 2024 techExchange.com</p>
       </div>
-      <h1></h1>
-      <h3></h3>
-    </section>
-
-    <section role="region" class="grid stats">
-
-      <div class="questions-answered card flex-column" data-aos="fade-down" data-aos="slide-down" data-aos-delay="600">
-        <h1>Questions answered</h1>
-        <span></span>
-      </div>
-
-      <div class="questions-asked card flex-column" data-aos="fade-down" data-aos="slide-down" data-aos-delay="650">
-        <h1>Questions asked</h1>
-        <span></span>
-      </div>
-
-      <div class="achievements card flex-column" data-aos="fade-down" data-aos="slide-down" data-aos-delay="680">
-        <h1>Achievement points</h1>
-        <span></span>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-logo">
-        <img src="images/logo.png" alt="logo" />
-      </div>
-
-      <div class="footer-description">
-        <p>
-          Connecting students, teachers, and seniors to share knowledge and
-          solve problems together.
-        </p>
-      </div>
-
-      <div class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="#">About</a>
-        <a href="additionalPages/contactUs.html">Contact</a>
-        <a href="#">FAQ</a>
-        <a href="#">Terms of Service</a>
-      </div>
-
-      <p>Copyright &#169; 2024 techExchange.com</p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

@@ -32,9 +32,9 @@
   text-align: center !important;
   cursor: pointer !important;
   -webkit-user-select: none !important;
-     -moz-user-select: none !important;
-      -ms-user-select: none !important;
-          user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
   border: 1px solid transparent !important;
   font-size: 1.15rem;
   border-radius: 0.625rem;
@@ -49,8 +49,8 @@
   color: var(--text-color-input);
   background-color: transparent;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-left: none;
   border: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -143,7 +143,7 @@ p {
   height: 1px;
   position: absolute;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
 }
 
@@ -179,7 +179,7 @@ p {
   width: -moz-fit-content;
   width: fit-content;
   bottom: -300%;
-  transform: translateX(var(--translateX,-80px)) translateY(15px);
+  transform: translateX(var(--translateX, -80px)) translateY(15px);
 }
 .tooltip:hover::before,
 .tooltip-logo:hover:before {
@@ -350,15 +350,26 @@ p {
   }
 }
 
-
-@keyframes animated-gradient {
-  0%{
+@-webkit-keyframes animated-gradient {
+  0% {
     background-position: 300% 300%;
   }
-  50%{
+  50% {
     background-position: 200% 200%;
   }
-  100%{
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes animated-gradient {
+  0% {
+    background-position: 300% 300%;
+  }
+  50% {
+    background-position: 200% 200%;
+  }
+  100% {
     background-position: 0% 0%;
   }
 }
@@ -371,13 +382,13 @@ p {
   inherits: false;
 }
 
-
-@supports not((@property)) {
+@supports not ((@property)) {
   main .hero .stats .child-1::after {
     background: transparent;
   }
-  
-.stats .child-1 {
-  background-color: transparent;
+
+  .stats .child-1 {
+    background-color: transparent;
+  }
 }
-}
+
