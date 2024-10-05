@@ -1,187 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qconn | Home</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Qconn | Home</title>
-
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script/utills/AOS.js" defer></script>
-
-  <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/utills.css" />
-  <link rel="stylesheet" href="css/media-qurery.css">
-  <script src="script/utills/theme.js" defer></script>
-  <script src="script/main.js" defer></script>
-  <script type="module" src="script/utills/navBar.js"></script>
-</head>
-
-<body data-dark-mode="false">
-
-  <div class="logo-mobile" data-aos="slide-down">
-    <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
-  </div>
-  <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu">
-    <div class="child1"></div>
-    <div class="child2"></div>
-    <div class="child3"></div>
-    <span class="sr-only">Menu</span>
-  </button>
-  <nav class="flex" id="nav-bar">
-    <div class="logo" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
-      <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
-    </div>
-    <ul class="nav-items flex">
-      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="#hero" class="active"  >Home</a></li>
-      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a href="questions.html" >Questions</a></li>
-      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a href="users.html" >Users</a></li>
-      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a href="questions.html" >Leader board</a></li>
-      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650"><a href="profile.html" >Profile</a></li>
-    </ul>
-    <div class="sign-btns">
-      <a href="additionalPages/sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
-      <a href="additionalPages/sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
-    </div>
-  </nav>
-
-  <section class="theme-toggle-btn poppins-bold" data-aos="fade-down"data-aos="slide-down" data-aos-delay="800">
-    Dark mode :
-    <div class="toggle-box" data-active="false">
-      <i class="toggle-icon"></i>
-    </div>
-  </section>
-
-  <main>
-    <section role="region" class="flex" data-aos="fade-down" data-aos="slide-down" data-aos-delay="500">
-      <div class="hero grid" id="hero">
-        <div class="text">
-          <h1>Your questions are resolved here</h1>
-          <p>
-            Meet exciting new people that can solve your queries, or you maybe
-            the one who solves them and build your connections from now.
-          </p>
-          <a href="questions.html"><button id="questions-btn" class="btn flex">Questions</button></a>
-        </div>
-        <div class="image">
-          <img src="images/header-1.png" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Cards section -->
-    <section role="region" class="flex-column" data-aos="slide-up">
-      <div class="features-text">
-        <h2>Features</h2>
-        <p>
-          Start making connections in your institute and start gaining
-          popularity points. Remember, there is someone that needs help just like
-          you, so start your journey.
-        </p>
-      </div>
-
-      <div class="flex testimonial">
-        <div class="card flex-column" data-aos="fade-right" data-aos-delay="300">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#3c7eff" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round" class="feather feather-user-check">
-            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-            <circle cx="8.5" cy="7" r="4"></circle>
-            <polyline points="17 11 19 13 23 9"></polyline>
-          </svg>
-          <h5>User-Friendly Interface</h5>
-          <p>
-            Navigate effortlessly through easy-to-use platform. Posting
-            questions and finding answers has never been easier.
-          </p>
-          <a href="#" class="learn-more">Learn more</a>
-        </div>
-
-        <div class="flex-column card" data-aos="slide-up" data-aos-delay="300">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#fd7e14" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round">
-            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-            <polyline points="2 17 12 22 22 17"></polyline>
-            <polyline points="2 12 12 17 22 12"></polyline>
-          </svg>
-          <h5>Diverse Expertise</h5>
-          <p>
-            Get insights from a wide range of subjects and experts. Whether
-            it's academic help or practical advice, find what you need.
-          </p>
-          <a href="#" class="learn-more">Learn more</a>
-        </div>
-
-        <div class="flex-column card" data-aos="fade-left" data-aos-delay="300">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#8bd74e" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" class="feather feather-pocket">
-            <path d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z"></path>
-            <polyline points="8 10 12 14 16 10"></polyline>
-          </svg>
-          <h5>Secure and Reliable</h5>
-          <p>
-            Your data and privacy are our top priority. Enjoy a secure and
-            trustworthy platform where your questions and answers are safe.
-          </p>
-          <a href="#" class="learn-more">Learn more</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" data-aos="slide-up">
-    <div class="footer-container">
-
-      <div class="footer-logo">
-        <img src="images/logo.png" alt="logo" />
-      </div>
-
-      <div class="footer-description">
-        <p>
-          Connecting students, teachers, and seniors to share knowledge and
-          solve problems together.
-        </p>
-      </div>
-
-      <div class="footer-nav">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="additionalPages/contactUs.html">Contact</a>
-        <a href="#">FAQ</a>
-        <a href="#">Terms of Service</a>
-      </div>
-
-      <p>Copyright &#169; 2024 techExchange.com</p>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/utills/AOS.js" defer></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utills.css" />
+    <link rel="stylesheet" href="css/media-qurery.css" />
+    <script src="script/utills/theme.js" defer></script>
+    <script src="script/main.js" defer></script>
+    <script type="module" src="script/utills/navBar.js" defer></script>
+  </head>
+
+  <body data-dark-mode="false">
+    <div class="logo-mobile" data-aos="slide-down">
+      <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"
+        ><img src="images/logo.png" alt="logo"
+      /></a>
     </div>
-  </footer>
+    <button
+      class="mobile-nav-toggle tooltip"
+      aria-controls="nav-bar"
+      aria-expanded="false"
+      data-tooltip="Menu"
+    >
+      <div class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="flex" id="nav-bar">
+      <div
+        class="logo"
+        data-aos="fade-down"
+        data-aos="slide-down"
+        data-aos-delay="100"
+      >
+        <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"
+          ><img src="images/logo.png" alt="logo"
+        /></a>
+      </div>
+      <ul class="nav-items flex">
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
+          <a href="#hero" class="active">Home</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250">
+          <a href="questions.html">Questions</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350">
+          <a href="users.html">Users</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450">
+          <a href="leaderBoard.html">Leader board</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650">
+          <a href="profile.html">Profile</a>
+        </li>
+      </ul>
+      <div class="sign-btns">
+        <a href="additionalPages/sign-in.html" target="_blank"
+          ><button id="sign-in" class="btn">Sign In</button></a
+        >
+        <a href="additionalPages/sign-up.html" target="_blank"
+          ><button id="sign-up" class="btn">Sign Up</button></a
+        >
+      </div>
+    </nav>
 
+    <section
+      class="theme-toggle-btn poppins-bold"
+      data-aos="fade-down"
+      data-aos="slide-down"
+      data-aos-delay="800"
+    >
+      Dark mode :
+      <div class="toggle-box" data-active="false">
+        <i class="toggle-icon"></i>
+      </div>
+    </section>
 
-  
-</body>
+    <main>
+      <section
+        role="region"
+        class="flex"
+        data-aos="fade-down"
+        data-aos="slide-down"
+        data-aos-delay="500"
+      >
+        <div class="hero grid" id="hero">
+          <div class="text">
+            <h1>Your questions are resolved here</h1>
+            <p>
+              Meet exciting new people that can solve your queries, or you maybe
+              the one who solves them and build your connections from now.
+            </p>
+            <a href="questions.html"
+              ><button id="questions-btn" class="btn flex">Questions</button></a
+            >
+          </div>
+          <div class="image">
+            <img src="images/header-1.png" />
+          </div>
+        </div>
+      </section>
 
+      <!-- Cards section -->
+      <section role="region" class="flex-column" data-aos="slide-up">
+        <div class="features-text">
+          <h2>Features</h2>
+          <p>
+            Start making connections in your institute and start gaining
+            popularity points. Remember, there is someone that needs help just
+            like you, so start your journey.
+          </p>
+        </div>
+
+        <div class="flex testimonial">
+          <div
+            class="card flex-column"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#3c7eff"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-user-check"
+            >
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="8.5" cy="7" r="4"></circle>
+              <polyline points="17 11 19 13 23 9"></polyline>
+            </svg>
+            <h5>User-Friendly Interface</h5>
+            <p>
+              Navigate effortlessly through easy-to-use platform. Posting
+              questions and finding answers has never been easier.
+            </p>
+            <a href="#" class="learn-more">Learn more</a>
+          </div>
+
+          <div
+            class="flex-column card"
+            data-aos="slide-up"
+            data-aos-delay="300"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#fd7e14"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <h5>Diverse Expertise</h5>
+            <p>
+              Get insights from a wide range of subjects and experts. Whether
+              it's academic help or practical advice, find what you need.
+            </p>
+            <a href="#" class="learn-more">Learn more</a>
+          </div>
+
+          <div
+            class="flex-column card"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#8bd74e"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-pocket"
+            >
+              <path
+                d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z"
+              ></path>
+              <polyline points="8 10 12 14 16 10"></polyline>
+            </svg>
+            <h5>Secure and Reliable</h5>
+            <p>
+              Your data and privacy are our top priority. Enjoy a secure and
+              trustworthy platform where your questions and answers are safe.
+            </p>
+            <a href="#" class="learn-more">Learn more</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" data-aos="slide-up">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="logo" />
+        </div>
+
+        <div class="footer-description">
+          <p>
+            Connecting students, teachers, and seniors to share knowledge and
+            solve problems together.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="additionalPages/contactUs.html">Contact</a>
+          <a href="#">FAQ</a>
+          <a href="#">Terms of Service</a>
+        </div>
+
+        <p>Copyright &#169; 2024 techExchange.com</p>
+      </div>
+    </footer>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

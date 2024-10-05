@@ -1,31 +1,33 @@
-'use strict'
+"use strict";
 
-const container = document.querySelector('.wrapper');
-
+const container = document.querySelector(".wrapper");
 
 export default class User {
-  constructor(userName, role, achievementPoints, Qans, Qask, profilePicture) {
+  constructor(userName, role, achievementPoints, Qans, Qask, userRank, profilePicture) {
     this.userName = userName;
     this.role = role;
     this.achievementPoints = achievementPoints;
     this.Qans = Qans;
     this.Qask = Qask;
-    this.profilePicture = profilePicture || '../images/defaultProfilePicture.jpg';
+    this.userRank = userRank;
+    this.profilePicture =
+      profilePicture || "../images/defaultProfilePicture.jpg";
   }
 
   //TODO : Figure out how to get users profile image
-
 }
 
 // TODO : Get users data from server
-const Users = [new User('Javascript','student',5,10,5),
-  new User('Mokshith rao','student',5,10,5),
-  new User('Ramakrishna','student',5,10,5)];
+export const Users = [
+  new User("Javascript", "student", 5, 10, 5, 1),
+  new User("Mokshith rao", "student", 5, 10, 5, 2),
+  new User("Ramakrishna", "student", 5, 10, 5, 3),
+];
 
 function renderUsers() {
-  Users.forEach(user => {
-    let card = document.createElement('div');
-    card.classList.add('card','flex');
+  Users.forEach((user) => {
+    let card = document.createElement("div");
+    card.classList.add("card", "flex");
     card.innerHTML = `
                 <section role="img" class="flex-column">
                     <a href="#"><img src="${user.profilePicture}" alt="User profile picture" /></a>
@@ -37,17 +39,18 @@ function renderUsers() {
                     <p><b>Experience points:</b> <span>${user.achievementPoints}</span></p>
                     <button class="btn">View profile</button>
                 </div>`;
-                card.querySelector('.btn').addEventListener('click',() => handleViewProfile(user));
-                if(container)
-                  container.appendChild(card);
+    card
+      .querySelector(".btn")
+      .addEventListener("click", () => handleViewProfile(user));
+    if (container) container.appendChild(card);
   });
 }
 
 const handleViewProfile = (user) => {
-  sessionStorage.setItem('selectedUser',JSON.stringify(user));
-  window.location.href = '../profile.html';
-}
+  sessionStorage.setItem("selectedUser", JSON.stringify(user));
+  window.location.href = "../profile.html";
+};
 
 window.onload = () => {
   renderUsers();
-}
+};

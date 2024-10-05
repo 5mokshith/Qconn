@@ -18,6 +18,7 @@
   --logo-color: transparent;
   --logo-padding: 0;
   --logo-radius: 0;
+  --box-shadow: rgba(0, 0, 0, 0.6);
 }
 
 /* Dark Theme colors */
@@ -346,6 +347,7 @@ section:is(.flex-column) {
     align-items: center;
     flex-shrink: 1;
     flex-wrap: wrap;
+    -webkit-margin-start: min(1rem, 5%);
     margin-inline-start: min(1rem, 5%);
   }
 
@@ -371,6 +373,8 @@ section:is(.flex-column) {
   }
   section .hero {
     --columns: 1;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   }
   .testimonial {
@@ -464,6 +468,8 @@ section:is(.flex-column) {
   }
 
   .features-text {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 1rem;
   }
@@ -477,9 +483,12 @@ section:is(.flex-column) {
     font-size: 0.891rem;
   }
 
-  @supports (backdrop-filter: blur(30px)) {
+  @supports (
+    (-webkit-backdrop-filter: blur(30px)) or (backdrop-filter: blur(30px))
+  ) {
     nav {
       background: rgb(0 0 0 /0.2);
+      -webkit-backdrop-filter: blur(30px);
       backdrop-filter: blur(30px);
     }
     .nav-items a {

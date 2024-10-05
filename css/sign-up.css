@@ -16,13 +16,13 @@
   font-weight: 500;
   line-height: 1.1;
   -webkit-margin-before: 0.67em;
-          margin-block-start: 0.67em;
+  margin-block-start: 0.67em;
   -webkit-margin-after: 0.67em;
-          margin-block-end: 0.67em;
+  margin-block-end: 0.67em;
   -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
+  margin-inline-start: 0px;
   -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+  margin-inline-end: 0px;
 }
 
 .wrapper form .child-1 {
@@ -40,9 +40,9 @@
 
 label {
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .sign-up {
@@ -103,13 +103,13 @@ a:hover {
     width: 90%;
   }
   .input-group input {
-    min-width: 8rem!important;
+    min-width: 8rem !important;
   }
   .teacher-section {
-    margin: 0!important;
+    margin: 0 !important;
   }
-   .input-group {
-    width: 15rem!important;
+  .input-group {
+    width: 15rem !important;
     margin: 0;
   }
 }

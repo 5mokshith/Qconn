@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qconn | LeaderBoard</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+    
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/utills/AOS.js" defer></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-qurery.css">
+    <link rel="stylesheet" href="css/utills.css">
+    <link rel="stylesheet" href="css/leaderBoard.css">
+
+
+    <script src="script/utills/navBar.js" type="module" defer></script>
+    <script src="script/utills/theme.js" type="module" defer></script>
+    <script type="module" src="script/users.js"></script>
+    <script src="script/leaderBoard.js" type="module" defer></script>
+</head>
+
+<body data-dark-mode="false">
+
+    <div class="logo-mobile" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+        <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png"
+                alt="logo" /></a>
+    </div>
+
+    <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu"
+        data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <span class="sr-only">Menu</span>
+    </button>
+    <nav class="flex" id="nav-bar">
+        <div class="logo" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+            <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png"
+                    alt="logo" /></a>
+        </div>
+        <ul class="flex nav-items">
+            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="index.html">Home</a></li>
+            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a
+                    href="questions.html">Questions</a></li>
+            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a href="users.html">Users</a></li>
+            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a class="active" href="#leaderBoard">LeaderBoard</a>
+            </li>
+            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650"><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="sign-btns"></div>
+        <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
+              <a href="sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
+   -->
+        <section class="theme-toggle-btn poppins-bold" style="position: static" data-aos="fade-down"
+            data-aos="slide-down" data-aos-delay="850">
+            Dark mode :
+            <div class="toggle-box" data-active="false">
+                <i class="toggle-icon"></i>
+            </div>
+        </section>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="hero flex">
+            <h1>#LeaderBoard</h1>
+        </div>
+        
+        <div>
+            <label for="search-bar" class="sr-only">search-bar</label>
+            <input type="search" id="search-bar" placeholder="Search here..." class="input">
+        </div>
+
+        <div class="wrapper-main flex">
+                <table id="leaderBoard">
+                    <tr>
+                        <th>ranking</th>
+                        <th>User name</th>
+                        <th>Questions Asked</th>
+                        <th>Questions answered</th>
+                        <th>Achievement points</th>
+                        <th>Role</th>
+                    </tr>
+                    <!-- <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr> -->
+                </table>
+        </div>
+    </main>
+
+</body>
+
+</html>

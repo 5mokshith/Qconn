@@ -1,91 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Qconn | Contact us</title>
 
     <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon" />
 
     <!-- AOS css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/utills.css" />
-    <link rel="stylesheet" href="../css/contactUs.css">
-    <link rel="stylesheet" href="../css/media-qurery.css">
+    <link rel="stylesheet" href="../css/contactUs.css" />
+    <link rel="stylesheet" href="../css/media-qurery.css" />
 
     <!-- AOS script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../script/utills/AOS.js" defer></script>
 
     <script src="../script/utills/navBar.js" defer></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="logo-mobile" data-aos="slide-down">
-        <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
-      </div>
-      <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu">
-        <div class="child1"></div>
-        <div class="child2"></div>
-        <div class="child3"></div>
-        <span class="sr-only">Menu</span>
-      </button>
+      <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"
+        ><img src="images/logo.png" alt="logo"
+      /></a>
+    </div>
+    <button
+      class="mobile-nav-toggle tooltip"
+      aria-controls="nav-bar"
+      aria-expanded="false"
+      data-tooltip="Menu"
+    >
+      <div class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+      <span class="sr-only">Menu</span>
+    </button>
 
     <nav class="flex" id="nav-bar">
-        <div class="logo" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
-          <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"><img src="../images/logo.png" alt="logo" /></a>
-        </div>
-        <ul class="nav-items flex">
-          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="../index.html">Home</a></li>
-          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a href="../questions.html" >Questions</a></li>
-          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a href="../users.html" >Users</a></li>
-          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a href="../questions.html" >Leader board</a></li>
-          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650"><a href="../profile.html" >Profile</a></li>
-        </ul>
-        <div class="sign-btns" data-aos="fade-down" data-aos="slide-down" data-aos-delay="900">
-          <a href="additionalPages/sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
-          <a href="additionalPages/sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
-        </div>
-      </nav>
+      <div
+        class="logo"
+        data-aos="fade-down"
+        data-aos="slide-down"
+        data-aos-delay="100"
+      >
+        <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"
+          ><img src="../images/logo.png" alt="logo"
+        /></a>
+      </div>
+      <ul class="nav-items flex">
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
+          <a href="../index.html">Home</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250">
+          <a href="../questions.html">Questions</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350">
+          <a href="../users.html">Users</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450">
+          <a href="leaderBoard.html">Leader board</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650">
+          <a href="../profile.html">Profile</a>
+        </li>
+      </ul>
+      <div
+        class="sign-btns"
+        data-aos="fade-down"
+        data-aos="slide-down"
+        data-aos-delay="900"
+      >
+        <a href="additionalPages/sign-in.html" target="_blank"
+          ><button id="sign-in" class="btn">Sign In</button></a
+        >
+        <a href="additionalPages/sign-up.html" target="_blank"
+          ><button id="sign-up" class="btn">Sign Up</button></a
+        >
+      </div>
+    </nav>
 
-    <main class="flex" data-aos="fade-down" data-aos="slide-down" data-aos-delay="250">
-        <form action="\" class="flex-column">
-            <h1 class="poppins-medium">Contact us</h1>
-            <div class="input-group">
-                <label for="name">Name</label>
-                <input type="text" placeholder="Your name" name="name" class="input">
-            </div>
-            <div class="input-group">
-                <label for="Email">Email</label>
-                <input type="text" placeholder="Email" name="Email" class="input">
-            </div>
-            <div class="input-group">
-                <label for="subject">Subject</label>
-                <select name="subject" id="subject" class="input">
-                    <option value="question">Questions</option>
-                    <option value="suggestion">Suggestion</option>
-                    <option value="Bug-report">Bug report</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" class="input"></textarea>
-            </div>
-            <div>
-                <button type="submit" class="btn submit">Submit</button>
-            </div>
-        </form>
+    <main
+      class="flex"
+      data-aos="fade-down"
+      data-aos="slide-down"
+      data-aos-delay="250"
+    >
+      <form action="\" class="flex-column">
+        <h1 class="poppins-medium">Contact us</h1>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            placeholder="Your name"
+            name="name"
+            class="input"
+          />
+        </div>
+        <div class="input-group">
+          <label for="Email">Email</label>
+          <input type="text" placeholder="Email" name="Email" class="input" />
+        </div>
+        <div class="input-group">
+          <label for="subject">Subject</label>
+          <select name="subject" id="subject" class="input">
+            <option value="question">Questions</option>
+            <option value="suggestion">Suggestion</option>
+            <option value="Bug-report">Bug report</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" class="input"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn submit">Submit</button>
+        </div>
+      </form>
     </main>
-</body>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        let currentTheme = localStorage.getItem('theme');
-        if(currentTheme) {
-            document.body.setAttribute('data-dark-mode',currentTheme === 'dark'?'true':'false');
-            document.querySelectorAll('.input-group').forEach(item => item.style.backgroundColor = 'rgb(255 255 255 /0.1)');
-        }
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let currentTheme = localStorage.getItem("theme");
+      if (currentTheme) {
+        document.body.setAttribute(
+          "data-dark-mode",
+          currentTheme === "dark" ? "true" : "false"
+        );
+        document
+          .querySelectorAll(".input-group")
+          .forEach(
+            (item) => (item.style.backgroundColor = "rgb(255 255 255 /0.1)")
+          );
+      }
     });
-</script>
+  </script>
 </html>

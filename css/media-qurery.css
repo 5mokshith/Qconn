@@ -9,6 +9,7 @@
     align-items: center;
     flex-shrink: 1;
     flex-wrap: wrap;
+    -webkit-margin-start: min(1rem, 5%);
     margin-inline-start: min(1rem, 5%);
   }
 
@@ -25,7 +26,6 @@
   img[alt="logo"] {
     min-width: 50px;
   }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -89,9 +89,12 @@
     font-size: 0.891rem;
   }
 
-  @supports (backdrop-filter: blur(30px)) {
+  @supports (
+    (-webkit-backdrop-filter: blur(30px)) or (backdrop-filter: blur(30px))
+  ) {
     nav {
       background: rgb(0 0 0 /0.2);
+      -webkit-backdrop-filter: blur(30px);
       backdrop-filter: blur(30px);
     }
     .nav-items a {
