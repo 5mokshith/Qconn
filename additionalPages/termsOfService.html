@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Qconn</title>
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/utills.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-qurery.css">
+
+    <script type="module" src="../script/utills/navBar.js" defer></script>
+    <style>
+        main {
+            color: #333;
+            line-height: 1.6;
+            margin: 8rem 2rem;
+        }
+        h1, h2 {
+            color: #2E86C1;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        h2 {
+            font-size: 2.5rem;
+        }
+        p, ul {
+            font-size: 1rem;
+            color: #555;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        main a {
+            color: #2980B9;
+            text-decoration: none;
+        }
+        main a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 600px) {
+          .logo-mobile {
+            top: -90px;
+          }
+        }
+    </style>
+</head>
+<body>
+
+
+  <div class="logo-mobile" data-aos="slide-down">
+    <a href="../index.html" class="tooltip-logo" data-tooltip="Questions & connections"
+      ><img src="../images/logo.png" alt="logo"
+    /></a>
+  </div>
+  <button
+    class="mobile-nav-toggle tooltip"
+    aria-controls="nav-bar"
+    aria-expanded="false"
+    data-tooltip="Menu"
+  >
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <span class="sr-only">Menu</span>
+  </button>
+
+    <nav class="flex" id="nav-bar">
+        <div
+          class="logo"
+          data-aos="fade-down"
+          data-aos="slide-down"
+          data-aos-delay="100"
+        >
+          <a href="../index.html" class="tooltip-logo" data-tooltip="Questions & connections"
+            ><img src="../images/logo.png" alt="logo"
+          /></a>
+        </div>
+        <ul class="nav-items flex">
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
+            <a href="../index.html">Home</a>
+          </li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250">
+            <a href="../questions.html">Questions</a>
+          </li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350">
+            <a href="../users.html">Users</a>
+          </li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450">
+            <a href="../leaderBoard.html">Leader board</a>
+          </li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650">
+            <a href="../profile.html">Profile</a>
+          </li>
+        </ul>
+        <div class="sign-btns">
+          <a href="sign-in.html" target="_blank"
+            ><button id="sign-in" class="btn">Sign In</button></a
+          >
+          <a href="sign-up.html" target="_blank"
+            ><button id="sign-up" class="btn">Sign Up</button></a
+          >
+        </div>
+      </nav>
+
+    <main>
+        <h1>Terms of Service</h1>
+        <p>Welcome to Qconn! By using our platform, you agree to the following terms and conditions. Please read them carefully before using the website or services.</p>
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+            By accessing or using the Qconn website and services, you agree to be bound by these terms of service. If you do not agree to these terms, you may not use our services.
+        </p>
+        <h2>2. User Accounts</h2>
+        <ul>
+            <li>You are responsible for maintaining the confidentiality of your account information and password.</li>
+            <li>Qconn is not liable for any loss or damage arising from your failure to protect your account credentials.</li>
+            <li>You must be at least 13 years old to create an account on Qconn.</li>
+        </ul>
+        <h2>3. Use of the Platform</h2>
+        <ul>
+            <li>You agree to use Qconn for lawful purposes and in a manner that does not infringe on the rights of others.</li>
+            <li>Posting offensive, harmful, or misleading content is strictly prohibited.</li>
+            <li>Qconn reserves the right to suspend or terminate accounts that violate our policies.</li>
+        </ul>
+        <h2>4. Content Ownership and Rights</h2>
+        <p>
+            By posting content on Qconn, you grant us a non-exclusive, royalty-free, perpetual, and worldwide license to use, modify, and distribute your content as part of the platform.
+        </p>
+        <p>
+            You retain ownership of any intellectual property rights you hold in your content. However, you are responsible for ensuring that your content does not violate the rights of third parties.
+        </p>
+        <h2>5. Limitation of Liability</h2>
+        <p>
+            Qconn is not liable for any direct, indirect, incidental, or consequential damages that arise from your use of the platform, including loss of data, profits, or other losses.
+        </p>
+        <h2>6. Changes to the Terms</h2>
+        <p>
+            Qconn reserves the right to update or modify these terms of service at any time. Any changes will be effective immediately upon posting. It is your responsibility to review the terms regularly. Continued use of the platform indicates acceptance of the updated terms.
+        </p>
+        <h2>7. Governing Law</h2>
+        <p>
+            These terms of service are governed by and construed in accordance with the laws of our jurisdiction, without regard to its conflict of law principles.
+        </p>
+        <h2>8. Contact Information</h2>
+        <p>
+            If you have any questions about these terms, please contact us at <a href="contactUs.html">support@qconn.com</a>.
+        </p>
+    </main>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let currentTheme = localStorage.getItem("theme");
+      if (currentTheme) {
+        document.body.setAttribute(
+          "data-dark-mode",
+          currentTheme === "dark" ? "true" : "false"
+        );
+      }
+    });
+  </script>
+</html>

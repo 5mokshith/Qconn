@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Qconn</title>
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utills.css">
+    <link rel="stylesheet" href="../css/media-qurery.css">
+
+    <script type="module" src="../script/utills/navBar.js" defer></script>
+    <script type="module" src="../script/utills/theme.js" defer></script>
+
+    <style>
+        main {
+            color: #333;
+            line-height: 1.6;
+            margin: 8rem 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #2E86C1;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #2980B9;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        ul {
+            font-size: 1.2rem;
+            color: #555;
+            margin-left: 2rem;
+        }
+        ul li {
+            margin-bottom: 1rem;
+            font-weight: 200;
+        }
+        strong {
+            color: var(--text-color);
+        }
+        @media screen and (max-width: 600px) {
+          .logo-mobile {
+            top: -90px;
+          }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-mobile" data-aos="slide-down">
+        <a href="../index.html" class="tooltip-logo" data-tooltip="Questions & connections"
+          ><img src="../images/logo.png" alt="logo"
+        /></a>
+      </div>
+      <button
+        class="mobile-nav-toggle tooltip"
+        aria-controls="nav-bar"
+        aria-expanded="false"
+        data-tooltip="Menu"
+      >
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <span class="sr-only">Menu</span>
+      </button>
+
+    <nav class="flex" id="nav-bar">
+        <div
+          class="logo"
+          data-aos="fade-down"
+          data-aos="slide-down"
+          data-aos-delay="100"
+        >
+          <a href="../index.html" class="tooltip-logo" data-tooltip="Questions & connections"
+            ><img src="../images/logo.png" alt="logo"
+          /></a>
+        </div>
+        <ul class="nav-items flex">
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
+            <a href="../index.html">Home</a>
+          </li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250">
+            <a href="../questions.html">Questions</a>
+          </li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350">
+            <a href="../users.html">Users</a>
+          </li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450">
+            <a href="../leaderBoard.html">Leader board</a>
+          </li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650">
+            <a href="../profile.html">Profile</a>
+          </li>
+        </ul>
+        <div class="sign-btns">
+          <a href="sign-in.html" target="_blank"
+            ><button id="sign-in" class="btn">Sign In</button></a
+          >
+          <a href="sign-up.html" target="_blank"
+            ><button id="sign-up" class="btn">Sign Up</button></a
+          >
+        </div>
+      </nav>
+
+
+    <main>
+        <h1>About Qconn</h1>
+        <p>
+            Welcome to <strong>Qconn</strong>—your go-to platform for questions, answers, and connections in the tech world! We are a vibrant community dedicated to fostering learning, collaboration, and growth across various tech domains. Whether you're seeking answers, looking to share your expertise, or simply eager to network, Qconn is the place to be.
+        </p>
+        <h2>Our Mission</h2>
+        <p>
+            At Qconn, our mission is to create an inclusive and collaborative environment where users can exchange knowledge, build their technical skills, and engage in meaningful discussions. We believe that by connecting people through shared curiosity and expertise, we can help everyone grow together.
+        </p>
+        <h2>Our Vision</h2>
+        <p>
+            Our vision is to become the leading Q&A platform for tech enthusiasts around the globe. We aim to provide a space where users can not only find reliable information but also expand their networks and connect with like-minded individuals who share a passion for technology.
+        </p>
+        <h2>Key Features</h2>
+        <ul>
+            <li>
+                <strong>User-Friendly Interface:</strong> A clean, easy-to-navigate platform that allows users to focus on what matters most—engaging with the community.
+            </li>
+            <li>
+                <strong>Intuitive Connections:</strong> Qconn helps you discover and connect with people who share your interests, enabling fruitful conversations and collaborations.
+            </li>
+            <li>
+                <strong>Rewarding Participation:</strong> Active users are recognized and rewarded through a system that encourages quality contributions, making Qconn not only a place to learn but also a place to grow.
+            </li>
+            <li>
+                <strong>Comprehensive Q&A System:</strong> Post questions, provide detailed answers, and engage in discussions across a wide range of tech topics.
+            </li>
+        </ul>
+        <p>
+            At Qconn, we believe in the power of community. Join us in building a supportive, knowledge-sharing network that empowers everyone to excel in their tech journey. Lets learn, grow, and connect—together.
+        </p>
+    </main>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let currentTheme = localStorage.getItem("theme");
+      if (currentTheme) {
+        document.body.setAttribute(
+          "data-dark-mode",
+          currentTheme === "dark" ? "true" : "false"
+        );
+      }
+    });
+  </script>
+</html>
