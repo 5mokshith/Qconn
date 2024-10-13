@@ -1,0 +1,3828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qconn | Home</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/utills/AOS.js" defer></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utills.css" />
+    <link rel="stylesheet" href="css/media-qurery.css" />
+    <script src="script/utills/theme.js" defer></script>
+    <script src="script/main.js" defer></script>
+    <script type="module" src="script/utills/navBar.js" defer></script>
+  </head>
+
+  <body data-dark-mode="false">
+    <div class="logo-mobile" data-aos="slide-down">
+      <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"
+        ><img src="images/logo.png" alt="logo"
+      /></a>
+    </div>
+    <button
+      class="mobile-nav-toggle tooltip"
+      aria-controls="nav-bar"
+      aria-expanded="false"
+      data-tooltip="Menu"
+    >
+      <div class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="flex" id="nav-bar">
+      <div
+        class="logo"
+        data-aos="fade-down"
+        data-aos="slide-down"
+        data-aos-delay="100"
+      >
+        <a href="#" class="tooltip-logo" data-tooltip="Questions & connections"
+          ><img src="images/logo.png" alt="logo"
+        /></a>
+      </div>
+      <ul class="nav-items flex">
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
+          <a href="#hero" class="active">Home</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250">
+          <a href="questions.html">Questions</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350">
+          <a href="users.html">Users</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450">
+          <a href="leaderBoard.html">Leader board</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650">
+          <a href="profile.html">Profile</a>
+        </li>
+      </ul>
+      <div class="sign-btns">
+        <a href="additionalPages/sign-in.html" target="_blank"
+          ><button id="sign-in" class="btn">Sign In</button></a
+        >
+        <a href="additionalPages/sign-up.html" target="_blank"
+          ><button id="sign-up" class="btn">Sign Up</button></a
+        >
+      </div>
+    </nav>
+
+    <section
+      class="theme-toggle-btn poppins-bold"
+      data-aos="fade-down"
+      data-aos="slide-down"
+      data-aos-delay="800"
+    >
+      Dark mode :
+      <div class="toggle-box" data-active="false">
+        <i class="toggle-icon"></i>
+      </div>
+    </section>
+
+    <main>
+      <section
+        role="region"
+        class="flex"
+        data-aos="fade-down"
+        data-aos="slide-down"
+        data-aos-delay="500"
+      >
+        <div class="hero grid" id="hero">
+          <div class="text">
+            <h1>Your questions are resolved here</h1>
+            <p>
+              Meet exciting new people that can solve your queries, or you maybe
+              the one who solves them and build your connections from now.
+            </p>
+            <a href="questions.html"
+              ><button id="questions-btn" class="btn flex">Questions</button></a
+            >
+          </div>
+          <div class="image">
+            <img src="images/header-1.png" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Cards section -->
+      <section role="region" class="flex-column" data-aos="slide-up">
+        <div class="features-text">
+          <h2>Features</h2>
+          <p>
+            Start making connections in your institute and start gaining
+            popularity points. Remember, there is someone that needs help just
+            like you, so start your journey.
+          </p>
+        </div>
+
+        <div class="flex testimonial">
+          <div
+            class="card flex-column"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#3c7eff"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-user-check"
+            >
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="8.5" cy="7" r="4"></circle>
+              <polyline points="17 11 19 13 23 9"></polyline>
+            </svg>
+            <h5>User-Friendly Interface</h5>
+            <p>
+              Navigate effortlessly through easy-to-use platform. Posting
+              questions and finding answers has never been easier.
+            </p>
+            <a href="#" class="learn-more">Learn more</a>
+          </div>
+
+          <div
+            class="flex-column card"
+            data-aos="slide-up"
+            data-aos-delay="300"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#fd7e14"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <h5>Diverse Expertise</h5>
+            <p>
+              Get insights from a wide range of subjects and experts. Whether
+              it's academic help or practical advice, find what you need.
+            </p>
+            <a href="#" class="learn-more">Learn more</a>
+          </div>
+
+          <div
+            class="flex-column card"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#8bd74e"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-pocket"
+            >
+              <path
+                d="M4 3h16a2 2 0 0 1 2 2v6a10 10 0 0 1-10 10A10 10 0 0 1 2 11V5a2 2 0 0 1 2-2z"
+              ></path>
+              <polyline points="8 10 12 14 16 10"></polyline>
+            </svg>
+            <h5>Secure and Reliable</h5>
+            <p>
+              Your data and privacy are our top priority. Enjoy a secure and
+              trustworthy platform where your questions and answers are safe.
+            </p>
+            <a href="#" class="learn-more">Learn more</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" data-aos="slide-up">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="logo" />
+        </div>
+
+        <div class="footer-description">
+          <p>
+            Connecting students, teachers, and seniors to share knowledge and
+            solve problems together.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#">Home</a>
+          <a href="additionalPages/about.html">About</a>
+          <a href="additionalPages/contactUs.html">Contact</a>
+          <a href="additionalPages/about.html">FAQ</a>
+          <a href="additionalPages/termsOfService.html">Terms of Service</a>
+        </div>
+
+        <p>Copyright &#169; 2024 techExchange.com</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+questions.html: 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qconn | Questions</title>
+
+  <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+  <!-- AOS css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/utills.css" />
+  <link rel="stylesheet" href="css/questions.css" />
+  <link rel="stylesheet" href="css/media-qurery.css">
+
+  <!-- AOS script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script/utills/AOS.js" defer></script>
+
+  <script src="script/utills/theme.js" defer></script>
+  <script src="script/questions.js" defer type="module"></script>
+  <script src="script/utills/navBar.js" defer></script>
+</head>
+
+<body data-dark-mode="false">
+
+  <div class="logo-mobile" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+    <a href="index.html" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
+  </div>
+
+  <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu"
+    data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <span class="sr-only">Menu</span>
+  </button>
+  <nav class="flex" id="nav-bar">
+    <div class="logo" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+      <a href="index.html" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png"
+          alt="logo" /></a>
+    </div>
+    <ul class="flex nav-items">
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="index.html">Home</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a class="active"
+          href="#questions">Questions</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a href="users.html">Users</a></li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a href="leaderBoard.html">LeaderBoard</a>
+      </li>
+      <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650"><a href="profile.html">Profile</a></li>
+    </ul>
+    <div class="sign-btns"></div>
+    <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
+            <a href="sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
+ -->
+    <section class="theme-toggle-btn poppins-bold" style="position: static" data-aos="fade-down" data-aos="slide-down"
+      data-aos-delay="850">
+      Dark mode :
+      <div class="toggle-box" data-active="false">
+        <i class="toggle-icon"></i>
+      </div>
+    </section>
+    </div>
+  </nav>
+
+  <main data-aos="fade-down" data-aos="slide-down" data-aos-delay="750" class="flex-column">
+    <div class="hero flex-column">
+      <h1 data-aos="fade-down" data-aos="slide-down" data-aos-delay="800">#Trending questions</h1>
+
+      <div class="stats flex" data-aos="fade-down" data-aos="slide-down" data-aos-delay="850">
+        <div class="stat-info flex-column child-1">
+          <h3>Questions</h3>
+          <h3>Answered</h3>
+          <span class="questions-answered">05</span>
+        </div>
+        <div class="stat-info flex-column">
+          <h3>Questions</h3>
+          <h3>Asked</h3>
+          <span class="questions-asked">03</span>
+        </div>
+      </div>
+    </div>
+
+    <section role="form" class="ask-question flex-column" data-aos="fade-down" data-aos="slide-down"
+      data-aos-delay="150">
+      <h2>Ask your question here</h2>
+      <div class="flex-column">
+        <input type="text" class="input" placeholder="Enter your question here" id="submitQuestionField" />
+        <button class="btn" id="submitQuestionBtn">Submit question</button>
+      </div>
+    </section>
+
+    <div class="card-container grid" id="questions" data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
+      <!-- Delete these before deploying :) -->
+
+      <!-- <div class="card flex" aria-label="Question" tabindex="0" data-aos="fade-right" data-aos="slide-right" data-aos-delay="350">
+          <div class="stats">
+            <h2>How to learn Javascript</h2>
+            <div style="font-weight: 700">
+              Author:
+              <span id="author-name" style="font-weight: 500">Hello world</span>
+            </div>
+            <div style="font-weight: 700">
+              Date:
+              <span id="date-of-submission" style="font-weight: 500">
+                21-677-9890</span
+              >
+            </div>
+          </div>
+
+          <div class="buttons flex-column">
+            <div
+              class="tooltip"
+              data-tooltip="Like this question"
+              data-clicked="false"
+              id="like"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M323.8 34.8c-38.2-10.9-78.1 11.2-89 49.4l-5.7 20c-3.7 13-10.4 25-19.5 35l-51.3 56.4c-8.9 9.8-8.2 25 1.6 33.9s25 8.2 33.9-1.6l51.3-56.4c14.1-15.5 24.4-34 30.1-54.1l5.7-20c3.6-12.7 16.9-20.1 29.7-16.5s20.1 16.9 16.5 29.7l-5.7 20c-5.7 19.9-14.7 38.7-26.6 55.5c-5.2 7.3-5.8 16.9-1.7 24.9s12.3 13 21.3 13L448 224c8.8 0 16 7.2 16 16c0 6.8-4.3 12.7-10.4 15c-7.4 2.8-13 9-14.9 16.7s.1 15.8 5.3 21.7c2.5 2.8 4 6.5 4 10.6c0 7.8-5.6 14.3-13 15.7c-8.2 1.6-15.1 7.3-18 15.2s-1.6 16.7 3.6 23.3c2.1 2.7 3.4 6.1 3.4 9.9c0 6.7-4.2 12.6-10.2 14.9c-11.5 4.5-17.7 16.9-14.4 28.8c.4 1.3 .6 2.8 .6 4.3c0 8.8-7.2 16-16 16l-97.5 0c-12.6 0-25-3.7-35.5-10.7l-61.7-41.1c-11-7.4-25.9-4.4-33.3 6.7s-4.4 25.9 6.7 33.3l61.7 41.1c18.4 12.3 40 18.8 62.1 18.8l97.5 0c34.7 0 62.9-27.6 64-62c14.6-11.7 24-29.7 24-50c0-4.5-.5-8.8-1.3-13c15.4-11.7 25.3-30.2 25.3-51c0-6.5-1-12.8-2.8-18.7C504.8 273.7 512 257.7 512 240c0-35.3-28.6-64-64-64l-92.3 0c4.7-10.4 8.7-21.2 11.8-32.2l5.7-20c10.9-38.2-11.2-78.1-49.4-89zM32 192c-17.7 0-32 14.3-32 32L0 448c0 17.7 14.3 32 32 32l64 0c17.7 0 32-14.3 32-32l0-224c0-17.7-14.3-32-32-32l-64 0z"
+                />
+              </svg>
+              <span>100</span>
+            </div>
+            <div
+              class="tooltip"
+              data-tooltip="Answer this question"
+              id="answer"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+                />
+              </svg>
+            </div>
+            <div class="tooltip" data-tooltip="view answers" id="answers">
+              <svg viewBox="0 0 640 512">
+                <path
+                  d="M88.2 309.1c9.8-18.3 6.8-40.8-7.5-55.8C59.4 230.9 48 204 48 176c0-63.5 63.8-128 160-128s160 64.5 160 128s-63.8 128-160 128c-13.1 0-25.8-1.3-37.8-3.6c-10.4-2-21.2-.6-30.7 4.2c-4.1 2.1-8.3 4.1-12.6 6c-16 7.2-32.9 13.5-49.9 18c2.8-4.6 5.4-9.1 7.9-13.6c1.1-1.9 2.2-3.9 3.2-5.9zM208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 41.8 17.2 80.1 45.9 110.3c-.9 1.7-1.9 3.5-2.8 5.1c-10.3 18.4-22.3 36.5-36.6 52.1c-6.6 7-8.3 17.2-4.6 25.9C5.8 378.3 14.4 384 24 384c43 0 86.5-13.3 122.7-29.7c4.8-2.2 9.6-4.5 14.2-6.8c15.1 3 30.9 4.5 47.1 4.5zM432 480c16.2 0 31.9-1.6 47.1-4.5c4.6 2.3 9.4 4.6 14.2 6.8C529.5 498.7 573 512 616 512c9.6 0 18.2-5.7 22-14.5c3.8-8.8 2-19-4.6-25.9c-14.2-15.6-26.2-33.7-36.6-52.1c-.9-1.7-1.9-3.4-2.8-5.1C622.8 384.1 640 345.8 640 304c0-94.4-87.9-171.5-198.2-175.8c4.1 15.2 6.2 31.2 6.2 47.8l0 .6c87.2 6.7 144 67.5 144 127.4c0 28-11.4 54.9-32.7 77.2c-14.3 15-17.3 37.6-7.5 55.8c1.1 2 2.2 4 3.2 5.9c2.5 4.5 5.2 9 7.9 13.6c-17-4.5-33.9-10.7-49.9-18c-4.3-1.9-8.5-3.9-12.6-6c-9.5-4.8-20.3-6.2-30.7-4.2c-12.1 2.4-24.8 3.6-37.8 3.6c-61.7 0-110-26.5-136.8-62.3c-16 5.4-32.8 9.4-50 11.8C279 439.8 350 480 432 480z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="card flex" aria-label="Question" tabindex="0" data-aos="fade-left" data-aos="slide-left" data-aos-delay="350">
+          <div class="stats">
+            <h2>How to learn Javascript</h2>
+            <div style="font-weight: 700">
+              Author:
+              <span id="author-name" style="font-weight: 500">Hello world</span>
+            </div>
+            <div style="font-weight: 700">
+              Date:
+              <span id="date-of-submission" style="font-weight: 500">
+                21-677-9890</span
+              >
+            </div>
+          </div>
+
+          <div class="buttons flex-column">
+            <div
+              class="tooltip"
+              data-tooltip="Like this question"
+              data-clicked="false"
+              id="like"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M323.8 34.8c-38.2-10.9-78.1 11.2-89 49.4l-5.7 20c-3.7 13-10.4 25-19.5 35l-51.3 56.4c-8.9 9.8-8.2 25 1.6 33.9s25 8.2 33.9-1.6l51.3-56.4c14.1-15.5 24.4-34 30.1-54.1l5.7-20c3.6-12.7 16.9-20.1 29.7-16.5s20.1 16.9 16.5 29.7l-5.7 20c-5.7 19.9-14.7 38.7-26.6 55.5c-5.2 7.3-5.8 16.9-1.7 24.9s12.3 13 21.3 13L448 224c8.8 0 16 7.2 16 16c0 6.8-4.3 12.7-10.4 15c-7.4 2.8-13 9-14.9 16.7s.1 15.8 5.3 21.7c2.5 2.8 4 6.5 4 10.6c0 7.8-5.6 14.3-13 15.7c-8.2 1.6-15.1 7.3-18 15.2s-1.6 16.7 3.6 23.3c2.1 2.7 3.4 6.1 3.4 9.9c0 6.7-4.2 12.6-10.2 14.9c-11.5 4.5-17.7 16.9-14.4 28.8c.4 1.3 .6 2.8 .6 4.3c0 8.8-7.2 16-16 16l-97.5 0c-12.6 0-25-3.7-35.5-10.7l-61.7-41.1c-11-7.4-25.9-4.4-33.3 6.7s-4.4 25.9 6.7 33.3l61.7 41.1c18.4 12.3 40 18.8 62.1 18.8l97.5 0c34.7 0 62.9-27.6 64-62c14.6-11.7 24-29.7 24-50c0-4.5-.5-8.8-1.3-13c15.4-11.7 25.3-30.2 25.3-51c0-6.5-1-12.8-2.8-18.7C504.8 273.7 512 257.7 512 240c0-35.3-28.6-64-64-64l-92.3 0c4.7-10.4 8.7-21.2 11.8-32.2l5.7-20c10.9-38.2-11.2-78.1-49.4-89zM32 192c-17.7 0-32 14.3-32 32L0 448c0 17.7 14.3 32 32 32l64 0c17.7 0 32-14.3 32-32l0-224c0-17.7-14.3-32-32-32l-64 0z"
+                />
+              </svg>
+              <span>200</span>
+            </div>
+            <div
+              class="tooltip"
+              data-tooltip="Answer this question"
+              id="answer"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+                />
+              </svg>
+            </div>
+            <div class="tooltip" data-tooltip="view answers" id="answers">
+              <svg viewBox="0 0 640 512">
+                <path
+                  d="M88.2 309.1c9.8-18.3 6.8-40.8-7.5-55.8C59.4 230.9 48 204 48 176c0-63.5 63.8-128 160-128s160 64.5 160 128s-63.8 128-160 128c-13.1 0-25.8-1.3-37.8-3.6c-10.4-2-21.2-.6-30.7 4.2c-4.1 2.1-8.3 4.1-12.6 6c-16 7.2-32.9 13.5-49.9 18c2.8-4.6 5.4-9.1 7.9-13.6c1.1-1.9 2.2-3.9 3.2-5.9zM208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 41.8 17.2 80.1 45.9 110.3c-.9 1.7-1.9 3.5-2.8 5.1c-10.3 18.4-22.3 36.5-36.6 52.1c-6.6 7-8.3 17.2-4.6 25.9C5.8 378.3 14.4 384 24 384c43 0 86.5-13.3 122.7-29.7c4.8-2.2 9.6-4.5 14.2-6.8c15.1 3 30.9 4.5 47.1 4.5zM432 480c16.2 0 31.9-1.6 47.1-4.5c4.6 2.3 9.4 4.6 14.2 6.8C529.5 498.7 573 512 616 512c9.6 0 18.2-5.7 22-14.5c3.8-8.8 2-19-4.6-25.9c-14.2-15.6-26.2-33.7-36.6-52.1c-.9-1.7-1.9-3.4-2.8-5.1C622.8 384.1 640 345.8 640 304c0-94.4-87.9-171.5-198.2-175.8c4.1 15.2 6.2 31.2 6.2 47.8l0 .6c87.2 6.7 144 67.5 144 127.4c0 28-11.4 54.9-32.7 77.2c-14.3 15-17.3 37.6-7.5 55.8c1.1 2 2.2 4 3.2 5.9c2.5 4.5 5.2 9 7.9 13.6c-17-4.5-33.9-10.7-49.9-18c-4.3-1.9-8.5-3.9-12.6-6c-9.5-4.8-20.3-6.2-30.7-4.2c-12.1 2.4-24.8 3.6-37.8 3.6c-61.7 0-110-26.5-136.8-62.3c-16 5.4-32.8 9.4-50 11.8C279 439.8 350 480 432 480z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div> -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="logo" />
+      </div>
+
+      <div class="footer-description">
+        <p>
+          Connecting students, teachers, and seniors to share knowledge and
+          solve problems together.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="additionalPages/about.html">About</a>
+        <a href="additionalPages/contactUs.html">Contact</a>
+        <a href="additionalPages/about.html">FAQ</a>
+        <a href="additionalPages/termsOfService.html">Terms of Service</a>
+      </div>
+
+      <p>Copyright &#169; 2024 techExchange.com</p>
+    </div>
+  </footer>
+
+  <!-- These are modals triggered by javascript -->
+  <aside>
+    <div class="modal grid">
+      <h2>Answers</h2>
+      <div class="close" data-modal="show-answers">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+        </svg>
+      </div>
+      <div class="wrapper grid">
+        <!-- Delete these before deploying :) -->
+
+        <div class="card flex">
+          <div class="stats">
+            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+            <div style="font-weight: 700">
+              Author:
+              <span id="author-name" style="font-weight: 500">Hello world</span>
+            </div>
+            <div style="font-weight: 700">
+              Date:
+              <span id="date-of-submission" style="font-weight: 500">
+                21-677-9890</span>
+            </div>
+          </div>
+        </div>
+        <div class="card flex">
+          <div class="stats">
+            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+            <div style="font-weight: 700">
+              Author:
+              <span id="author-name" style="font-weight: 500">Hello world</span>
+            </div>
+            <div style="font-weight: 700">
+              Date:
+              <span id="date-of-submission" style="font-weight: 500">
+                21-677-9890</span>
+            </div>
+          </div>
+        </div>
+        <div class="card flex">
+          <div class="stats">
+            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+            <div style="font-weight: 700">
+              Author:
+              <span id="author-name" style="font-weight: 500">Hello world</span>
+            </div>
+            <div style="font-weight: 700">
+              Date:
+              <span id="date-of-submission" style="font-weight: 500">
+                21-677-9890</span>
+            </div>
+          </div>
+        </div>
+        <div class="card flex">
+          <div class="stats">
+            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+            <div style="font-weight: 700">
+              Author:
+              <span id="author-name" style="font-weight: 500">Hello world</span>
+            </div>
+            <div style="font-weight: 700">
+              Date:
+              <span id="date-of-submission" style="font-weight: 500">
+                21-677-9890</span>
+            </div>
+          </div>
+        </div>
+        <div class="card flex">
+          <div class="stats">
+            <h2>Practice the DOM manupulation can make your skill's popup</h2>
+            <div style="font-weight: 700">
+              Author:
+              <span id="author-name" style="font-weight: 500">Hello world</span>
+            </div>
+            <div style="font-weight: 700">
+              Date:
+              <span id="date-of-submission" style="font-weight: 500">
+                21-677-9890</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-ans">
+      <div class="close" data-modal="write-answer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+        </svg>
+      </div>
+      <div class="wrapper flex-column">
+        <h2>Write your Answer here</h2>
+        <textarea type="text" placeholder="Enter your answer here" class="input"></textarea>
+        <button class="btn" type="submit">Submit Answer</button>
+      </div>
+    </div>
+  </aside>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+users.html: 
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qconn | Users</title>
+
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+    
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utills.css" />
+    <link rel="stylesheet" href="css/users.css" />
+    <link rel="stylesheet" href="css/media-qurery.css" />
+
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/utills/AOS.js" defer></script>
+
+    <script type="module" src="script/utills/navBar.js" defer></script>
+    <script src="script/users.js" type="module" defer></script>
+    <script type="module" src="script/utills/theme.js" defer></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Sevillana&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="logo-mobile" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+        <a href="index.html" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png" alt="logo" /></a>
+      </div>
+  
+      <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="flex" id="nav-bar">
+        <div class="logo" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+          <a href="index.html" class="tooltip-logo" data-tooltip="Questions & connections"
+            ><img src="images/logo.png" alt="logo"
+          /></a>
+        </div>
+        <ul class="flex nav-items">
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="index.html">Home</a></li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a href="questions.html">Questions</a></li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a class="active"href="users.html">Users</a></li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a href="leaderBoard.html">LeaderBoard</a></li>
+          <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650"><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="sign-btns"></div>
+          <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
+              <a href="sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
+   -->
+          <section class="theme-toggle-btn poppins-bold" style="position: static" data-aos="fade-down" data-aos="slide-down" data-aos-delay="850">
+            Dark mode :
+            <div class="toggle-box" data-active="false">
+              <i class="toggle-icon"></i>
+            </div>
+          </section>
+        </div>
+      </nav>
+
+    <div class="hero" data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
+        <h1 class="poppins-bold">Users</h1>
+    </div>
+
+    <main>
+        <div class="grid wrapper" id="users" data-aos="fade-down" data-aos="slide-down" data-aos-delay="250">
+            <!-- Todo: somehow this should take to the user page -->
+             <!-- Done it  -->
+
+           <!--  <div class="flex card">
+                <section role="img" class="flex-column">
+                    <a href="#"><img src="images/sign-in.png" alt="User profile picture" /></a>
+                </section>
+                <div class="flex-column info">
+                    <h3>Mokshith rao</h3>
+
+                    <p><b>Role:</b> <span>student</span></p>
+                    <p><b>Experience points:</b> <span>05</span></p>
+                    <button class="btn">View profile</button>
+                </div>
+            </div>
+
+            <div class="flex card">
+                <section role="img" class="flex">
+                    <a href="#"><img src="images/sign-in.png" alt="User profile picture" /></a>
+                </section>
+                <div class="flex-column info">
+                    <h3>Mokshith rao</h3>
+
+                    <p><b>Role:</b> <span>student</span></p>
+                    <p><b>Experience points:</b> <span>05</span></p>
+                    <button class="btn">View profile</button>
+                </div>
+            </div> -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="logo" />
+          </div>
+  
+          <div class="footer-description">
+            <p>
+              Connecting students, teachers, and seniors to share knowledge and
+              solve problems together.
+            </p>
+          </div>
+  
+          <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="additionalPages/about.html">About</a>
+            <a href="additionalPages/contactUs.html">Contact</a>
+            <a href="additionalPages/about.html">FAQ</a>
+            <a href="additionalPages/termsOfService.html">Terms of Service</a>
+          </div>
+  
+          <p>Copyright &#169; 2024 techExchange.com</p>
+        </div>
+      </footer>
+</body>
+
+</html>
+
+leaderBoard.html:
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qconn | LeaderBoard</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/utills/AOS.js" defer></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-qurery.css">
+    <link rel="stylesheet" href="css/utills.css">
+    <link rel="stylesheet" href="css/leaderBoard.css">
+
+
+    <script src="script/utills/navBar.js" type="module" defer></script>
+    <script src="script/utills/theme.js" type="module" defer></script>
+    <script type="module" src="script/users.js"></script>
+    <script src="script/leaderBoard.js" type="module" defer></script>
+</head>
+
+<body data-dark-mode="false">
+
+    <div class="logo-mobile" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+        <a href="index.html" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png"
+                alt="logo" /></a>
+    </div>
+
+    <button class="mobile-nav-toggle tooltip" aria-controls="nav-bar" aria-expanded="false" data-tooltip="Menu"
+        data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <span class="sr-only">Menu</span>
+    </button>
+    <nav class="flex" id="nav-bar">
+        <div class="logo" data-aos="fade-down" data-aos="slide-down" data-aos-delay="100">
+            <a href="index.html" class="tooltip-logo" data-tooltip="Questions & connections"><img src="images/logo.png"
+                    alt="logo" /></a>
+        </div>
+        <ul class="flex nav-items">
+            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150"><a href="index.html">Home</a></li>
+            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250"><a href="questions.html">Questions</a>
+            </li>
+            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350"><a href="users.html">Users</a></li>
+            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450"><a class="active"
+                    href="#leaderBoard">LeaderBoard</a>
+            </li>
+            <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="650"><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="sign-btns"></div>
+        <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
+              <a href="sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
+   -->
+        <section class="theme-toggle-btn poppins-bold" style="position: static" data-aos="fade-down"
+            data-aos="slide-down" data-aos-delay="850">
+            Dark mode :
+            <div class="toggle-box" data-active="false">
+                <i class="toggle-icon"></i>
+            </div>
+        </section>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="hero flex">
+            <h1>#LeaderBoard</h1>
+        </div>
+
+        <div>
+            <label for="search-bar" class="sr-only">search-bar</label>
+            <input type="search" id="search-bar" placeholder="Search here..." class="input">
+        </div>
+
+        <div class="wrapper-main flex">
+            <table id="leaderBoard">
+                <tr>
+                    <th>ranking</th>
+                    <th>User name</th>
+                    <th>Questions Asked</th>
+                    <th>Questions answered</th>
+                    <th>Achievement points</th>
+                    <th>Role</th>
+                </tr>
+                <!-- <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr> -->
+            </table>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="logo" />
+          </div>
+    
+          <div class="footer-description">
+            <p>
+              Connecting students, teachers, and seniors to share knowledge and
+              solve problems together.
+            </p>
+          </div>
+    
+          <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="additionalPages/about.html">About</a>
+            <a href="additionalPages/contactUs.html">Contact</a>
+            <a href="additionalPages/about.html">FAQ</a>
+            <a href="additionalPages/termsOfService.html">Terms of Service</a>
+          </div>
+    
+          <p>Copyright &#169; 2024 techExchange.com</p>
+        </div>
+      </footer>
+</body>
+
+</html>
+
+profile.html:
+
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qconn | profile</title>
+
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/utills/AOS.js" defer></script>
+
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utills.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/media-qurery.css" />
+    <script src="script/utills/theme.js" defer="defer"></script>
+    <script src="script/utills/navBar.js" defer></script>
+    <script src="script/profile.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <div
+      class="logo-mobile"
+      data-aos="fade-down"
+      data-aos="slide-down"
+      data-aos-delay="100"
+    >
+      <a href="index.html" class="tooltip-logo" data-tooltip="Questions & connections"
+        ><img src="images/logo.png" alt="logo"
+      /></a>
+    </div>
+
+    <button
+      class="mobile-nav-toggle tooltip"
+      aria-controls="nav-bar"
+      aria-expanded="false"
+      data-tooltip="Menu"
+      data-aos="fade-down"
+      data-aos="slide-down"
+      data-aos-delay="150"
+    >
+      <div class="child1"></div>
+      <div class="child2"></div>
+      <div class="child3"></div>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="flex" id="nav-bar">
+      <div
+        class="logo"
+        data-aos="fade-down"
+        data-aos="slide-down"
+        data-aos-delay="150"
+      >
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+      </div>
+      <ul class="nav-items flex">
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="150">
+          <a href="index.html">Home</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="250">
+          <a href="questions.html">Questions</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="350">
+          <a href="users.html">Users</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="450">
+          <a href="leaderBoard.html">LeaderBoard</a>
+        </li>
+        <li data-aos="fade-down" data-aos="slide-down" data-aos-delay="550">
+          <a class="active" href="#profile">Profile</a>
+        </li>
+      </ul>
+      <div class="sign-btns">
+        <!--             <a href="sign-in.html" target="_blank"><button id="sign-in" class="btn">Sign In</button></a>
+            <a href="sign-up.html" target="_blank"><button id="sign-up" class="btn">Sign Up</button></a>
+ -->
+        <section
+          class="theme-toggle-btn poppins-bold"
+          style="position: static"
+          data-aos="fade-down"
+          data-aos="slide-down"
+          data-aos-delay="650"
+        >
+          Dark mode :
+          <div class="toggle-box" data-active="false">
+            <i class="toggle-icon"></i>
+          </div>
+        </section>
+      </div>
+    </nav>
+
+    <main
+      class="flex hero"
+      id="profile"
+      data-aos="fade-in"
+      data-aos="slide-in"
+      data-aos-delay="350"
+    >
+      <section class="flex details" style="--flex-direction: column">
+        <div
+          role="figure"
+          class="profile-picture"
+          data-aos="fade-down"
+          data-aos="slide-down"
+          data-aos-delay="550"
+        >
+          <img src="images/logo.jpg" alt="Profile picture" />
+        </div>
+        <h1></h1>
+        <h3></h3>
+      </section>
+
+      <section role="region" class="grid stats">
+        <div
+          class="questions-answered card flex-column"
+          data-aos="fade-down"
+          data-aos="slide-down"
+          data-aos-delay="600"
+        >
+          <h1>Questions answered</h1>
+          <span></span>
+        </div>
+
+        <div
+          class="questions-asked card flex-column"
+          data-aos="fade-down"
+          data-aos="slide-down"
+          data-aos-delay="650"
+        >
+          <h1>Questions asked</h1>
+          <span></span>
+        </div>
+
+        <div
+          class="achievements card flex-column"
+          data-aos="fade-down"
+          data-aos="slide-down"
+          data-aos-delay="680"
+        >
+          <h1>Achievement points</h1>
+          <span></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="logo" />
+        </div>
+
+        <div class="footer-description">
+          <p>
+            Connecting students, teachers, and seniors to share knowledge and
+            solve problems together.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="additionalPages/about.html">About</a>
+          <a href="additionalPages/contactUs.html">Contact</a>
+          <a href="additionalPages/about.html">FAQ</a>
+          <a href="additionalPages/termsOfService.html">Terms of Service</a>
+        </div>
+
+        <p>Copyright &#169; 2024 techExchange.com</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+css : 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 10rem;
+}
+
+:root {
+  --primary-body-bg: #ffffff;
+  --text-color: black;
+  --text-color-btn: white;
+  --card-bg-color: #f5f5f5;
+  --toogle-btn-bg: black;
+  --toogle-btn-text: white;
+  --text-color-input: rgb(46, 44, 44);
+  --modal-bg-color: rgb(0 0 0 /0.35);
+  --logo-color: transparent;
+  --logo-padding: 0;
+  --logo-radius: 0;
+  --box-shadow: rgba(0, 0, 0, 0.6);
+}
+
+/* Dark Theme colors */
+[data-dark-mode="true"] {
+  --primary-body-bg: #000000;
+  --text-color: white;
+  --card-bg-color: #27282a;
+  --toogle-btn-bg: white;
+  --toogle-btn-text: black;
+  --text-color-input: rgba(0, 0, 0, 0.737);
+  --modal-bg-color: rgb(255 255 255 / 0.36);
+  --logo-color: #fff;
+  --logo-padding: 8px;
+  --logo-radius: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: Poppins, "Helvetica", "Arial";
+  background-color: var(--primary-body-bg);
+  transition: all 600ms ease;
+  overflow-x: hidden;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-mobile {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 5rem;
+  z-index: 100;
+  --translateX: -50px;
+}
+
+nav {
+  --justify-content: space-around;
+  position: fixed;
+  top: 0;
+  z-index: 2222;
+  width: 100vw;
+  height: 6rem;
+  padding: 1rem;
+  background-color: var(--primary-body-bg);
+  -webkit-border-after: 1px solid rgba(133, 127, 127, 0.335);
+  border-block-end: 1px solid rgba(133, 127, 127, 0.335);
+  transition: all 0.2s ease;
+}
+
+nav img {
+  width: 6rem;
+}
+img[alt="logo"] {
+  border-radius: var(--logo-radius);
+  padding: var(--logo-padding);
+  background-color: var(--logo-color);
+}
+.nav-items a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--text-color);
+  font-weight: 600;
+}
+nav li {
+  position: relative;
+}
+nav .active::before,
+nav .active::after {
+  content: "";
+  width: 100%;
+  height: 6px;
+  border-radius: 2rem;
+  position: absolute;
+  background-image: linear-gradient(
+    45deg,
+    #ff0000,
+    orange,
+    rgba(0, 0, 255, 0.695),
+    #ff0000
+  );
+  background-size: 300% 300%;
+  top: 100%;
+  right: 0%;
+  transform: translate(-50% -50%);
+  -webkit-animation: animated-gradient 5000ms linear infinite;
+  animation: animated-gradient 5000ms linear infinite;
+  transition: opacity 900ms ease;
+}
+.nav-items a:hover {
+  opacity: 0.6;
+}
+.nav-items a:active {
+  opacity: 1;
+}
+
+.nav-items {
+  margin-left: 2rem;
+  --gap: 2rem;
+}
+
+#sign-in {
+  --font-weight: 700;
+  --text-color-btn: #3c7eff;
+  --btn-background: transparent;
+}
+#sign-in:hover {
+  --text-color-btn: #2b5ab8;
+}
+#sign-in:active {
+  --text-color-btn: #3c7eff;
+}
+
+#sign-up {
+  --text-color-btn: white;
+  --btn-background: #538af7;
+}
+
+#sign-up:hover {
+  --btn-background: #3c7eff;
+}
+
+#sign-up:active {
+  --btn-background: #538af7;
+}
+
+.theme-toggle-btn {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  z-index: 1;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+section .hero {
+  width: 90vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2rem;
+  margin-top: 10rem;
+  border-radius: 1.25rem;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  --columns: 2;
+  color: var(--text-color);
+}
+
+section .text {
+  width: 100%;
+  height: 100%;
+}
+
+section .text h1 {
+  font-size: 4.25rem;
+  line-height: 1.1;
+  -webkit-margin-before: 0.67em;
+  margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+  margin-block-end: 0.67em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+}
+
+section .text p {
+  font-size: 1.315em;
+  -webkit-margin-before: 1em;
+  margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+  margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  line-height: 1.6;
+  color: var(--text-color);
+  opacity: 0.6;
+}
+
+section .text button {
+  --btn-background: #387aff;
+  --btn-padding: 1.2rem;
+  --width: 8rem;
+  --height: 3rem;
+  cursor: pointer;
+}
+section .text button:hover {
+  --btn-background: #3c7eff;
+}
+
+section .text button:active {
+  --btn-background: #538af7;
+}
+section:is(.flex-column) {
+  margin-top: 8%;
+  --justify-content: center;
+  --align-items: center;
+  -webkit-border-before: 1px solid #837d7d72;
+  border-block-start: 1px solid #837d7d72;
+}
+
+.features-text {
+  text-align: center;
+  width: max(50%, 450px);
+  color: var(--text-color);
+}
+
+.features-text h2 {
+  font-size: clamp(2em, 2.5vw, 2.5em);
+  font-weight: 600;
+}
+
+.features-text p {
+  line-height: 1.4;
+  font-size: clamp(1.2rem, 2.5vw, 1.4em);
+  opacity: 0.7;
+}
+
+.testimonial {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-wrap: wrap;
+  padding: 2rem;
+  color: var(--text-color);
+}
+
+.testimonial > * {
+  flex-shrink: 0;
+}
+.testimonial .card {
+  width: min(90%, 350px);
+  height: min(90%, 350px);
+  aspect-ratio: 1;
+  padding-block: 3rem;
+  padding-inline: 3.5rem;
+  background-color: var(--card-bg-color);
+  --gap: 0;
+}
+.testimonial .card svg {
+  width: clamp(60px, 50%, 80px);
+  aspect-ratio: 1;
+}
+
+.testimonial .card h5 {
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.1em);
+  margin: 5% auto;
+}
+
+.testimonial .card p {
+  font-size: 0.91rem;
+  text-align: center;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.learn-more {
+  color: #007bff;
+}
+.learn-more:hover {
+  color: #195faa;
+}
+
+/* footer styles */
+
+.footer {
+  -webkit-margin-before: 10rem;
+  margin-block-start: 10rem;
+  background-color: var(--primary-body-bg);
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #a7a3a371;
+  color: var(--text-color);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  width: clamp(60px, 50%, 150px);
+}
+
+.footer-nav a {
+  margin: 0 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1080px) {
+  img:not([alt="logo"]) {
+    transform: translateY(80px);
+  }
+
+  section .text h1 {
+    font-size: clamp(2.2rem, 9vh + 1px, 4rem);
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  nav {
+    --gap: 1rem;
+    --justify-content: space-around;
+  }
+
+  .sign-btns {
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    -webkit-margin-start: min(1rem, 5%);
+    margin-inline-start: min(1rem, 5%);
+  }
+
+  #sign-in,
+  #sign-up {
+    width: 5rem;
+  }
+
+  nav .nav-items {
+    margin: 0;
+    --gap: 1rem;
+  }
+
+  img[alt="logo"] {
+    min-width: 50px;
+  }
+
+  .theme-toggle-btn {
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    margin: 0;
+  }
+  section .hero {
+    --columns: 1;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .testimonial {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .testimonial > * {
+    flex-shrink: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-mobile {
+    display: block;
+  }
+  nav {
+    width: 60%;
+    height: 100%;
+    padding: 1rem;
+    margin: 0;
+    right: 0;
+    overflow: hidden;
+    --flex-direction: column;
+    --align-items: flex-start;
+    background: rgb(0 0 0 / 0.6);
+    transition: all 300ms ease;
+    transform: translateX(110vw);
+  }
+  .nav-items a {
+    font-size: 1.156rem;
+    color: white;
+  }
+  nav img {
+    width: 4rem;
+    transform: translate(0);
+  }
+
+  .mobile-nav-toggle {
+    width: 3rem;
+    height: 3rem;
+    aspect-ratio: 1;
+    position: fixed;
+    z-index: 9999;
+    top: 2rem;
+    right: 2rem;
+    border: none;
+    background: none;
+  }
+
+  .mobile-nav-toggle .child1,
+  .child2,
+  .child3 {
+    width: 90%;
+    height: 3px;
+    margin-top: 5px;
+    background-color: var(--text-color);
+    transition: all 300ms ease;
+  }
+
+  button[aria-expanded="true"] .child2 {
+    display: none;
+  }
+
+  button[aria-expanded="true"] .child1 {
+    transform: rotate(-45deg) translateY(5px);
+  }
+
+  button[aria-expanded="true"] .child3 {
+    transform: rotate(45deg) translateY(-5px);
+  }
+
+  .theme-toggle-btn {
+    position: absolute;
+    top: 4%;
+    left: 12%;
+    margin: 0;
+  }
+
+  section .hero {
+    margin-top: 5rem;
+    --columns: 1;
+  }
+
+  section .text h1 {
+    font-size: clamp(1.2rem, 6vh + 1px, 3rem);
+  }
+
+  .features-text {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1rem;
+  }
+
+  .testimonial {
+    padding: 0;
+    --flex-direction: column;
+  }
+
+  .footer {
+    font-size: 0.891rem;
+  }
+
+  @supports (
+    (-webkit-backdrop-filter: blur(30px)) or (backdrop-filter: blur(30px))
+  ) {
+    nav {
+      background: rgb(0 0 0 /0.2);
+      -webkit-backdrop-filter: blur(30px);
+      backdrop-filter: blur(30px);
+    }
+    .nav-items a {
+      color: var(--text-color);
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .testimonial .card p {
+    font-size: 0.8rem;
+    word-break: break-all;
+  }
+}
+.nav-items li a {
+  font-weight: 600;
+}
+main {
+  -webkit-margin-before: 8.5rem;
+  margin-block-start: 8.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.logo-mobile {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 5rem;
+  z-index: 100;
+  --translateX: -50px;
+}
+
+main .hero {
+  width: 98%;
+  padding: 2rem;
+  /* background: linear-gradient(to left,pink, 5%,rgba(237, 221, 2, 0.523),orange); */
+  background: conic-gradient(pink, #ecec22ab, transparent, pink);
+  /* box-shadow: 0 0 20px orange; */
+  box-shadow: 0 0 20px pink;
+}
+
+.hero h1 {
+  font-size: 5rem;
+}
+
+.hero .stats {
+  --gap: 2rem;
+}
+
+.hero .stats .stat-info {
+  padding: 1rem;
+  --gap: 0rem;
+  width: 20rem;
+  /*  box-shadow: 0 0 100px #ffb73c; */
+  background-color: #80808051;
+  border-radius: 1rem;
+}
+.stat-info h3 {
+  font-size: 1.9rem;
+  margin: 0;
+}
+.stat-info span {
+  -webkit-margin-before: 1rem;
+  margin-block-start: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: rgb(140, 0, 255);
+}
+
+.stats .child-1 {
+  position: relative !important;
+  background-color: #939292 !important;
+  opacity: 1 !important;
+}
+
+main .hero .stats .child-1::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  padding: 0.5rem;
+  box-sizing: content-box;
+  border-radius: inherit;
+  background: conic-gradient(from var(--angle), transparent 50%, blue, orange);
+  color: black;
+  -webkit-animation: rotate 3000ms linear infinite;
+  animation: rotate 2000ms linear infinite;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+main .hero .stats .child-1::before {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+main .ask-question {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 20rem;
+  border: none;
+}
+
+main .ask-question div {
+  width: 100%;
+}
+main .ask-question input {
+  width: 50%;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 10px var(--text-color);
+  transition: all 200ms ease;
+  color: var(--text-color);
+}
+main .ask-question input:hover {
+  box-shadow: 8px 2px 100px var(--text-color);
+}
+main .ask-question .btn {
+  margin: 1rem;
+  width: 10rem;
+}
+
+main .ask-question .btn:hover {
+  --btn-background: #3c7eff;
+}
+
+main .ask-question .btn:active {
+  --btn-background: #538af7;
+}
+
+.card-container {
+  -webkit-margin-before: 1rem;
+  margin-block-start: 1rem;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  --columns: auto-fit;
+  --col-size: minmax(
+    330px,
+    1fr
+  ); /* Tried for responsive design but didn't liked at the larger screen sizes */
+  /*  --columns: 3; */
+  --gap: 2rem;
+}
+
+.card {
+  border-radius: 1rem;
+  padding: 1rem;
+  --gap: 1rem;
+  --justify-content: space-between;
+  background-color: var(--card-bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out,
+              scale 0.3s ease-in-out;
+}
+.card h2 {
+  margin-top: 1rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.4em);
+}
+.card div {
+  -webkit-margin-after: 0.5rem;
+  margin-block-end: 0.5rem;
+  color: var(--text-color);
+}
+.card span {
+  opacity: 0.6;
+}
+.card:hover {
+  box-shadow: 2px 8px 16px var(--box-shadow);
+  transform: scale(1.05);
+}
+
+.card .buttons {
+  height: 100%;
+  width: 1.5rem;
+  --gap: 5px;
+}
+.buttons div {
+  -webkit-margin-before: 10px;
+  margin-block-start: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.buttons div svg {
+  fill: #3c7eff;
+}
+.buttons div svg:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.buttons div svg:active {
+  opacity: 1;
+}
+
+body {
+  position: relative;
+}
+
+.modal,
+.modal-ans {
+  display: none;
+  --columns: 1;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  place-items: center;
+  height: 70vh;
+  width: 40vw;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--modal-bg-color);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.modal .wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  --rows: 1;
+  overflow-y: auto;
+}
+.modal .close,
+.modal-ans .close {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: -8px;
+  right: -15px;
+  background-color: white;
+  border-radius: 50%;
+}
+.modal .close svg:hover,
+.modal-ans .close svg:hover {
+  cursor: pointer;
+  fill: red;
+}
+
+.modal .close svg:active,
+.modal-ans .close svg:active {
+  fill: black;
+}
+
+.modal-ans .wrapper {
+  height: 100%;
+  width: 100%;
+}
+.modal-ans textarea {
+  border-radius: 1rem;
+  font-family: Helvetica, sans-serif;
+  background-color: rgb(0 0 0 / 0.6);
+  color: white;
+  --font-size: 1.815rem;
+  height: 50%;
+}
+
+.modal-ans button {
+  width: 50%;
+}
+
+.modal-ans button:hover {
+  --btn-background: #3c7eff;
+}
+
+.modal-ans button:active {
+  --btn-background: #538af7;
+}
+
+@media screen and (max-width: 600px) {
+  .logo-mobile {
+    display: block;
+    top: -120px;
+  }
+
+  main .hero {
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: 2.368rem;
+  }
+  .hero .stats {
+    --gap: 1rem;
+  }
+  .hero .stats .stat-info {
+    width: 12rem;
+  }
+  .stat-info h3 {
+    font-size: 1.2rem;
+  }
+  main .ask-question input {
+    width: 90%;
+    margin: 0;
+  }
+  .modal,
+  .modal-ans {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero .stats {
+    --gap: 1rem;
+  }
+
+  .theme-toggle-btn {
+    width: 150%;
+    font-size: 0.8rem;
+    word-break: keep-all;
+    margin: 0;
+  }
+
+  .hero .stats .stat-info {
+    width: 18rem;
+  }
+
+  main .ask-question input {
+    width: 90%;
+    margin: 0;
+  }
+
+  .modal,
+  .modal-ans {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  nav {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    border-radius: 2rem;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero .stats .stat-info {
+    width: 9rem;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 450px) {
+  nav {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero .stats .stat-info {
+    width: 9rem;
+  }
+}
+main {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.hero {
+  width: 100%;
+  padding: 2rem;
+  -webkit-margin-before: 6.5rem;
+  margin-block-start: 6.5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.wrapper {
+  --columns: auto-fit;
+  --col-size: minmax(330px, 1fr);
+  padding: 1.125rem;
+  gap: 2rem;
+}
+
+.card {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--card-bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: all 200ms ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+  outline: 1px solid orange;
+}
+
+.card section[role="img"] {
+  width: 180px;
+  /* aspect-ratio: 1/0.2; */
+  border-radius: 50%;
+  margin: auto;
+  background-color: rgb(198, 198, 198);
+  position: relative;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card .info {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  text-align: center;
+  --gap: 1rem;
+}
+
+.card .info p {
+  color: #828282;
+}
+
+.btn {
+  background-color: #007bff;
+  width: 10rem;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:active {
+  background-color: #007bff;
+}
+
+/*   background-color: #007bff; */
+
+/* background-color: #0056b3; */
+
+/* background-color: #1e90ff; */
+
+/* background-color: #006bb3; */
+.card .info h3 {
+  margin: 0;
+  font-family: "Playwrite CU", cursive;
+  font-size: clamp(1.1rem, 2vw + 1rem, 1.2rem);
+}
+
+.card .info p {
+  margin: 0;
+  font-size: clamp(0.5rem, 2vw + 0.3rem, 0.9rem);
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+  }
+  .logo-mobile {
+    top: -80px;
+  }
+
+  .wrapper {
+    --col-size: minmax(330px, 1fr);
+  }
+
+  .wrapper .card {
+    max-width: 28rem;
+  }
+}
+main {
+  margin-block-start: 6rem;
+  counter-reset: section;
+}
+.hero h1 {
+  font-size: 4.5rem;
+}
+
+.wrapper-main table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 90vw;
+}
+
+.wrapper-main table tr,
+td {
+  border: 1px solid var(--text-color);
+  padding: 1rem;
+  height: 2rem;
+  color: var(--text-color);
+  text-align: center;
+  font-weight: 600;
+  overflow: hidden;
+}
+.wrapper-main table tr:has(th) {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+/* .wrapper-main td:first-child::after {
+    counter-increment: section;
+    content: counter(section)".";
+} */
+
+main {
+  position: relative;
+}
+main .input {
+  position: absolute;
+  height: 3rem;
+  width: 15rem;
+  right: 20px;
+  top: 80px;
+  border-radius: 1rem;
+  color: var(--text-color);
+  box-shadow: 2px 2px 10px var(--text-color);
+}
+
+@media screen and (max-width: 800px) {
+  table {
+    font-size: 12px;
+  }
+  .logo-mobile {
+    top: -80px;
+  }
+  .mobile-nav-toggle {
+    width: 3rem;
+    height: 3rem;
+    aspect-ratio: 1;
+    position: fixed;
+    z-index: 9999;
+    top: 2rem;
+    right: 2rem;
+    border: none;
+    background: none;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  input[type="search"],
+  input[type="search"]::placeholder {
+    height: 1.8rem;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  main .wrapper-main {
+    margin-block-start: 2rem;
+  }
+}
+
+
+.logo-mobile {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 5rem;
+  z-index: 100;
+  --translateX: -50px;
+}
+
+.profile-picture img {
+  max-width: 20rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+main {
+  border: none !important;
+  padding: 1rem;
+  -webkit-margin-before: 8rem;
+  margin-block-start: 8rem;
+  margin-inline: 1rem;
+  border-radius: 2rem;
+  /* backdrop-filter: blur(200px);
+    background-color: var(--card-bg-color); */
+  background: conic-gradient(pink, pink, #ecb622ab, #ec8a22ab, pink);
+  --gap: 0;
+  --justify-content: space-around;
+}
+
+.stats {
+  --columns: 2;
+  --rows: 2;
+  --gap: 2rem;
+  text-align: center;
+}
+
+.achievements {
+  grid-row: span 2/3;
+  background-color: aqua;
+}
+h1 {
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+  margin: 1rem;
+  font-size: clamp(2rem, 10vh, 2.556rem);
+}
+
+.stats .card {
+  padding: 1rem;
+  --gap: 0rem;
+  width: 20rem;
+  /*  box-shadow: 0 0 100px #ffb73c; */
+  background-color: rgb(0 0 0 /0.2);
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  border-radius: 1rem;
+}
+
+.stats span {
+  -webkit-margin-before: 1rem;
+  margin-block-start: 1rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  background: linear-gradient(150deg, rgb(90, 88, 88), blue, orange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+h3 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+@media screen and (max-width: 690px) {
+  .logo-mobile {
+    display: block;
+    top: -100px;
+  }
+  .profile-picture {
+    width: 10rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+  }
+  .profile-picture img {
+    width: 10rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+  main {
+    --flex-direction: column;
+    height: 100%;
+  }
+  .stats {
+    margin-block-start: 1rem;
+    --columns: 1;
+    --rows: 1;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  .stats .card {
+    width: 15rem;
+  }
+  .stats h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .stats {
+    --columns: 1;
+  }
+  .stats .card {
+    max-width: 20rem;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+  .stats .card {
+    width: 16rem;
+  }
+
+  .stats h1 {
+    font-size: 2.256rem;
+  }
+
+  .profile-picture img {
+    position: relative;
+    top: -80px;
+  }
+}
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+  flex-direction: var(--flex-direction, row);
+  justify-content: var(--justify-content, center);
+  align-items: var(--align-items, center);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns, auto), var(--col-size, 1fr));
+  grid-template-rows: repeat(var(--rows, auto), var(--rows-size, 1fr));
+  gap: var(--gap, 1rem);
+}
+
+.flex-column {
+  display: flex;
+  gap: var(--gap, 1rem);
+  flex-direction: var(--flex-direction, column);
+  justify-content: var(--justify-content, center);
+  align-items: var(--align-items, center);
+}
+
+/* Components */
+.btn {
+  width: var(--width, 6rem);
+  height: var(--height, 2.5rem);
+  color: var(--text-color-btn);
+  background-color: var(--btn-background, #538af7);
+  font-weight: var(--font-weight, 500);
+  padding: var(--btn-padding);
+  text-align: center !important;
+  cursor: pointer !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  border: 1px solid transparent !important;
+  font-size: 1.15rem;
+  border-radius: 0.625rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.825rem 1.1875rem;
+  font-size: var(--font-size, 1.225rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--text-color-input);
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-left: none;
+  border: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 1.3rem;
+  /*  color: var(--text-color); */
+  opacity: 0.6;
+}
+
+input::-moz-placeholder {
+  font-size: 1.3rem;
+  /*  color: var(--text-color); */
+  opacity: 0.6;
+}
+
+input:-ms-input-placeholder {
+  font-size: 1.3rem;
+  /*  color: var(--text-color); */
+  opacity: 0.6;
+}
+
+input::-ms-input-placeholder {
+  font-size: 1.3rem;
+  /*  color: var(--text-color); */
+  opacity: 0.6;
+}
+
+input::placeholder {
+  font-size: 1.3rem;
+  /*  color: var(--text-color); */
+  opacity: 0.6;
+}
+
+input:user-valid {
+  border: 1px solid lightgreen;
+}
+
+input:user-invalid {
+  border: 1px solid red;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* toggle button styles */
+
+.toggle-box {
+  margin-right: 10px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 20px;
+  background: #c0c0c0;
+  /* #EFEFEF */
+  border-radius: 10px;
+  transition: all 0.2s;
+  bottom: -5px;
+}
+
+.toggle-box i {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 15%;
+  transition: all 0.2s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: var(--text-color);
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+/* Tooltips */
+
+.tooltip,
+.tooltip-logo {
+  position: relative;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.tooltip::before,
+.tooltip-logo::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip-logo::before {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  bottom: -300%;
+  transform: translateX(var(--translateX, -80px)) translateY(15px);
+}
+.tooltip:hover::before,
+.tooltip-logo:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* user selection styles */
+
+::-moz-selection {
+  background-color: #ffa722;
+  color: var(--text-color);
+  opacity: 1;
+}
+
+::selection {
+  background-color: #ffa722;
+  color: var(--text-color);
+  opacity: 1;
+}
+
+::-moz-selection {
+  background-color: #fd7e14;
+  color: var(--text-color);
+}
+
+/* scroll bars  */
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: color-mix(in srgb, var(--text-color), transparent 50%);
+  opacity: 0.2;
+  /* border-radius: 1rem; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: color-mix(in srgb, var(--primary-body-bg), transparent 60%);
+  /* border-radius: 1rem; */
+}
+
+/* Don't change */
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Animations */
+
+@-webkit-keyframes rotate {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes rotate {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@-webkit-keyframes animated-gradient {
+  0% {
+    background-position: 300% 300%;
+  }
+  50% {
+    background-position: 200% 200%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes animated-gradient {
+  0% {
+    background-position: 300% 300%;
+  }
+  50% {
+    background-position: 200% 200%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Custom properties */
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@supports not ((@property)) {
+  main .hero .stats .child-1::after {
+    background: transparent;
+  }
+
+  .stats .child-1 {
+    background-color: transparent;
+  }
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  -webkit-margin-before: 2rem;
+  margin-block-start: 2rem;
+}
+
+.logo-mobile {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 5rem;
+  z-index: 100;
+  --translateX: -50px;
+}
+
+main form {
+  padding: 1rem;
+  --gap: 2.6rem;
+  color: var(--text-color);
+  width: 28rem;
+  -webkit-margin-before: auto;
+  margin-block-start: auto;
+}
+
+main form h1 {
+  font-size: clamp(1rem, 50vh, 2.525rem);
+  line-height: 1.1;
+  -webkit-margin-before: 0.67em;
+  margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+  margin-block-end: 0.67em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+}
+
+form .input-group {
+  width: 25rem;
+  height: 3.5rem;
+  border-radius: 0.625rem;
+  border: 2px solid #bebebf;
+  --font-size: 1.2rem;
+  --gap: 0;
+  /* background-color: #e8f0fe; */
+  position: relative;
+}
+.input-group input {
+  border-radius: inherit;
+  height: 100%;
+  background-color: transparent;
+  color: var(--text-color);
+}
+.input-group:hover {
+  border: 2px solid #1a1aeb;
+}
+.input-group:focus-within {
+  border: 2px solid #1a1aeb;
+}
+
+.input-group label {
+  position: absolute;
+  transform: translateY(-1.5rem);
+}
+
+.submit:hover {
+  --btn-background: #3c7eff;
+}
+
+.submit:active {
+  --btn-background: #538af7;
+}
+
+textarea {
+  color: white;
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  nav {
+    --gap: 1rem;
+    --justify-content: space-around;
+  }
+
+  .sign-btns {
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    -webkit-margin-start: min(1rem, 5%);
+    margin-inline-start: min(1rem, 5%);
+  }
+
+  #sign-in,
+  #sign-up {
+    width: 5rem;
+  }
+
+  nav .nav-items {
+    margin: 0;
+    --gap: 1rem;
+  }
+
+  img[alt="logo"] {
+    min-width: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    width: 60%;
+    height: 100%;
+    padding: 1rem;
+    margin: 0;
+    right: 0;
+    overflow: hidden;
+    --flex-direction: column;
+    --align-items: flex-start;
+    background: rgb(0 0 0 / 0.6);
+    transition: all 300ms ease;
+    transform: translateX(110vw);
+  }
+  .nav-items a {
+    font-size: 1.156rem;
+    color: white;
+  }
+  nav img {
+    width: 4rem;
+    transform: translate(0);
+  }
+
+  .mobile-nav-toggle {
+    width: 3rem;
+    height: 3rem;
+    aspect-ratio: 1;
+    position: fixed;
+    z-index: 9999;
+    top: 2rem;
+    right: 2rem;
+    border: none;
+    background: none;
+  }
+
+  .mobile-nav-toggle .child1,
+  .child2,
+  .child3 {
+    width: 90%;
+    height: 3px;
+    margin-top: 5px;
+    background-color: var(--text-color);
+    transition: all 300ms ease;
+  }
+
+  button[aria-expanded="true"] .child2 {
+    display: none;
+  }
+
+  button[aria-expanded="true"] .child1 {
+    transform: rotate(-45deg) translateY(5px);
+  }
+
+  button[aria-expanded="true"] .child3 {
+    transform: rotate(45deg) translateY(-5px);
+  }
+
+  .footer {
+    font-size: 0.891rem;
+  }
+
+  @supports (
+    (-webkit-backdrop-filter: blur(30px)) or (backdrop-filter: blur(30px))
+  ) {
+    nav {
+      background: rgb(0 0 0 /0.2);
+      -webkit-backdrop-filter: blur(30px);
+      backdrop-filter: blur(30px);
+    }
+    .nav-items a {
+      color: var(--text-color);
+    }
+  }
+}
+main {
+  min-height: 100%;
+  width: 100%;
+  background-color: var(--primary-body-bg);
+}
+
+.wrapper {
+  padding: 1rem;
+  min-height: 100vh;
+  width: 100%;
+  --gap: 10rem;
+}
+
+.wrapper form {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  --gap: 1rem;
+}
+
+.wrapper .left {
+  margin-left: 10rem;
+}
+
+.wrapper h1 {
+  font-size: 2.725rem;
+  font-weight: 500;
+  line-height: 1.1;
+  -webkit-margin-before: 0.67em;
+  margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+  margin-block-end: 0.67em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+}
+
+.wrapper form .input-group {
+  width: 100%;
+  height: 3.2rem;
+  border-radius: 0.625rem;
+  border: 2px solid #bebebf;
+  background-color: #e8f0fe;
+}
+
+.wrapper form .input-group .svg-container {
+  width: 70px;
+  aspect-ratio: 1;
+  padding: 1rem;
+}
+
+.wrapper form .input-group .svg-container svg {
+  fill: var(--text-color-input);
+  opacity: 0.5;
+}
+
+.wrapper .picture {
+  width: 50%;
+  margin-right: 5rem;
+}
+
+form .sign-in {
+  width: 100%;
+  padding: 1rem;
+  height: 100%;
+  --btn-background: #007bff;
+}
+
+form .sign-in:hover {
+  --btn-background: #0056b3;
+}
+
+form .sign-in:active {
+  --btn-background: #007bff;
+}
+
+.socials {
+  text-align: center;
+}
+
+.socials .social-icons {
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.socials .social-icons .social-icon {
+  --btn-background: var(--card-bg-color);
+}
+.socials .social-icons .social-icon svg {
+  stroke: var(--text-color);
+  fill: var(--text-color);
+}
+a {
+  color: #007bff;
+}
+a:hover {
+  color: #195faa;
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper .picture {
+    display: none;
+  }
+  .wrapper .left {
+    margin-left: 0;
+  }
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper form {
+  padding: 1rem;
+  --gap: 1.6rem;
+  color: var(--text-color);
+  /* background-color: var(--card-bg-color);
+    border-radius: 1rem; */
+}
+
+.wrapper form h1 {
+  font-size: clamp(1rem, 50vh, 2.525rem);
+  font-weight: 500;
+  line-height: 1.1;
+  -webkit-margin-before: 0.67em;
+  margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+  margin-block-end: 0.67em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+}
+
+.wrapper form .child-1 {
+  --gap: 1rem !important;
+  border: none !important;
+  background: none !important;
+}
+
+.wrapper form .child-1 input {
+  border: 2px solid #bebebf;
+  border-radius: 0.625rem;
+  width: 12rem;
+  background-color: #e8f0fe;
+}
+
+label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sign-up {
+  width: 90%;
+  height: 3rem;
+  --btn-background: #007bff;
+}
+
+.sign-up:hover {
+  --btn-background: #0056b3;
+}
+
+.sign-up:active {
+  --btn-background: #007bff;
+}
+
+.wrapper form .input-group {
+  width: 25rem;
+  height: 3.5rem;
+  border-radius: 0.625rem;
+  border: 2px solid #bebebf;
+  --font-size: 1.2rem;
+  --gap: 0;
+  background-color: #e8f0fe;
+}
+
+.wrapper form .input-group .svg-container {
+  --gap: 0;
+  width: 70px;
+  aspect-ratio: 1;
+  padding: 1rem;
+}
+
+.wrapper form .input-group .svg-container svg {
+  fill: var(--text-color-input);
+  opacity: 0.5;
+}
+
+.teacher-section {
+  font-size: 1.2rem;
+}
+
+.teacher-section input[type="checkbox"] {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  color: #195faa;
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper {
+    width: 90%;
+  }
+  .input-group input {
+    min-width: 8rem !important;
+  }
+  .teacher-section {
+    margin: 0 !important;
+  }
+  .input-group {
+    width: 15rem !important;
+    margin: 0;
+  }
+}
+
+scripts.js : 
+
+"use strict";
+import { isclicked } from "./utills/utilities.js";
+import { closeModal } from "./utills/utilities.js";
+import { setAOS } from "./utills/utilities.js";
+
+const container = document.querySelector(".card-container");
+const answersModal = document.querySelector(".modal");
+const answersModalClose = document.querySelector(".close");
+const answerModal = document.querySelector(".modal-ans");
+const answerModalClose = document.querySelector(".modal-ans .close");
+const submitQuestionField = document.querySelector("#submitQuestionField");
+const submitBtn = document.querySelector("#submitQuestionBtn");
+
+class Answer {
+  constructor(answerId, author, date, answer) {
+    this.answerId = Number(answerId);
+    this.author = author;
+    this.date = date;
+    this.answer = answer;
+  }
+}
+
+class Question {
+  constructor(
+    questionId,
+    author,
+    dateOfSubmission,
+    likes,
+    question,
+    answers = []
+  ) {
+    this.questionId = Number(questionId);
+    this.author = author;
+    this.dateOfSubmission = dateOfSubmission;
+    this.likes = likes;
+    this.question = question;
+    this.answers = answers;
+  }
+  postAnswer(answer) {
+    this.answers.push(answer);
+  }
+}
+
+//This is how it's goona look after fetching
+const questions = [
+  new Question(1, "hello world", "21-98-6758", 100, "How to learn javascript", [
+    new Answer(
+      1,
+      "Hello",
+      "43-87-6859",
+      "Practice DOM manupulation it can make your skill's popup"
+    ),
+    new Answer(
+      2,
+      "world",
+      "43-87-6859",
+      "Practice can make your skill's popup"
+    ),
+  ]),
+];
+
+const currentUserName = getUserInfo(); // Todo: get username from backend
+let currentDate = new Date();
+currentDate = currentDate.toLocaleDateString();
+
+function getQuestionsFromServer() {
+  questions = [];
+}
+function getUserInfo() {
+  // Todo: needed to fetech the user credentials
+}
+
+function renderQuestions() {
+  container.innerHTML = "";
+  questions.forEach((question) => {
+    let questionElement = document.createElement("div");
+    questionElement.classList.add("card", "flex");
+    questionElement.setAttribute("aria-label", "Question");
+    questionElement.setAttribute("data-question-id", `${question.questionId}`);
+    setAOS(questionElement);
+    questionElement.setAttribute("tabindex", "0");
+    questionElement.innerHTML = `
+                <div class="stats">
+                    <h2>${question.question}</h2>
+                    <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">${question.author}
+                            </span></div>
+                    <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
+                            ${question.dateOfSubmission}</span></div>
+                </div>
+
+                <div class="buttons flex-column">
+                    <div class="tooltip" data-tooltip='Like this question' data-clicked="false"id="like">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M323.8 34.8c-38.2-10.9-78.1 11.2-89 49.4l-5.7 20c-3.7 13-10.4 25-19.5 35l-51.3 56.4c-8.9 9.8-8.2 25 1.6 33.9s25 8.2 33.9-1.6l51.3-56.4c14.1-15.5 24.4-34 30.1-54.1l5.7-20c3.6-12.7 16.9-20.1 29.7-16.5s20.1 16.9 16.5 29.7l-5.7 20c-5.7 19.9-14.7 38.7-26.6 55.5c-5.2 7.3-5.8 16.9-1.7 24.9s12.3 13 21.3 13L448 224c8.8 0 16 7.2 16 16c0 6.8-4.3 12.7-10.4 15c-7.4 2.8-13 9-14.9 16.7s.1 15.8 5.3 21.7c2.5 2.8 4 6.5 4 10.6c0 7.8-5.6 14.3-13 15.7c-8.2 1.6-15.1 7.3-18 15.2s-1.6 16.7 3.6 23.3c2.1 2.7 3.4 6.1 3.4 9.9c0 6.7-4.2 12.6-10.2 14.9c-11.5 4.5-17.7 16.9-14.4 28.8c.4 1.3 .6 2.8 .6 4.3c0 8.8-7.2 16-16 16l-97.5 0c-12.6 0-25-3.7-35.5-10.7l-61.7-41.1c-11-7.4-25.9-4.4-33.3 6.7s-4.4 25.9 6.7 33.3l61.7 41.1c18.4 12.3 40 18.8 62.1 18.8l97.5 0c34.7 0 62.9-27.6 64-62c14.6-11.7 24-29.7 24-50c0-4.5-.5-8.8-1.3-13c15.4-11.7 25.3-30.2 25.3-51c0-6.5-1-12.8-2.8-18.7C504.8 273.7 512 257.7 512 240c0-35.3-28.6-64-64-64l-92.3 0c4.7-10.4 8.7-21.2 11.8-32.2l5.7-20c10.9-38.2-11.2-78.1-49.4-89zM32 192c-17.7 0-32 14.3-32 32L0 448c0 17.7 14.3 32 32 32l64 0c17.7 0 32-14.3 32-32l0-224c0-17.7-14.3-32-32-32l-64 0z" />
+                        </svg>
+                        <span>100</span>
+                    </div>
+                    <div class="tooltip" data-tooltip="Answer this question" id="answer">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
+                        </svg>
+                    </div>
+                    <div class="tooltip" data-tooltip="view answers" id="answers">
+                        <svg viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M88.2 309.1c9.8-18.3 6.8-40.8-7.5-55.8C59.4 230.9 48 204 48 176c0-63.5 63.8-128 160-128s160 64.5 160 128s-63.8 128-160 128c-13.1 0-25.8-1.3-37.8-3.6c-10.4-2-21.2-.6-30.7 4.2c-4.1 2.1-8.3 4.1-12.6 6c-16 7.2-32.9 13.5-49.9 18c2.8-4.6 5.4-9.1 7.9-13.6c1.1-1.9 2.2-3.9 3.2-5.9zM208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 41.8 17.2 80.1 45.9 110.3c-.9 1.7-1.9 3.5-2.8 5.1c-10.3 18.4-22.3 36.5-36.6 52.1c-6.6 7-8.3 17.2-4.6 25.9C5.8 378.3 14.4 384 24 384c43 0 86.5-13.3 122.7-29.7c4.8-2.2 9.6-4.5 14.2-6.8c15.1 3 30.9 4.5 47.1 4.5zM432 480c16.2 0 31.9-1.6 47.1-4.5c4.6 2.3 9.4 4.6 14.2 6.8C529.5 498.7 573 512 616 512c9.6 0 18.2-5.7 22-14.5c3.8-8.8 2-19-4.6-25.9c-14.2-15.6-26.2-33.7-36.6-52.1c-.9-1.7-1.9-3.4-2.8-5.1C622.8 384.1 640 345.8 640 304c0-94.4-87.9-171.5-198.2-175.8c4.1 15.2 6.2 31.2 6.2 47.8l0 .6c87.2 6.7 144 67.5 144 127.4c0 28-11.4 54.9-32.7 77.2c-14.3 15-17.3 37.6-7.5 55.8c1.1 2 2.2 4 3.2 5.9c2.5 4.5 5.2 9 7.9 13.6c-17-4.5-33.9-10.7-49.9-18c-4.3-1.9-8.5-3.9-12.6-6c-9.5-4.8-20.3-6.2-30.7-4.2c-12.1 2.4-24.8 3.6-37.8 3.6c-61.7 0-110-26.5-136.8-62.3c-16 5.4-32.8 9.4-50 11.8C279 439.8 350 480 432 480z" />
+                        </svg>
+                    </div>
+                </div>`;
+
+    questionElement
+      .querySelector("#like")
+      .addEventListener("click", handleLike);
+    questionElement
+      .querySelector("#answer")
+      .addEventListener("click", submitAnswer);
+    questionElement
+      .querySelector("#answers")
+      .addEventListener("click", showAnswers);
+    questionElement.addEventListener('click',showAnswers);
+    container.appendChild(questionElement);
+  });
+}
+
+function renderAnswers(answers) {
+  const answersContainer = document.querySelector(".modal .wrapper");
+  answersContainer.innerHTML = "";
+  answers.forEach((ans) => {
+    let answer = document.createElement("div");
+    answer.classList.add("card", "flex");
+    answer.setAttribute("data-answer-id", ans.answerId);
+    answer.innerHTML = `
+                    <div class="stats">
+                        <h2>${ans.answer}</h2>
+                        <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">${ans.author}
+                                </span></div>
+                        <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
+                                ${ans.date}</span></div>
+                    </div>`;
+    answersContainer.appendChild(answer);
+  });
+  answersModal.style.display = "grid";
+}
+
+const getQuestion = (event) => {
+  if (submitQuestionField.value === "") {
+    alert("please enter the question before submitting");
+    return;
+  }
+  let userQuestion = submitQuestionField.value;
+  submitQuestionField.value = "";
+  return userQuestion;
+};
+
+const postQuestion = () => {
+  let questionToSubmit = getQuestion();
+  if (questionToSubmit) {
+    /* Todo: Need to post this question to the server then receive a unique id and 
+            then post it to the server to store */
+    questions.push(
+      new Question(6, currentUserName, currentDate, 0, questionToSubmit, [])
+    );
+    // Todo: Need to post the new question to the server
+    renderQuestions();
+  }
+};
+
+const handleLike = (event) => {
+  let btn = event.target.closest("#like");
+  if (!isclicked(btn)) {
+    let totalLikesDisplay = btn.querySelector("span");
+    let totalLikes = Number(totalLikesDisplay.textContent);
+    totalLikes += 1;
+    totalLikesDisplay.textContent = totalLikes;
+
+    /* Note to me: also update this(likes) in the server */
+  }
+};
+
+const getAnswer = (event) => {
+  return new Promise((resolve, reject) => {
+    const userAnswerInput = answerModal.querySelector("textarea");
+    const submitBtn = answerModal.querySelector(".modal-ans button");
+    submitBtn.addEventListener("click", () => {
+      let answer = userAnswerInput.value;
+      if (answer === "") {
+        window.alert("Please enter correct answer ");
+        reject("User entered a incorrect answer");
+        return;
+      }
+      answerModal.style.display = "none";
+      submitBtn.disabled = true;
+      resolve(answer);
+    });
+    userAnswerInput.value = "";
+  });
+};
+
+async function submitAnswer(event) {
+  let questionId = event.target
+    .closest(".card")
+    .getAttribute("data-question-id");
+  let currentQuestion = questions.find(
+    (question) => question.questionId === Number(questionId)
+  );
+  answerModal.style.display = "block";
+  try {
+    let answer = await getAnswer();
+    /* Todo: need to post this quetion and get unique answerId and then update it */
+    currentQuestion.postAnswer(
+      new Answer(
+        3,
+        currentUserName,
+        currentDate,
+        answer
+      ) /* Id should be fetched from the server */
+    );
+  } catch {
+  } finally {
+    const submitBtn = document.querySelector(".modal-ans button");
+    submitBtn.disabled = false;
+  }
+}
+
+const showAnswers = (event) => {
+  let questionId = event.target
+    .closest(".card")
+    .getAttribute("data-question-id");
+  let currentQuestion = questions.find(
+    (question) => question.questionId === Number(questionId)
+  );
+  renderAnswers(currentQuestion.answers);
+};
+
+const renderStats = () => {
+  let questionsAnswered = (document.querySelector(
+    ".stat-info .questions-asked"
+  ).textContent = "100");
+  let questionsAsked = (document.querySelector(
+    ".stat-info .questions-answered"
+  ).textContent = "200");
+  // TODO : get these stats from the server
+};
+
+submitBtn.addEventListener("click", postQuestion);
+answersModalClose.addEventListener("click", closeModal);
+answerModalClose.addEventListener("click", closeModal);
+
+window.onload = () => {
+  renderQuestions();
+  renderStats();
+};
+"use strict";
+import { Users } from "./users.js";
+const table = document.querySelector("table");
+const searchBar = document.querySelector("input[type=search]")
+
+function renderProfiles(users = Users) {
+  table.querySelectorAll("tr:not(:first-child)").forEach(row => row.remove());
+  users.forEach((user,index) => {
+
+    let tableRow = document.createElement("tr");
+
+    //Adding ranking
+    let ranking = document.createElement('td');
+    ranking.textContent = user.userRank || index + 1;
+    let tableDataName = document.createElement("td");
+
+    let profilePic = document.createElement("img");
+    profilePic.src = user.profilePicture;
+    profilePic.alt = user.userName + "'s profile picture";
+    profilePic.style.width = "50px"; 
+    profilePic.style.marginInlineEnd = "50px"; 
+    profilePic.style.borderRadius = "50%";
+    
+    //userName
+    tableDataName.appendChild(profilePic);
+    tableDataName.innerHTML = tableDataName.innerHTML + user.userName;
+
+    //Other data :)
+    let tableDataQask = document.createElement("td");
+    tableDataQask.textContent = user.Qask;
+    let tableDataQans = document.createElement("td");
+    tableDataQans.textContent = user.Qans;
+    let tableDataAchievementPoints = document.createElement("td");
+    tableDataAchievementPoints.textContent = user.achievementPoints;
+    let tableDataRole = document.createElement("td")
+    tableDataRole.textContent = user.role;
+
+
+    tableRow.append(ranking, tableDataName, tableDataQans, tableDataQask, tableDataAchievementPoints, tableDataRole);
+    table.append(tableRow);
+  });
+}
+
+
+searchBar.addEventListener('input',(event) => {
+  let searchValue = event.target.value.toLowerCase();
+  let filteredUsers = Users.filter(user => {
+    return user.userName.toLowerCase().includes(searchValue);
+  });
+  renderProfiles(filteredUsers);
+});
+
+window.addEventListener('DOMContentLoaded',()=>{
+    renderProfiles();
+})
+"use strict";
+
+import User from "./users.js";
+
+const profilePicture = document.querySelector(".profile-picture img");
+const userName = document.querySelector(".details h1");
+const userRole = document.querySelector(".details h3");
+const questionsAnswered = document.querySelector(".questions-answered span");
+const questionsAsked = document.querySelector(".questions-asked span");
+const achievements = document.querySelector(".achievements span");
+
+let currentUser = getUser();
+
+function renderUser() {
+  let selectedUser = JSON.parse(sessionStorage.getItem("selectedUser"));
+  if (selectedUser) {
+    profilePicture.src = selectedUser.profilePicture;
+    userName.textContent = selectedUser.userName;
+    userRole.textContent = selectedUser.role;
+    questionsAnswered.textContent = selectedUser.Qans;
+    questionsAsked.textContent = selectedUser.Qask;
+    achievements.textContent = selectedUser.achievementPoints;
+    sessionStorage.removeItem("selectedUser");
+  } else {
+    profilePicture.src = currentUser.profilePicture;
+    userName.textContent = currentUser.userName;
+    userRole.textContent = currentUser.role;
+    questionsAnswered.textContent = currentUser.Qans;
+    questionsAsked.textContent = currentUser.Qask;
+    achievements.textContent = currentUser.achievementPoints;
+  }
+}
+
+function getUser() {
+  return new User("Mokshith rao", "student", 5, 10, 5);
+}
+
+window.onload = () => {
+  renderUser();
+};
+"use strict";
+import { isclicked } from "./utills/utilities.js";
+import { closeModal } from "./utills/utilities.js";
+import { setAOS } from "./utills/utilities.js";
+
+const container = document.querySelector(".card-container");
+const answersModal = document.querySelector(".modal");
+const answersModalClose = document.querySelector(".close");
+const answerModal = document.querySelector(".modal-ans");
+const answerModalClose = document.querySelector(".modal-ans .close");
+const submitQuestionField = document.querySelector("#submitQuestionField");
+const submitBtn = document.querySelector("#submitQuestionBtn");
+
+class Answer {
+  constructor(answerId, author, date, answer) {
+    this.answerId = Number(answerId);
+    this.author = author;
+    this.date = date;
+    this.answer = answer;
+  }
+}
+
+class Question {
+  constructor(
+    questionId,
+    author,
+    dateOfSubmission,
+    likes,
+    question,
+    answers = []
+  ) {
+    this.questionId = Number(questionId);
+    this.author = author;
+    this.dateOfSubmission = dateOfSubmission;
+    this.likes = likes;
+    this.question = question;
+    this.answers = answers;
+  }
+  postAnswer(answer) {
+    this.answers.push(answer);
+  }
+}
+
+//This is how it's goona look after fetching
+const questions = [
+  new Question(1, "hello world", "21-98-6758", 100, "How to learn javascript", [
+    new Answer(
+      1,
+      "Hello",
+      "43-87-6859",
+      "Practice DOM manupulation it can make your skill's popup"
+    ),
+    new Answer(
+      2,
+      "world",
+      "43-87-6859",
+      "Practice can make your skill's popup"
+    ),
+  ]),
+];
+
+const currentUserName = getUserInfo(); // Todo: get username from backend
+let currentDate = new Date();
+currentDate = currentDate.toLocaleDateString();
+
+function getQuestionsFromServer() {
+  questions = [];
+}
+function getUserInfo() {
+  // Todo: needed to fetech the user credentials
+}
+
+function renderQuestions() {
+  container.innerHTML = "";
+  questions.forEach((question) => {
+    let questionElement = document.createElement("div");
+    questionElement.classList.add("card", "flex");
+    questionElement.setAttribute("aria-label", "Question");
+    questionElement.setAttribute("data-question-id", `${question.questionId}`);
+    setAOS(questionElement);
+    questionElement.setAttribute("tabindex", "0");
+    questionElement.innerHTML = `
+                <div class="stats">
+                    <h2>${question.question}</h2>
+                    <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">${question.author}
+                            </span></div>
+                    <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
+                            ${question.dateOfSubmission}</span></div>
+                </div>
+
+                <div class="buttons flex-column">
+                    <div class="tooltip" data-tooltip='Like this question' data-clicked="false"id="like">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M323.8 34.8c-38.2-10.9-78.1 11.2-89 49.4l-5.7 20c-3.7 13-10.4 25-19.5 35l-51.3 56.4c-8.9 9.8-8.2 25 1.6 33.9s25 8.2 33.9-1.6l51.3-56.4c14.1-15.5 24.4-34 30.1-54.1l5.7-20c3.6-12.7 16.9-20.1 29.7-16.5s20.1 16.9 16.5 29.7l-5.7 20c-5.7 19.9-14.7 38.7-26.6 55.5c-5.2 7.3-5.8 16.9-1.7 24.9s12.3 13 21.3 13L448 224c8.8 0 16 7.2 16 16c0 6.8-4.3 12.7-10.4 15c-7.4 2.8-13 9-14.9 16.7s.1 15.8 5.3 21.7c2.5 2.8 4 6.5 4 10.6c0 7.8-5.6 14.3-13 15.7c-8.2 1.6-15.1 7.3-18 15.2s-1.6 16.7 3.6 23.3c2.1 2.7 3.4 6.1 3.4 9.9c0 6.7-4.2 12.6-10.2 14.9c-11.5 4.5-17.7 16.9-14.4 28.8c.4 1.3 .6 2.8 .6 4.3c0 8.8-7.2 16-16 16l-97.5 0c-12.6 0-25-3.7-35.5-10.7l-61.7-41.1c-11-7.4-25.9-4.4-33.3 6.7s-4.4 25.9 6.7 33.3l61.7 41.1c18.4 12.3 40 18.8 62.1 18.8l97.5 0c34.7 0 62.9-27.6 64-62c14.6-11.7 24-29.7 24-50c0-4.5-.5-8.8-1.3-13c15.4-11.7 25.3-30.2 25.3-51c0-6.5-1-12.8-2.8-18.7C504.8 273.7 512 257.7 512 240c0-35.3-28.6-64-64-64l-92.3 0c4.7-10.4 8.7-21.2 11.8-32.2l5.7-20c10.9-38.2-11.2-78.1-49.4-89zM32 192c-17.7 0-32 14.3-32 32L0 448c0 17.7 14.3 32 32 32l64 0c17.7 0 32-14.3 32-32l0-224c0-17.7-14.3-32-32-32l-64 0z" />
+                        </svg>
+                        <span>100</span>
+                    </div>
+                    <div class="tooltip" data-tooltip="Answer this question" id="answer">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
+                        </svg>
+                    </div>
+                    <div class="tooltip" data-tooltip="view answers" id="answers">
+                        <svg viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M88.2 309.1c9.8-18.3 6.8-40.8-7.5-55.8C59.4 230.9 48 204 48 176c0-63.5 63.8-128 160-128s160 64.5 160 128s-63.8 128-160 128c-13.1 0-25.8-1.3-37.8-3.6c-10.4-2-21.2-.6-30.7 4.2c-4.1 2.1-8.3 4.1-12.6 6c-16 7.2-32.9 13.5-49.9 18c2.8-4.6 5.4-9.1 7.9-13.6c1.1-1.9 2.2-3.9 3.2-5.9zM208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 41.8 17.2 80.1 45.9 110.3c-.9 1.7-1.9 3.5-2.8 5.1c-10.3 18.4-22.3 36.5-36.6 52.1c-6.6 7-8.3 17.2-4.6 25.9C5.8 378.3 14.4 384 24 384c43 0 86.5-13.3 122.7-29.7c4.8-2.2 9.6-4.5 14.2-6.8c15.1 3 30.9 4.5 47.1 4.5zM432 480c16.2 0 31.9-1.6 47.1-4.5c4.6 2.3 9.4 4.6 14.2 6.8C529.5 498.7 573 512 616 512c9.6 0 18.2-5.7 22-14.5c3.8-8.8 2-19-4.6-25.9c-14.2-15.6-26.2-33.7-36.6-52.1c-.9-1.7-1.9-3.4-2.8-5.1C622.8 384.1 640 345.8 640 304c0-94.4-87.9-171.5-198.2-175.8c4.1 15.2 6.2 31.2 6.2 47.8l0 .6c87.2 6.7 144 67.5 144 127.4c0 28-11.4 54.9-32.7 77.2c-14.3 15-17.3 37.6-7.5 55.8c1.1 2 2.2 4 3.2 5.9c2.5 4.5 5.2 9 7.9 13.6c-17-4.5-33.9-10.7-49.9-18c-4.3-1.9-8.5-3.9-12.6-6c-9.5-4.8-20.3-6.2-30.7-4.2c-12.1 2.4-24.8 3.6-37.8 3.6c-61.7 0-110-26.5-136.8-62.3c-16 5.4-32.8 9.4-50 11.8C279 439.8 350 480 432 480z" />
+                        </svg>
+                    </div>
+                </div>`;
+
+    questionElement
+      .querySelector("#like")
+      .addEventListener("click", handleLike);
+    questionElement
+      .querySelector("#answer")
+      .addEventListener("click", submitAnswer);
+    questionElement
+      .querySelector("#answers")
+      .addEventListener("click", showAnswers);
+    questionElement.addEventListener('click',showAnswers);
+    container.appendChild(questionElement);
+  });
+}
+
+function renderAnswers(answers) {
+  const answersContainer = document.querySelector(".modal .wrapper");
+  answersContainer.innerHTML = "";
+  answers.forEach((ans) => {
+    let answer = document.createElement("div");
+    answer.classList.add("card", "flex");
+    answer.setAttribute("data-answer-id", ans.answerId);
+    answer.innerHTML = `
+                    <div class="stats">
+                        <h2>${ans.answer}</h2>
+                        <div style="font-weight: 700;">Author: <span id="author-name" style="font-weight: 500;">${ans.author}
+                                </span></div>
+                        <div style="font-weight: 700;">Date: <span id="date-of-submission" style="font-weight: 500;">
+                                ${ans.date}</span></div>
+                    </div>`;
+    answersContainer.appendChild(answer);
+  });
+  answersModal.style.display = "grid";
+}
+
+const getQuestion = (event) => {
+  if (submitQuestionField.value === "") {
+    alert("please enter the question before submitting");
+    return;
+  }
+  let userQuestion = submitQuestionField.value;
+  submitQuestionField.value = "";
+  return userQuestion;
+};
+
+const postQuestion = () => {
+  let questionToSubmit = getQuestion();
+  if (questionToSubmit) {
+    /* Todo: Need to post this question to the server then receive a unique id and 
+            then post it to the server to store */
+    questions.push(
+      new Question(6, currentUserName, currentDate, 0, questionToSubmit, [])
+    );
+    // Todo: Need to post the new question to the server
+    renderQuestions();
+  }
+};
+
+const handleLike = (event) => {
+  let btn = event.target.closest("#like");
+  if (!isclicked(btn)) {
+    let totalLikesDisplay = btn.querySelector("span");
+    let totalLikes = Number(totalLikesDisplay.textContent);
+    totalLikes += 1;
+    totalLikesDisplay.textContent = totalLikes;
+
+    /* Note to me: also update this(likes) in the server */
+  }
+};
+
+const getAnswer = (event) => {
+  return new Promise((resolve, reject) => {
+    const userAnswerInput = answerModal.querySelector("textarea");
+    const submitBtn = answerModal.querySelector(".modal-ans button");
+    submitBtn.addEventListener("click", () => {
+      let answer = userAnswerInput.value;
+      if (answer === "") {
+        window.alert("Please enter correct answer ");
+        reject("User entered a incorrect answer");
+        return;
+      }
+      answerModal.style.display = "none";
+      submitBtn.disabled = true;
+      resolve(answer);
+    });
+    userAnswerInput.value = "";
+  });
+};
+
+async function submitAnswer(event) {
+  let questionId = event.target
+    .closest(".card")
+    .getAttribute("data-question-id");
+  let currentQuestion = questions.find(
+    (question) => question.questionId === Number(questionId)
+  );
+  answerModal.style.display = "block";
+  try {
+    let answer = await getAnswer();
+    /* Todo: need to post this quetion and get unique answerId and then update it */
+    currentQuestion.postAnswer(
+      new Answer(
+        3,
+        currentUserName,
+        currentDate,
+        answer
+      ) /* Id should be fetched from the server */
+    );
+  } catch {
+  } finally {
+    const submitBtn = document.querySelector(".modal-ans button");
+    submitBtn.disabled = false;
+  }
+}
+
+const showAnswers = (event) => {
+  let questionId = event.target
+    .closest(".card")
+    .getAttribute("data-question-id");
+  let currentQuestion = questions.find(
+    (question) => question.questionId === Number(questionId)
+  );
+  renderAnswers(currentQuestion.answers);
+};
+
+const renderStats = () => {
+  let questionsAnswered = (document.querySelector(
+    ".stat-info .questions-asked"
+  ).textContent = "100");
+  let questionsAsked = (document.querySelector(
+    ".stat-info .questions-answered"
+  ).textContent = "200");
+  // TODO : get these stats from the server
+};
+
+submitBtn.addEventListener("click", postQuestion);
+answersModalClose.addEventListener("click", closeModal);
+answerModalClose.addEventListener("click", closeModal);
+
+window.onload = () => {
+  renderQuestions();
+  renderStats();
+};
+"use strict";
+
+const container = document.querySelector(".wrapper");
+
+export default class User {
+  constructor(userName, role, achievementPoints, Qans, Qask, userRank, profilePicture) {
+    this.userName = userName;
+    this.role = role;
+    this.achievementPoints = achievementPoints;
+    this.Qans = Qans;
+    this.Qask = Qask;
+    this.userRank = userRank;
+    this.profilePicture =
+      profilePicture || "../images/defaultProfilePicture.jpg";
+  }
+
+  //TODO : Figure out how to get users profile image
+}
+
+// TODO : Get users data from server
+export const Users = [
+  new User("Javascript", "student", 5, 10, 5, 1),
+  new User("Mokshith rao", "student", 5, 10, 5, 2),
+  new User("Ramakrishna", "student", 5, 10, 5, 3),
+];
+
+function renderUsers() {
+  Users.forEach((user) => {
+    let card = document.createElement("div");
+    card.classList.add("card", "flex");
+    card.innerHTML = `
+                <section role="img" class="flex-column">
+                    <a href="#"><img src="${user.profilePicture}" alt="User profile picture" /></a>
+                </section>
+                <div class="flex-column info">
+                    <h3>${user.userName}</h3>
+
+                    <p><b>Role:</b> <span>${user.role}</span></p>
+                    <p><b>Experience points:</b> <span>${user.achievementPoints}</span></p>
+                    <button class="btn">View profile</button>
+                </div>`;
+    card
+      .querySelector(".btn")
+      .addEventListener("click", () => handleViewProfile(user));
+    if (container) container.appendChild(card);
+  });
+}
+
+const handleViewProfile = (user) => {
+  sessionStorage.setItem("selectedUser", JSON.stringify(user));
+  window.location.href = "../profile.html";
+};
+
+window.onload = () => {
+  renderUsers();
+};
+utills folder : 
+
+AOS.init();
+let toggleButton = document.querySelector(".mobile-nav-toggle");
+let nav = document.querySelector("nav");
+toggleButton.addEventListener("click", () => {
+	let state = toggleButton.getAttribute("aria-expanded");
+	if (state === "true") {
+		toggleButton.setAttribute("aria-expanded", "false");
+		nav.style.transform = "translateX(100vh)";
+	} else {
+		toggleButton.setAttribute("aria-expanded", "true");
+		nav.style.transform = "translateX(0)";
+	}
+});
+"use strict";
+
+const buttonBox = document.querySelector(".toggle-box");
+const btn = document.querySelector(".toggle-icon");
+
+function changeButtonState() {
+	let buttonState = buttonBox.getAttribute("data-active");
+	if (buttonState === "false") {
+		/* btn.style.right = 0; */
+		btn.style.left = "50%";
+		buttonBox.style.background = "blue";
+		buttonBox.setAttribute("data-active", "true");
+		//Theme operations
+		localStorage.setItem("theme", "dark");
+		document.body.setAttribute("data-dark-mode", "true");
+	} else if (buttonState === "true") {
+		btn.style.left = "15%";
+		/* btn.style.right = "50%"; */
+		buttonBox.style.background = "#c0c0c0";
+		buttonBox.setAttribute("data-active", "false");
+		//Theme operations
+		localStorage.setItem("theme", "light");
+		document.body.setAttribute("data-dark-mode", "false");
+	}
+}
+buttonBox.addEventListener("click", changeButtonState);
+
+const setTheme = () => {
+	let currentTheme = localStorage.getItem("theme") || "light";
+	if (currentTheme === "dark") {
+		document.body.setAttribute("data-dark-mode", "true");
+		btn.style.left = "50%";
+		buttonBox.style.background = "blue";
+		buttonBox.setAttribute("data-active", "true");
+	} else {
+		document.body.setAttribute("data-dark-mode", "false");
+		btn.style.left = "15%";
+		/* btn.style.right = "50%"; */
+		buttonBox.style.background = "#c0c0c0";
+		buttonBox.setAttribute("data-active", "false");
+	}
+};
+
+window.addEventListener("DOMContentLoaded", () => {
+	console.log(localStorage.getItem("theme"));
+	setTheme();
+});
+"use strict";
+
+export const isclicked = (btn) => {
+	let clicked = btn.getAttribute("data-clicked");
+	if (clicked === "false") {
+		btn.setAttribute("data-clicked", "true");
+		return false;
+	}
+	return true;
+};
+
+export const closeModal = (event) => {
+	let btn = event.target.closest(".close");
+	let modalName = btn.getAttribute("data-modal");
+	let currentModal = undefined;
+	switch (modalName) {
+		case "show-answers":
+			currentModal = document.querySelector(".modal");
+			currentModal.style.display = "none";
+			break;
+		case "write-answer":
+			currentModal = document.querySelector(".modal-ans");
+			currentModal.style.display = "none";
+		default:
+			break;
+	}
+};
+
+export const setAOS = (element) => {
+	let dataAOS = ["slide-right", "slide-left"];
+	element.setAttribute("data-aos", dataAOS[Math.floor(Math.random() * 2)]);
+	if (element.getAttribute("data-aos") === "slide-right")
+		element.setAttribute("data-aos", "fade-right");
+	else element.setAttribute("data-aos", "fade-left");
+	element.setAttribute("data-aos-delay", "500");
+};
+"use strict";
+
+export const isclicked = (btn) => {
+	let clicked = btn.getAttribute("data-clicked");
+	if (clicked === "false") {
+		btn.setAttribute("data-clicked", "true");
+		return false;
+	}
+	return true;
+};
+
+export const closeModal = (event) => {
+	let btn = event.target.closest(".close");
+	let modalName = btn.getAttribute("data-modal");
+	let currentModal = undefined;
+	switch (modalName) {
+		case "show-answers":
+			currentModal = document.querySelector(".modal");
+			currentModal.style.display = "none";
+			break;
+		case "write-answer":
+			currentModal = document.querySelector(".modal-ans");
+			currentModal.style.display = "none";
+		default:
+			break;
+	}
+};
+
+export const setAOS = (element) => {
+	let dataAOS = ["slide-right", "slide-left"];
+	element.setAttribute("data-aos", dataAOS[Math.floor(Math.random() * 2)]);
+	if (element.getAttribute("data-aos") === "slide-right")
+		element.setAttribute("data-aos", "fade-right");
+	else element.setAttribute("data-aos", "fade-left");
+	element.setAttribute("data-aos-delay", "500");
+};
+
+
+

@@ -101,6 +101,43 @@ img {
   vertical-align: middle;
 }
 
+
+.error-message {
+  font-size: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 10rem;
+  margin: auto 10%;
+  padding: 1rem;
+  width: 25rem;
+  height: 10rem;
+  border-radius: 1rem;
+  color: rgb(241, 22, 22);
+  background-color: var(--card-bg-color);
+  box-shadow: 2px 2px 2px var(--text-color);
+  transition: all 200ms ease-in-out;
+}
+
+.log-out {
+  display: none;
+  background-color: transparent;
+  color: var(--text-color);
+  text-wrap: nowrap;
+}
+
+.log-out > svg {
+  fill: var(--text-color);
+}
+
+.log-out:hover {
+  opacity: 0.8;
+}
+
+.log-out:active {
+  opacity: 1;
+}
+
 /* toggle button styles */
 
 .toggle-box {

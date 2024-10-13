@@ -170,6 +170,7 @@ const postQuestion = () => {
 };
 
 const handleLike = (event) => {
+  event.stopPropagation();
   let btn = event.target.closest("#like");
   if (!isclicked(btn)) {
     let totalLikesDisplay = btn.querySelector("span");
@@ -201,6 +202,7 @@ const getAnswer = (event) => {
 };
 
 async function submitAnswer(event) {
+  event.stopPropagation();
   let questionId = event.target
     .closest(".card")
     .getAttribute("data-question-id");

@@ -1,138 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Qconn | Sign-in</title>
 
-    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/sign-in.css" />
-    <link rel="stylesheet" href="../css/utills.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qconn | Sign-in</title>
 
-  <body data-dark-mode="false">
-    <div class="wrapper flex">
-      <div class="left">
-        <form action="../index.html" method="post" class="flex-column">
-          <h1>Sign in</h1>
-          <div class="input-group flex">
-            <div class="svg-container flex">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path
-                  d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"
-                />
-              </svg>
-            </div>
-            <input
-              type="email"
-              required
-              aria-required="true"
-              class="mail-field input"
-              placeholder="Email address"
-            />
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script type="module" src="script/main.js" defer></script>
+
+  <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/sign-in.css" />
+  <link rel="stylesheet" href="../css/utills.css" />
+</head>
+
+<body data-dark-mode="false">
+  <div class="wrapper flex">
+    <div class="left">
+      <form class="flex-column" id="signin-form">
+        <h1>Sign in</h1>
+        <div class="input-group flex">
+          <div class="svg-container flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z" />
+            </svg>
           </div>
-          <div class="input-group flex">
-            <div class="svg-container flex">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path
-                  d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"
-                />
-              </svg>
-            </div>
-            <input
-              type="password"
-              required
-              aria-required="true"
-              class="password-field input"
-              placeholder="Password"
-            />
+          <input type="email" required aria-required="true" class="mail-field input" placeholder="Email address" name="email"/>
+        </div>
+        <div class="input-group flex">
+          <div class="svg-container flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z" />
+            </svg>
           </div>
-          <button class="btn sign-in" type="submit">Sign in</button>
-          <p>Don't have an account? <a href="sign-up.html">Log in</a></p>
-        </form>
+          <input type="password" required aria-required="true" class="password-field input" placeholder="Password" autocomplete="current-password" name="password"/>
+        </div>
+        <button class="btn sign-in" type="submit">Sign in</button>
+        <p>Don't have an account? <a href="sign-up.html">Log in</a></p>
+      </form>
 
-        <!-- O-auth seems to be preety hard to implement -->
+      <!-- O-auth seems to be preety hard to implement -->
 
-        <div class="socials">
-          <div class="text">Sign in via socials</div>
-          <div class="social-icons flex">
-            <button class="btn flex social-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="fill-dark-1 js-on-edit"
-                sf-label="SVG icon"
-                sf-type="svg"
-                sf-uid="29"
-                draggable="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z"
-                ></path>
-              </svg>
-            </button>
-            <button class="btn flex social-icon">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="fill-dark-1 js-on-edit"
-                sf-label="SVG icon"
-                sf-type="svg"
-                sf-uid="32"
-                draggable="true"
-              >
-                <path
-                  d="M19.4565 8.15425C19.5795 8.81325 19.6465 9.50225 19.6465 10.2213C19.6465 15.8453 15.8825 19.8442 10.1975 19.8442C8.90467 19.8446 7.62442 19.5903 6.42991 19.0957C5.23541 18.6012 4.15006 17.8761 3.23588 16.9619C2.3217 16.0477 1.59661 14.9624 1.10204 13.7679C0.607475 12.5733 0.353122 11.2931 0.353516 10.0003C0.353122 8.70741 0.607475 7.42716 1.10204 6.23265C1.59661 5.03814 2.3217 3.95279 3.23588 3.03861C4.15006 2.12443 5.23541 1.39935 6.42991 0.904778C7.62442 0.41021 8.90467 0.155856 10.1975 0.15625C12.8555 0.15625 15.0765 1.13425 16.7805 2.72225L14.0055 5.49725V5.49025C12.9725 4.50625 11.6615 4.00125 10.1975 4.00125C6.94952 4.00125 4.30952 6.74525 4.30952 9.99425C4.30952 13.2423 6.94952 15.9923 10.1975 15.9923C13.1445 15.9923 15.1505 14.3073 15.5625 11.9933H10.1975V8.15425H19.4575H19.4565Z"
-                ></path>
-              </svg>
-            </button>
-            <button class="btn flex social-icon">
-              <svg
-                width="24"
-                height="20"
-                viewBox="0 0 24 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="fill-dark-1 js-on-edit"
-                sf-label="SVG icon"
-                sf-type="svg"
-                sf-uid="35"
-                draggable="true"
-              >
-                <path
-                  d="M23.6435 2.93757C22.8085 3.30757 21.9115 3.55757 20.9685 3.67057C21.9415 3.08836 22.6694 2.17203 23.0165 1.09257C22.1023 1.63555 21.1018 2.01776 20.0585 2.22257C19.3569 1.47343 18.4276 0.976891 17.4148 0.810039C16.4021 0.643187 15.3626 0.815357 14.4577 1.29982C13.5529 1.78428 12.8333 2.55393 12.4107 3.48927C11.988 4.42461 11.886 5.47332 12.1205 6.47257C10.2682 6.37956 8.45613 5.89811 6.80192 5.05947C5.14772 4.22083 3.68834 3.04373 2.5185 1.60457C2.1185 2.29457 1.8885 3.09457 1.8885 3.94657C1.88805 4.71356 2.07693 5.46881 2.43838 6.1453C2.79982 6.82179 3.32266 7.3986 3.9605 7.82457C3.22078 7.80103 2.49737 7.60115 1.8505 7.24157V7.30156C1.85043 8.37731 2.22253 9.41994 2.90368 10.2526C3.58483 11.0852 4.53307 11.6565 5.5875 11.8696C4.90128 12.0553 4.18184 12.0826 3.4835 11.9496C3.781 12.8752 4.3605 13.6846 5.14087 14.2645C5.92124 14.8444 6.86342 15.1657 7.8355 15.1836C6.18533 16.479 4.14739 17.1817 2.0495 17.1786C1.67788 17.1787 1.30658 17.157 0.9375 17.1136C3.06698 18.4827 5.54584 19.2094 8.0775 19.2066C16.6475 19.2066 21.3325 12.1086 21.3325 5.95257C21.3325 5.75257 21.3275 5.55056 21.3185 5.35056C22.2298 4.69154 23.0164 3.87546 23.6415 2.94057L23.6435 2.93757Z"
-                ></path>
-              </svg>
-            </button>
-          </div>
+      <div class="socials">
+        <div class="text">Sign in via socials</div>
+        <div class="social-icons flex">
+          <button class="btn flex social-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="fill-dark-1 js-on-edit" sf-label="SVG icon" sf-type="svg" sf-uid="29" draggable="true">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z">
+              </path>
+            </svg>
+          </button>
+          <button class="btn flex social-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="fill-dark-1 js-on-edit" sf-label="SVG icon" sf-type="svg" sf-uid="32" draggable="true">
+              <path
+                d="M19.4565 8.15425C19.5795 8.81325 19.6465 9.50225 19.6465 10.2213C19.6465 15.8453 15.8825 19.8442 10.1975 19.8442C8.90467 19.8446 7.62442 19.5903 6.42991 19.0957C5.23541 18.6012 4.15006 17.8761 3.23588 16.9619C2.3217 16.0477 1.59661 14.9624 1.10204 13.7679C0.607475 12.5733 0.353122 11.2931 0.353516 10.0003C0.353122 8.70741 0.607475 7.42716 1.10204 6.23265C1.59661 5.03814 2.3217 3.95279 3.23588 3.03861C4.15006 2.12443 5.23541 1.39935 6.42991 0.904778C7.62442 0.41021 8.90467 0.155856 10.1975 0.15625C12.8555 0.15625 15.0765 1.13425 16.7805 2.72225L14.0055 5.49725V5.49025C12.9725 4.50625 11.6615 4.00125 10.1975 4.00125C6.94952 4.00125 4.30952 6.74525 4.30952 9.99425C4.30952 13.2423 6.94952 15.9923 10.1975 15.9923C13.1445 15.9923 15.1505 14.3073 15.5625 11.9933H10.1975V8.15425H19.4575H19.4565Z">
+              </path>
+            </svg>
+          </button>
+          <button class="btn flex social-icon">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="fill-dark-1 js-on-edit" sf-label="SVG icon" sf-type="svg" sf-uid="35" draggable="true">
+              <path
+                d="M23.6435 2.93757C22.8085 3.30757 21.9115 3.55757 20.9685 3.67057C21.9415 3.08836 22.6694 2.17203 23.0165 1.09257C22.1023 1.63555 21.1018 2.01776 20.0585 2.22257C19.3569 1.47343 18.4276 0.976891 17.4148 0.810039C16.4021 0.643187 15.3626 0.815357 14.4577 1.29982C13.5529 1.78428 12.8333 2.55393 12.4107 3.48927C11.988 4.42461 11.886 5.47332 12.1205 6.47257C10.2682 6.37956 8.45613 5.89811 6.80192 5.05947C5.14772 4.22083 3.68834 3.04373 2.5185 1.60457C2.1185 2.29457 1.8885 3.09457 1.8885 3.94657C1.88805 4.71356 2.07693 5.46881 2.43838 6.1453C2.79982 6.82179 3.32266 7.3986 3.9605 7.82457C3.22078 7.80103 2.49737 7.60115 1.8505 7.24157V7.30156C1.85043 8.37731 2.22253 9.41994 2.90368 10.2526C3.58483 11.0852 4.53307 11.6565 5.5875 11.8696C4.90128 12.0553 4.18184 12.0826 3.4835 11.9496C3.781 12.8752 4.3605 13.6846 5.14087 14.2645C5.92124 14.8444 6.86342 15.1657 7.8355 15.1836C6.18533 16.479 4.14739 17.1817 2.0495 17.1786C1.67788 17.1787 1.30658 17.157 0.9375 17.1136C3.06698 18.4827 5.54584 19.2094 8.0775 19.2066C16.6475 19.2066 21.3325 12.1086 21.3325 5.95257C21.3325 5.75257 21.3275 5.55056 21.3185 5.35056C22.2298 4.69154 23.0164 3.87546 23.6415 2.94057L23.6435 2.93757Z">
+              </path>
+            </svg>
+          </button>
         </div>
       </div>
-
-      <div class="picture">
-        <img src="../images/sign-in.png" alt="image" />
-      </div>
     </div>
-  </body>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      let currentTheme = localStorage.getItem("theme");
-      if (currentTheme) {
-        document.body.setAttribute(
-          "data-dark-mode",
-          currentTheme === "dark" ? "true" : "false"
-        );
-      }
-    });
-  </script>
+
+    <p id="error-message" class="flex error-message"></p>
+    <div class="picture">
+      <img src="../images/sign-in.png" alt="image" />
+    </div>
+  </div>
+</body>
+<script type="module">
+  "use strict"
+  import {signIn} from "./../script/main.js";
+  const form = document.getElementById("signin-form");
+  document.addEventListener("DOMContentLoaded", () => {
+    let currentTheme = localStorage.getItem("theme");
+    if (currentTheme) {
+      document.body.setAttribute(
+        "data-dark-mode",
+        currentTheme === "dark" ? "true" : "false"
+      );
+    }
+  });
+  form.addEventListener("submit",(event) => {
+    event.preventDefault();
+    signIn(form);
+  })
+</script>
+
 </html>
