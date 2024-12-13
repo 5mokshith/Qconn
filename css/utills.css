@@ -115,7 +115,6 @@ img {
   border-radius: 1rem;
   color: rgb(241, 22, 22);
   background-color: var(--card-bg-color);
-  box-shadow: 2px 2px 2px var(--text-color);
   transition: all 200ms ease-in-out;
 }
 

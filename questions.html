@@ -19,9 +19,12 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script/utills/AOS.js" defer></script>
 
-  <script src="script/utills/theme.js" defer></script>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="script/utills/theme.js" type="module" defer></script>
+  <script type="module" src="script/main.js" type="module" defer></script>
   <script src="script/questions.js" defer type="module"></script>
-  <script src="script/utills/navBar.js" defer></script>
+  <script src="script/utills/navBar.js" type="module" defer></script>
+  <script src="script/utills/animation.js" type="module" defer></script>
 </head>
 
 <body data-dark-mode="false">
@@ -66,7 +69,7 @@
   </nav>
 
   <main data-aos="fade-down" data-aos="slide-down" data-aos-delay="750" class="flex-column">
-    <div class="hero flex-column">
+    <div class="hero flex-column" data-identifier="questions">
       <h1 data-aos="fade-down" data-aos="slide-down" data-aos-delay="800">#Trending questions</h1>
 
       <div class="stats flex" data-aos="fade-down" data-aos="slide-down" data-aos-delay="850">
@@ -235,7 +238,7 @@
       <div class="wrapper grid">
         <!-- Delete these before deploying :) -->
 
-        <div class="card flex">
+        <!-- <div class="card flex">
           <div class="stats">
             <h2>Practice the DOM manupulation can make your skill's popup</h2>
             <div style="font-weight: 700">
@@ -248,63 +251,7 @@
                 21-677-9890</span>
             </div>
           </div>
-        </div>
-        <div class="card flex">
-          <div class="stats">
-            <h2>Practice the DOM manupulation can make your skill's popup</h2>
-            <div style="font-weight: 700">
-              Author:
-              <span id="author-name" style="font-weight: 500">Hello world</span>
-            </div>
-            <div style="font-weight: 700">
-              Date:
-              <span id="date-of-submission" style="font-weight: 500">
-                21-677-9890</span>
-            </div>
-          </div>
-        </div>
-        <div class="card flex">
-          <div class="stats">
-            <h2>Practice the DOM manupulation can make your skill's popup</h2>
-            <div style="font-weight: 700">
-              Author:
-              <span id="author-name" style="font-weight: 500">Hello world</span>
-            </div>
-            <div style="font-weight: 700">
-              Date:
-              <span id="date-of-submission" style="font-weight: 500">
-                21-677-9890</span>
-            </div>
-          </div>
-        </div>
-        <div class="card flex">
-          <div class="stats">
-            <h2>Practice the DOM manupulation can make your skill's popup</h2>
-            <div style="font-weight: 700">
-              Author:
-              <span id="author-name" style="font-weight: 500">Hello world</span>
-            </div>
-            <div style="font-weight: 700">
-              Date:
-              <span id="date-of-submission" style="font-weight: 500">
-                21-677-9890</span>
-            </div>
-          </div>
-        </div>
-        <div class="card flex">
-          <div class="stats">
-            <h2>Practice the DOM manupulation can make your skill's popup</h2>
-            <div style="font-weight: 700">
-              Author:
-              <span id="author-name" style="font-weight: 500">Hello world</span>
-            </div>
-            <div style="font-weight: 700">
-              Date:
-              <span id="date-of-submission" style="font-weight: 500">
-                21-677-9890</span>
-            </div>
-          </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -322,6 +269,9 @@
       </div>
     </div>
   </aside>
+
+  <p id="error-message" class="flex error-message"></p>
+  <div class="blob"></div>
 </body>
 
 </html>

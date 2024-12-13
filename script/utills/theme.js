@@ -1,5 +1,7 @@
 "use strict";
 
+import { setHeroBg } from "./animation.js";
+
 const buttonBox = document.querySelector(".toggle-box");
 const btn = document.querySelector(".toggle-icon");
 const userDeviceColorMode = window.matchMedia("(prefers-color-scheme: dark)");
@@ -12,6 +14,7 @@ function changeButtonState() {
     buttonBox.setAttribute("data-active", "true");
     //Theme operations
     localStorage.setItem("theme", "dark");
+    setHeroBg();
     document.body.setAttribute("data-dark-mode", "true");
   } else if (buttonState === "true") {
     btn.style.left = "15%";
@@ -20,6 +23,7 @@ function changeButtonState() {
     buttonBox.setAttribute("data-active", "false");
     //Theme operations
     localStorage.setItem("theme", "light");
+    setHeroBg();
     document.body.setAttribute("data-dark-mode", "false");
   }
 }

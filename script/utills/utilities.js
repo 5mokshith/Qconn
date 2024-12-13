@@ -2,11 +2,14 @@
 
 export const isclicked = (btn) => {
   let clicked = btn.getAttribute("data-clicked");
-  if (clicked === "false") {
+  if (clicked === "true") {
+    btn.setAttribute("data-clicked", "false");
+    return true;
+  }
+  else {
     btn.setAttribute("data-clicked", "true");
     return false;
   }
-  return true;
 };
 
 export const closeModal = (event) => {
@@ -47,4 +50,11 @@ export function displayMessage(message, error = true) {
     errorMessage.style.visibility = "hidden";
     errorMessage.style.opacity = 0;
   }, 2000);
+}
+
+export function isOnline() {
+  if(navigator.onLine) {
+    return true;
+  }
+  return false;
 }
