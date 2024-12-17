@@ -222,7 +222,7 @@ section .text button:hover {
 section .text button:active {
   --btn-background: #538af7;
 }
-section:is(.flex-column) {
+section:is(.flex-column):not(:has(img)) {
   margin-top: 8%;
   --justify-content: center;
   --align-items: center;

@@ -14,7 +14,6 @@ export const supabaseClient = supabase.createClient(supabaseURL, supabaseKey, {
 async function getUsers() {
   try {
     let response = await supabaseClient.from("Users").select("*");
-    console.log(response);
     if (response.error) {
       throw response.error.message;
     }
@@ -46,7 +45,6 @@ export async function signUp(formElement) {
 }
 
 async function insertUser(userId, name, role) {
-  console.log(name, role);
   const data = await supabaseClient.from("Users").insert([
     {
       id: userId,
@@ -67,8 +65,6 @@ export async function signIn(formElement) {
   const email = formData.get("email");
   const password = formData.get("password");
 
-  console.log(email)
-  console.log(password)
   if (!email || !password) {
     displayMessage("Please enter the details correctly");
   }
@@ -77,7 +73,6 @@ export async function signIn(formElement) {
     email: email,
     password: password,
   });
-  console.log(state)
   if (state.error) {
     displayMessage(state.error.message || "you don't have a account or there might be an error");
   } else {
@@ -89,7 +84,6 @@ export async function signIn(formElement) {
       window.location.href = "../index.html";
       localStorage.setItem("userLoggedIn", "true");
       window.close();
-      console.log("Session in local storage:", localStorage.getItem("sb-lnfuimkyyghqtjgartur-auth-token"));
     }
   }
 }
@@ -101,7 +95,6 @@ const logOutBtn = document.querySelector("#log-out");
 async function isAuth() {
   try {
     let { data, error } = await supabaseClient.auth.getSession();
-    console.dir(data);
     if (signInBtn || signUpBtn || logOutBtn) {
       if (data.session) {
         signInBtn.style.display = "none";

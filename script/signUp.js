@@ -1,1 +1,0 @@
-import { signUp } from "./main.js";

@@ -1,7 +1,6 @@
 "use strict";
 
-import User from "./users.js";
-
+import { supabaseClient } from "./main.js";
 const profilePicture = document.querySelector(".profile-picture img");
 const userName = document.querySelector(".details h1");
 const userRole = document.querySelector(".details h3");
@@ -9,7 +8,7 @@ const questionsAnswered = document.querySelector(".questions-answered span");
 const questionsAsked = document.querySelector(".questions-asked span");
 const achievements = document.querySelector(".achievements span");
 
-let currentUser = getUser();
+let currentUser;
 
 function renderUser() {
   let selectedUser = JSON.parse(sessionStorage.getItem("selectedUser"));
@@ -21,20 +20,33 @@ function renderUser() {
     questionsAsked.textContent = selectedUser.Qask;
     achievements.textContent = selectedUser.achievementPoints;
     sessionStorage.removeItem("selectedUser");
-  } else {
+  } else if(currentUser) {
     profilePicture.src = currentUser.profilePicture;
     userName.textContent = currentUser.userName;
     userRole.textContent = currentUser.role;
-    questionsAnswered.textContent = currentUser.Qans;
-    questionsAsked.textContent = currentUser.Qask;
+    questionsAnswered.textContent = currentUser.questionsAnswered;
+    questionsAsked.textContent = currentUser.questionsAsked;
     achievements.textContent = currentUser.achievementPoints;
   }
 }
 
-function getUser() {
-  return new User("Mokshith rao", "student", 5, 10, 5);
+async function getUser() {
+  try {
+    let {data:session, error:sessionError} = await supabaseClient.auth.getSession();
+    let currentUserId = session.session.user.id;
+    let { data: currentUser, error} = await supabaseClient.from("Users").select("*").eq("id", currentUserId);
+    console.log(currentUser[0]);
+    if(sessionError || error) {
+      return;
+    }
+    return currentUser[0];
+  }
+  catch(error) {
+    console.error(error);
+  }
 }
 
-window.onload = () => {
+window.onload = async () => {
+  currentUser = await getUser();
   renderUser();
 };

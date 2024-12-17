@@ -1,5 +1,8 @@
 "use strict";
 
+import { supabaseClient } from "./main.js";
+import { displayMessage } from "./utills/utilities.js";
+
 const container = document.querySelector(".wrapper");
 
 export default class User {
@@ -17,20 +20,33 @@ export default class User {
   //TODO : Figure out how to get users profile image
 }
 
-// TODO : Get users data from server
-export const Users = [
-  new User("Javascript", "student", 5, 10, 5, 1),
-  new User("Mokshith rao", "student", 5, 10, 5, 2),
-  new User("Ramakrishna", "student", 5, 10, 5, 3),
-];
+let Users = [];
 
+
+export async function fetchUsers() {
+  let { data, error } = await supabaseClient.from("Users").select("*");
+  if(error) {
+    displayMessage("Some unknown error occured ", true);
+    return [];
+  }
+  return data.map((user) => {
+    return new User(
+      user.userName,
+      user.role,
+      user.achievementPoints,
+      user.questionsAnswered,
+      user.questionsAsked,
+      user.rank
+    )
+  });
+}
 function renderUsers() {
-  Users.forEach((user) => {
+   Users.forEach((user) => {
     let card = document.createElement("div");
     card.classList.add("card", "flex");
     card.innerHTML = `
                 <section role="img" class="flex-column">
-                    <a href="#"><img src="${user.profilePicture}" alt="User profile picture" /></a>
+                <img src="${user.profilePicture}" alt="User profile picture" />
                 </section>
                 <div class="flex-column info">
                     <h3>${user.userName}</h3>
@@ -51,6 +67,7 @@ const handleViewProfile = (user) => {
   window.location.href = "../profile.html";
 };
 
-window.onload = () => {
+window.onload = async () => {
+  Users = await fetchUsers();
   renderUsers();
 };

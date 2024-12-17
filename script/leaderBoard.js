@@ -1,8 +1,13 @@
 "use strict";
-import { Users } from "./users.js";
-const table = document.querySelector("table");
-const searchBar = document.querySelector("input[type=search]")
 
+import { fetchUsers } from "./users.js";
+
+const table = document.querySelector("table");
+const searchBar = document.querySelector("input[type=search]");
+
+let Users = [];
+
+console.log("Users from leaderBoard: ", Users);
 function renderProfiles(users = Users) {
   table.querySelectorAll("tr:not(:first-child)").forEach(row => row.remove());
   users.forEach((user,index) => {
@@ -50,6 +55,7 @@ searchBar.addEventListener('input',(event) => {
   renderProfiles(filteredUsers);
 });
 
-window.addEventListener('DOMContentLoaded',()=>{
-    renderProfiles();
+window.addEventListener('DOMContentLoaded',async ()=>{
+  Users = await fetchUsers(); 
+  renderProfiles();
 })
