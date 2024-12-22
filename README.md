@@ -70,6 +70,7 @@ Sure, here is the complete README file with all the details included:
 qconn/ ├── additionalPages/ │ ├── about.html │ ├── contactUs.html │ ├── sign-in.html │ ├── sign-up.html │ └── termsOfService.html ├── css/ │ ├── contactUs.css │ ├── leaderBoard.css │ ├── media-qurery.css │ ├── profile.css │ ├── questions.css │ ├── sign-in.css │ ├── sign-up.css │ ├── style.css │ └── utills.css ├── images/ │ └── svg/ ├── script/ │ ├── leaderBoard.js │ ├── main.js │ ├── profile.js │ ├── questions.js │ ├── users.js │ └── utills/ │ ├── animation.js │ ├── AOS.js │ ├── navBar.js │ └── theme.js ├── index.html ├── leaderBoard.html ├── profile.html ├── questions.html ├── users.html └── templates.txt
 
 
+
 ## Supabase
 
 Supabase is an open-source Firebase alternative that provides a suite of tools for building applications. Qconn uses Supabase for:
@@ -94,24 +95,41 @@ Supabase is an open-source Firebase alternative that provides a suite of tools f
 
 To learn more about Supabase, visit the [official website](https://supabase.io/).
 
+## Screenshots
+
+### Home Page
+![Home Page](path/to/homepage-screenshot.png)
+
+### Sign Up Page
+![Sign Up Page](path/to/signup-screenshot.png)
+
+### Questions Page
+![Questions Page](path/to/questions-screenshot.png)
+
+### User Profile
+![User Profile](path/to/profile-screenshot.png)
+
+### Leaderboard
+!Leaderboard
+
 ## Contributing
 
 Contributions are welcome! Please follow these steps to contribute:
 
-1. Fork the repository.
-2. Create a new branch:
+1. **Fork the repository**.
+2. **Create a new branch**:
     ```sh
     git checkout -b feature/your-feature-name
     ```
-3. Make your changes and commit them:
+3. **Make your changes and commit them**:
     ```sh
     git commit -m 'Add some feature'
     ```
-4. Push to the branch:
+4. **Push to the branch**:
     ```sh
     git push origin feature/your-feature-name
     ```
-5. Open a pull request.
+5. **Open a pull request**.
 
 ## License
 
