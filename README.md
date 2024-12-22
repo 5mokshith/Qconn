@@ -97,6 +97,8 @@ To learn more about Supabase, visit the [official website](https://supabase.io/)
 
 ## Screenshots
 
+This is also a mobile responsive design adapting to different screen sizes
+
 ### Home Page
 ![Screenshot (1)](https://github.com/user-attachments/assets/5e03f663-be35-48c8-88ce-ac9a688be5f9)
 ![Screenshot (2)](https://github.com/user-attachments/assets/4bfef424-cc6c-4296-8cff-0f8bb0e078a2)
