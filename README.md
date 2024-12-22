@@ -98,19 +98,22 @@ To learn more about Supabase, visit the [official website](https://supabase.io/)
 ## Screenshots
 
 ### Home Page
-![Home Page](path/to/homepage-screenshot.png)
+![Screenshot (1)](https://github.com/user-attachments/assets/5e03f663-be35-48c8-88ce-ac9a688be5f9)
+![Screenshot (2)](https://github.com/user-attachments/assets/4bfef424-cc6c-4296-8cff-0f8bb0e078a2)
 
 ### Sign Up Page
-![Sign Up Page](path/to/signup-screenshot.png)
+![Sign Up Page](path/to/signup![Screenshot (9)](https://github.com/user-attachments/assets/7d575d8a-ed79-447c-9475-1b395b97d3ba)
+-screenshot.png)
 
 ### Questions Page
-![Questions Page](path/to/questions-screenshot.png)
+![Screenshot (4)](https://github.com/user-attachments/assets/4486f818-bcb2-4c4d-a44f-ac1793377e5f)
 
 ### User Profile
-![User Profile](path/to/profile-screenshot.png)
+![Screenshot (8)](https://github.com/user-attachments/assets/365747a2-c7b9-4489-aade-3745f769e5d6)
 
 ### Leaderboard
 !Leaderboard
+![Screenshot (7)](https://github.com/user-attachments/assets/748607c4-5fe3-4397-ad98-cc28a6f80927)
 
 ## Contributing
 
