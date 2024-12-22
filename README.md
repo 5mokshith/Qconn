@@ -41,23 +41,18 @@ Qconn is an innovative platform designed to connect students, teachers, and seni
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/qconn.git
+    git clone https://github.com/5mokshith/qconn.git
     cd qconn
     ```
 
-2. Install dependencies:
-    ```sh
-    npm install
-    ```
-
-3. Set up environment variables:
+2. Set up environment variables:
     Create a `.env` file in the root directory and add your Supabase credentials:
     ```env
     SUPABASE_URL=your-supabase-url
     SUPABASE_KEY=your-supabase-key
     ```
 
-4. Start the development server:
+3. Start the development server:
     ```sh
     npm start
     ```
