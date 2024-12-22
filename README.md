@@ -69,3 +69,7 @@ Qconn is an innovative platform designed to connect students, teachers, and seni
 3. Explore the features such as posting questions, answering questions, and viewing user profiles.
 
 ## Project Structure
+GitHub Copilot
+Sure, here is the complete README file with all the details included:
+
+qconn/ ├── additionalPages/ │ ├── about.html │ ├── contactUs.html │ ├── sign-in.html │ ├── sign-up.html │ └── termsOfService.html ├── css/ │ ├── contactUs.css │ ├── leaderBoard.css │ ├── media-qurery.css │ ├── profile.css │ ├── questions.css │ ├── sign-in.css │ ├── sign-up.css │ ├── style.css │ └── utills.css ├── images/ │ └── svg/ ├── script/ │ ├── leaderBoard.js │ ├── main.js │ ├── profile.js │ ├── questions.js │ ├── users.js │ └── utills/ │ ├── animation.js │ ├── AOS.js │ ├── navBar.js │ └── theme.js ├── index.html ├── leaderBoard.html ├── profile.html ├── questions.html ├── users.html └── templates.txt
