@@ -115,6 +115,10 @@ To learn more about Supabase, visit the [official website](https://supabase.io/)
 !Leaderboard
 ![Screenshot (7)](https://github.com/user-attachments/assets/748607c4-5fe3-4397-ad98-cc28a6f80927)
 
+### Users
+
+![Screenshot (6)](https://github.com/user-attachments/assets/0acdcc6a-596e-4bdb-9b97-e8ae95588701)
+
 ## Contributing
 
 Contributions are welcome! Please follow these steps to contribute:
