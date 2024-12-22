@@ -1,47 +1,71 @@
+# Qconn
 
-## Supabase
+Qconn is an innovative platform designed to connect students, teachers, and seniors to share knowledge and solve problems together. This project includes various features such as user authentication, posting questions, answering questions, and viewing user profiles.
 
-Supabase is an open-source Firebase alternative that provides a suite of tools for building applications. Qconn uses Supabase for:
+## Table of Contents
 
-- **Authentication**: Managing user sign-up, sign-in, and session persistence.
-- **Database**: Storing user data, questions, answers, and other application data.
-- **Real-time**: Enabling real-time updates and synchronization across the platform.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Supabase](#supabase)
+- [Contributing](#contributing)
+- [License](#license)
 
-### How Supabase is Used
+## Features
 
-- **User Authentication**: 
-  - The [signUp](http://_vscodecontentref_/0) function handles user registration by creating a new user in Supabase and storing their details in the database.
-  - The [signIn](http://_vscodecontentref_/1) function manages user login and session persistence.
-  - The [logOut](http://_vscodecontentref_/2) function handles user logout and session termination.
-  - The [isAuth](http://_vscodecontentref_/3) function checks if a user is authenticated and updates the UI accordingly.
+### User Authentication
+- **Sign Up**: Users can create an account using their email and password.
+- **Sign In**: Users can log in to their account to access the platform.
+- **Persistent Sessions**: User sessions are persisted across browser sessions.
 
-- **Database Operations**:
-  - The [getUsers](http://_vscodecontentref_/4) function fetches all users from the Supabase database.
-  - The [insertUser](http://_vscodecontentref_/5) function inserts a new user into the Supabase database after registration.
-  - The `fetchQuestions` function retrieves questions and their associated answers from the database.
-  - The `updateLikes` function updates the like count for a question in the database.
+### Questions and Answers
+- **Post Questions**: Users can post questions to the platform.
+- **Answer Questions**: Users can answer questions posted by others.
+- **Like Questions**: Users can like questions to show appreciation.
 
-To learn more about Supabase, visit the [official website](https://supabase.io/).
+### User Profiles
+- **View Profiles**: Users can view their profile and other users' profiles.
+- **Profile Picture**: Users can upload a profile picture.
+- **User Stats**: View statistics such as questions asked, questions answered, and achievement points.
 
-## Contributing
+### Leaderboard
+- **Top Users**: View the leaderboard of top users based on their activity.
+- **Search Users**: Search for users on the leaderboard.
 
-Contributions are welcome! Please follow these steps to contribute:
+### Responsive Design
+- **Mobile Friendly**: The platform is responsive and works on various devices.
+- **Dark Mode**: Users can toggle between light and dark themes.
 
-1. Fork the repository.
-2. Create a new branch:
+## Installation
+
+1. Clone the repository:
     ```sh
-    git checkout -b feature/your-feature-name
+    git clone https://github.com/your-username/qconn.git
+    cd qconn
     ```
-3. Make your changes and commit them:
-    ```sh
-    git commit -m 'Add some feature'
-    ```
-4. Push to the branch:
-    ```sh
-    git push origin feature/your-feature-name
-    ```
-5. Open a pull request.
 
-## License
+2. Install dependencies:
+    ```sh
+    npm install
+    ```
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+3. Set up environment variables:
+    Create a `.env` file in the root directory and add your Supabase credentials:
+    ```env
+    SUPABASE_URL=your-supabase-url
+    SUPABASE_KEY=your-supabase-key
+    ```
+
+4. Start the development server:
+    ```sh
+    npm start
+    ```
+
+## Usage
+
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Sign up or sign in to start using the platform.
+3. Explore the features such as posting questions, answering questions, and viewing user profiles.
+
+## Project Structure
