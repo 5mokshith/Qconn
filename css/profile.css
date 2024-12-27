@@ -15,17 +15,15 @@
   aspect-ratio: 1;
   border-radius: 50%;
 }
-
 main {
   border: none !important;
   padding: 1rem;
   -webkit-margin-before: 8rem;
   margin-block-start: 8rem;
   margin-inline: 1rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   /* backdrop-filter: blur(200px);
     background-color: var(--card-bg-color); */
-  background: conic-gradient(pink, pink, #ecb622ab, #ec8a22ab, pink);
   --gap: 0;
   --justify-content: space-around;
 }
