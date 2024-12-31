@@ -145,8 +145,8 @@ restrictedLinks.forEach(link => {
   link.addEventListener("click", async (event) => {
     if (await isAuth() === "false") {
       event.preventDefault();
-      if(window.open("../additionalPages/sign-in.html", "_blank")) return;
-      window.location.href = "../additionalPages/sign-in.html";
+      if(window.open("../Qconn/additionalPages/sign-in.html", "_blank")) return;
+      window.location.href = "../Qconn/additionalPages/sign-in.html";
     }
   });
 });
