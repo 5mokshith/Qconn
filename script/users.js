@@ -14,7 +14,7 @@ export default class User {
     this.Qask = Qask;
     this.userRank = userRank;
     this.profilePicture =
-      profilePicture || "./../images/defaultProfilePicture.jpg";
+      profilePicture || "/images/defaultProfilePicture.jpg";
   }
 
   //TODO : Figure out how to get users profile image
