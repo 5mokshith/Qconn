@@ -1,4 +1,4 @@
-# Qconn
+# Qconn - A Interactive platform for Students and teachers to connect more effectively
 
 Qconn is an innovative platform designed to connect students, teachers, and seniors to share knowledge and solve problems together. This project includes various features such as user authentication, posting questions, answering questions, and viewing user profiles.
 
